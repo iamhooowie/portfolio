@@ -1,0 +1,230 @@
+.vh100 {
+    height: 100vh;
+}
+
+.about-block {
+    margin: 14rem 0 0 0;
+    height: calc(100vh - 305px);
+}
+
+.about-link {
+    margin: 6rem 0 0 0;
+}
+
+.about-link a {
+    font-size: 2rem;
+    color: #ffffff;
+    margin-right: 5rem;
+}
+
+.about-link a i {
+    padding-right: 1rem;
+}
+
+.inner-header-block {
+    background: url(../images/blue-xl.jpg) #ffffff;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-bottom: 8rem;
+}
+
+.work-title {
+    margin: 14rem 0 0 0;
+    font-size: 5.4rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase
+}
+
+.work-tag {
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 3rem;
+}
+
+.work-tag span {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.work-tag~img {
+    margin-bottom: 3rem;
+}
+
+.separate-2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.separate-2-item {
+    width: 47.5%;
+}
+
+.separate-3 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.separate-3-item {
+    width: 30%;
+}
+
+.separate-3-item p {
+    text-align: center;
+}
+
+.content-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-groups {
+    display: flex;
+    justify-content: space-between;
+}
+
+.inner-header-block {}
+
+.inner-header-block:after {
+    background: var(--one-color);
+    height: 785px;
+    content: "";
+    position: absolute;
+}
+
+.content-content {
+    width: 1050px;
+}
+
+.content-group {
+    display: flex;
+}
+
+.content-title {
+    width: 350px;
+    position: relative;
+}
+
+.content-title:before {
+    position: absolute;
+    content: "";
+    width: 5px;
+    height: 30px;
+    background-color: var(--two-color);
+    top: 3px;
+}
+
+.content-title h2 {
+    padding-left: 15px;
+}
+
+.content-content {
+    width: 1050px;
+}
+
+/* ====================================================================== RWD ====================================================================== */
+@media(max-width:1400px) {
+    .inner-header-block {
+        background: url(../images/blue-l.jpg) #ffffff;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+}
+
+@media(max-width:1200px) {
+    .about-block {
+        margin: 12rem 0;
+        height: auto;
+    }
+
+    .content-group {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .content-group .content-title {
+        margin-bottom: 2.5rem;
+    }
+
+    .content-groups {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content-content {
+        width: 100%;
+    }
+
+    .work-title {
+        margin: 12rem 0 0 0;
+        font-size: 4.2rem;
+    }
+}
+
+@media(max-width:992px) {
+    .work-title {
+        margin: 10rem 0 0 0;
+    }
+
+    .inner-header-block {
+        background: #004AF9;
+        background-repeat: no-repeat;
+        background-size: contain;
+        padding-bottom: 6rem;
+        color: #fff;
+    }
+}
+
+@media(max-width:768px) {
+    .work-title {
+        font-size: 3.2rem;
+    }
+
+    .inner-header-block {
+        padding-bottom: 6rem;
+        color: #fff;
+    }
+}
+
+@media(max-width:576px) {
+    .inner-header-block {
+        padding-bottom: 4rem;
+    }
+
+    .work-title {
+        margin: 8rem 0 0 0;
+    }
+
+    .separate-3 {
+        flex-direction: column;
+    }
+
+    .separate-3-item {
+        width: 100%;
+        margin-bottom: 2.5rem;
+    }
+
+    .work-title {
+        font-size: 2.6rem;
+    }
+}
+
+@media(max-width:480px) {
+    .about-link {
+        margin: 4rem 0 0 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-link a {
+        font-size: 1.6rem;
+        display: inline-block;
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media(max-width:420px) {
+    .content-title {
+        width: 100%;
+    }
+}
