@@ -650,6 +650,10 @@ a#button span {
     display: none !important;
 }
 
+.sp-28 {
+    line-height: 3.6rem;
+}
+
 .sp-red {
     background: #EE0412;
 }
@@ -1006,6 +1010,10 @@ a#button span {
 
     .sp-21 {
         padding: 6rem 0;
+    }
+
+    .sp-28 {
+        line-height: 3rem;
     }
 }
 
