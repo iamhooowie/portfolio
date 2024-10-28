@@ -1,11 +1,4 @@
 /* ====================================================================== 通用 ====================================================================== */
-@font-face {
-    font-family: "華康翩翩體";
-    src: local("華康翩翩體 bold"),
-        local("華康翩翩體-bold"),
-        url(../font/華康翩翩體.otf);
-    font-weight: bold;
-}
 
 @font-face {
     font-family: "ElaineSans";
@@ -500,11 +493,15 @@ a#button span {
     bottom: 7px;
 }
 
-.sp-2 {
-    font-family: "華康翩翩體";
-    font-size: 12rem;
-    color: var(--two-color);
-    line-height: normal !important;
+span.sp-2 {
+    display: inline-block;
+}
+
+.sp-2 img {
+    height: 10rem;
+    line-height: 12rem;
+    width: fit-content;
+    margin-right: 2rem;
 }
 
 .sp-3 {
@@ -654,6 +651,12 @@ a#button span {
     line-height: 3.6rem;
 }
 
+.sp-29 {
+    margin: 2.5rem 0 3rem;
+    display: flex;
+    align-items: center;
+}
+
 .sp-red {
     background: #EE0412;
 }
@@ -784,8 +787,8 @@ a#button span {
         margin-top: 12rem;
     }
 
-    .sp-2 {
-        font-size: 8rem;
+    .sp-2 img {
+        height: 7rem;
     }
 
     .sp-3 {
@@ -803,6 +806,10 @@ a#button span {
 
     .sp-18 {
         margin-top: -20rem;
+    }
+
+    .sp-29 {
+        margin: 2.5rem 0 4rem;
     }
 }
 
@@ -975,8 +982,9 @@ a#button span {
     }
 
     /* ===== sp =====*/
-    .sp-2 {
-        font-size: 6rem;
+    .sp-2 img {
+        height: 5rem;
+        margin-right: 1.25rem;
     }
 
     .sp-3 {
