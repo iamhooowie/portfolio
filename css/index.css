@@ -1,0 +1,337 @@
+h4 {
+    font-size: 2rem;
+    line-height: 3rem;
+    font-weight: 400;
+}
+
+.index-bk {
+    background: var(--one-color);
+}
+
+.banner-block {
+    position: relative;
+    overflow: hidden;
+}
+
+.cursor::after {
+    content: '';
+    display: inline-block;
+    margin-left: 3px;
+    background-color: white;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+}
+
+h1.cursor {
+    font-size: 6rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: "ElaineSans";
+    color: #ffffff;
+    letter-spacing: 2px;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    49% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+div#output {
+    margin-top: -3rem;
+}
+
+.whatido-block {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    font-size: 2.6rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 11rem 0 0;
+    padding: 13rem 0;
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+}
+
+.whatido-block::after {
+    position: absolute;
+    content: "WHAT I DO";
+    color: rgba(255, 255, 255, 10%);
+    font-size: 24rem;
+    font-family: "ElaineSans";
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: -10;
+}
+
+.index-work-block {
+    margin-top: 10rem;
+
+}
+
+.index-work-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.index-work-item {
+    width: 47.5%;
+    margin-bottom: 9rem;
+}
+
+.index-work-item {
+    border-bottom: 1px solid #fff;
+}
+
+.index-work-item h4 {
+    color: #ffffff;
+    margin-bottom: 2.5rem;
+}
+
+.index-work-title {
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 1.5rem 0 0.5rem;
+}
+
+.circle-text {
+    position: absolute;
+    right: -8rem;
+    top: 40%;
+    background-color: var(--two-color);
+    border-radius: 99rem;
+    padding: 4rem;
+    width: 47.5rem;
+    height: 47.5rem;
+    transform: translateY(-50%);
+}
+
+:root {
+    --rotationDuration: 20s;
+    --hoverDuration: 0.3s;
+}
+
+.link__svg {
+    width: 100%;
+    height: auto;
+    transform-box: fill-box;
+
+    stroke-width: 0.05em;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    word-spacing: 0.3em;
+
+}
+
+.link__arrow {
+    transform-origin: 50% 50%;
+    transition: transform var(--hoverDuration) / 2 var(--easeIn);
+}
+
+.link:hover .link__arrow {
+    transform: scale(1.1);
+    transition: transform var(--hoverDuration) var(--easeOut);
+}
+
+.link__arrow {
+    stroke-width: 0.075em;
+}
+
+.link__text {
+    animation: rotate normal infinite var(--rotationDuration) linear;
+    transform-origin: 50% 50%;
+}
+
+.link:hover .link__text {
+    animation-play-state: paused;
+}
+
+@keyframes rotate {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+textPath {
+    font-size: 2.5rem;
+    letter-spacing: 6px;
+}
+
+/* ====================================================================== RWD ====================================================================== */
+@media(max-width:1500px) {
+    .whatido-block::after {
+        font-size: 18rem;
+    }
+
+    .circle-text {
+        top: 25%;
+        padding: 3rem;
+        width: 40rem;
+        height: 40rem;
+    }
+
+    textPath {
+        font-size: 2rem;
+        letter-spacing: 9px;
+    }
+}
+
+@media(max-width:1360px) {}
+
+@media(max-width:1280px) {
+    .circle-text {
+        padding: 2rem;
+        width: 32.5rem;
+        height: 32.5rem;
+    }
+
+    .whatido-block {
+        font-size: 2rem;
+    }
+
+    .index-work-item h4 {
+        color: #ffffff;
+        margin: 0.5rem 0 2.5rem;
+        font-size: 1.8rem;
+    }
+}
+
+@media(max-width:1200px) {
+    .circle-text {
+        width: 25rem;
+        height: 25rem;
+    }
+}
+
+@media(max-width:1080px) {
+    .circle-text {
+        right: -2rem;
+        top: 17%;
+        padding: 2rem;
+        width: 20rem;
+        height: 20rem;
+    }
+
+    h1.cursor {
+        font-size: 4rem;
+        margin-top: 1rem;
+    }
+
+    .whatido-block {
+        font-size: 1.8rem;
+        margin: 6rem 0 0;
+        padding: 8rem 0;
+    }
+
+    .whatido-block::after {
+        font-size: 13rem;
+    }
+}
+
+@media(max-width:992px) {
+    .whatido-block {
+        flex-wrap: wrap;
+    }
+
+    .whatido-item {
+        width: 50%;
+        margin: 1.5rem 0;
+    }
+
+    .whatido-block {
+        padding: 3rem 0;
+    }
+
+    .index-work-block {
+        margin-top: 6rem;
+    }
+
+    .index-work-item {
+        margin-bottom: 6rem;
+    }
+}
+
+@media(max-width:768px) {
+    h4 {
+        font-size: 1.6rem;
+    }
+
+    h1.cursor {
+        font-size: 3rem;
+        margin-top: 1rem;
+    }
+    
+    .whatido-block::after {
+        font-size: 10rem;
+    }
+
+    .index-work-item {
+        width: 100%;
+    }
+}
+
+@media(max-width:576px) {
+    .circle-text {
+        right: -2rem;
+        top: 14%;
+        padding: 1rem;
+        width: 15rem;
+        height: 15rem;
+    }
+
+    h1.cursor {
+        font-size: 2.4rem;
+        margin-top: 3rem;
+    }
+
+    .whatido-block {
+        font-size: 1.8rem;
+        margin: 4rem 0 0;
+        padding: 4rem 0;
+    }
+
+    .whatido-block::after {
+        font-size: 8rem;
+    }
+
+    .whatido-item {
+        width: 45%;
+    }
+}
+
+@media(max-width:480px) {
+    .whatido-block {
+        font-size: 1.6rem;
+        padding: 3rem 0;
+    }
+}
+
+@media(max-width:420px) {
+    .circle-text {
+        opacity: 0.5;
+        z-index: -1;
+    }
+
+    .index-work-title {
+        font-size: 2rem;
+    }
+}
