@@ -493,9 +493,9 @@ a#button span {
     bottom: 7px;
 }
 
-span.sp-2 {
+/* span.sp-2 {
     display: inline-block;
-}
+} */
 
 .sp-2 img {
     height: 10rem;
@@ -846,6 +846,10 @@ span.sp-2 {
     }
 
     /* ===== sp =====*/
+    .sp-2 img {
+        width: auto!important;
+        height: 70rem;
+    }
     .sp-4 {
         margin-top: 3.5rem;
         width: 100%;
