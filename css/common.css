@@ -499,8 +499,7 @@ span.sp-2 {
 
 .sp-2 img {
     height: 10rem;
-    line-height: 12rem;
-    width: fit-content;
+    width: auto;
     margin-right: 2rem;
 }
 
