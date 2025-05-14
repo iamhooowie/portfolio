@@ -656,6 +656,28 @@ a#button span {
     align-items: center;
 }
 
+.sp-30{
+    height: 100vh;
+}
+
+.sp-31{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sp-32{
+    background-color: var(--two-color);
+    font-size: 1.6rem;
+    font-weight: bold;
+    border: transparent;
+    border-radius: 99px;
+    padding: 1rem 3rem;
+    width: 100%;
+}
+
 .sp-red {
     background: #EE0412;
 }

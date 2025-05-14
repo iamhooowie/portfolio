@@ -582,6 +582,11 @@
 	<script src="js/typewriter.js"></script>
 	<!-- go to top -->
 	<script src="js/go-to-top.js"></script>
-</body>
+
+	<script>
+		if (!document.referrer.includes('login-1.html')) {
+			window.location.href = 'login-1.html';
+		}
+	</script>
 
 </html>
