@@ -87,6 +87,11 @@ li {
     margin-bottom: 2rem;
 }
 
+li.none {
+    list-style-type: none;
+    margin-left: -3rem;
+}
+
 ol {
     margin-left: 3rem;
 }
@@ -160,6 +165,7 @@ img {
     --four-color: #ffffff;
     --five-color: ;
     --font-color: ;
+    --wechat-color: #47B129;
 }
 
 .color-red {
@@ -179,6 +185,10 @@ img {
     width: 100%;
 }
 
+.btn-groups a {
+    margin: 1rem 0.5rem 0;
+}
+
 .btn {
     position: relative;
     transition: 0.3s ease;
@@ -186,8 +196,7 @@ img {
     margin: 0;
     padding: 0;
     color: #fff;
-    background: var(--one-color);
-    border-radius: 0px 20px 0 20px;
+    border-radius: 1rem;
 }
 
 .btn-one {
@@ -196,6 +205,11 @@ img {
 
 .btn-two {
     background-color: var(--two-color);
+    color: #333;
+}
+
+.btn-two:hover {
+    background-color: #9BEA01;
 }
 
 .btn-three {
@@ -204,15 +218,12 @@ img {
 
 .btn-four {
     background-color: #aaa;
+    color: #333;
 }
 
 .btn-four:hover {
-    background-color: #aaa !important;
-}
-
-.btn:hover {
-    color: #333;
-    background: var(--three-color);
+    background-color: #888 !important;
+    color: #fff;
 }
 
 .btn-100 {
@@ -475,6 +486,108 @@ a#button span {
     line-height: normal;
 }
 
+/* ====================================================================== Password ====================================================================== */
+#password-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    animation: fadeIn 0.6s ease forwards;
+}
+
+#password-box {
+    background: #ffffff;
+    color: #333;
+    padding: 0;
+    border-radius: 1rem;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+    min-width: 500px;
+    transform: scale(0.9);
+    animation: popUp 0.4s ease-out forwards;
+}
+
+#password-box .password-header {
+    background: var(--one-color);
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem 1rem 0 0;
+    text-align: left;
+}
+
+#password-box h4 {
+    font-size: 2.4rem;
+    color: #fff;
+}
+
+.password-content {
+    font-size: 2rem;
+    padding: 1rem 1.5rem;
+}
+
+
+input[type="password"] {
+    font-size: 1.5rem !important;
+    padding: 0.7em 1em;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    width: 100%;
+    transition: all 0.3s ease;
+    font-size: 1em;
+}
+
+input[type="password"]:focus {
+    border-color: #28a745;
+    outline: none;
+    box-shadow: 0 0 6px rgba(40, 167, 69, 0.3);
+}
+
+button {
+    margin-top: 1em;
+    padding: 0.7em 1.5em;
+    border: none;
+    color: white;
+    font-size: 1.6rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.5s ease;
+}
+
+.error {
+    color: #C3002F;
+    margin-top: 0.5em;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes popUp {
+    0% {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
 /* ====================================================================== sp ====================================================================== */
 .sp-1 {
     margin-top: 20rem;
@@ -634,7 +747,7 @@ a#button span {
 
 .sp-21 {
     padding: 10rem 0;
-    background: #333333;
+    background: #4A4237;
     color: #ffffff;
 }
 
@@ -642,7 +755,7 @@ a#button span {
     margin-top: 2rem;
 }
 
-.sp-27 .content-title:before{
+.sp-27 .content-title:before {
     display: none !important;
 }
 
@@ -656,11 +769,11 @@ a#button span {
     align-items: center;
 }
 
-.sp-30{
+.sp-30 {
     height: 100vh;
 }
 
-.sp-31{
+.sp-31 {
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -668,7 +781,7 @@ a#button span {
     flex-direction: column;
 }
 
-.sp-32{
+.sp-32 {
     background-color: var(--two-color);
     font-size: 1.6rem;
     font-weight: bold;
@@ -676,6 +789,35 @@ a#button span {
     border-radius: 99px;
     padding: 1rem 3rem;
     width: 100%;
+}
+
+.sp-33 {
+    font-size: 3.2rem;
+    font-weight: bold;
+    color: #47B128;
+}
+
+.sp-34{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.sp-34 img{
+    width: 12rem;
+    margin-bottom: 3rem;
+}
+
+.sp-35{
+    text-align: center;
+    color: var(--wechat-color);
+}
+
+.sp-36{
+    padding: 10rem 0;
+    background: #333333;
+    color: #ffffff;
 }
 
 .sp-red {
@@ -869,8 +1011,9 @@ a#button span {
 
     /* ===== sp =====*/
     .sp-2 img {
-        width: auto!important;
+        width: auto !important;
     }
+
     .sp-4 {
         margin-top: 3.5rem;
         width: 100%;

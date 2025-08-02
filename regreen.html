@@ -17,24 +17,42 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/common.css">
 	<link rel="stylesheet" href="css/style.css">
-    <script>
-      (function (h, o, t, j, a, r) {
-        h.hj =
-          h.hj ||
-          function () {
-            (h.hj.q = h.hj.q || []).push(arguments);
-          };
-        h._hjSettings = { hjid: 6440270, hjsv: 6 };
-        a = o.getElementsByTagName("head")[0];
-        r = o.createElement("script");
-        r.async = 1;
-        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
-        a.appendChild(r);
-      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
-    </script>
+	<script>
+		(function (h, o, t, j, a, r) {
+			h.hj =
+				h.hj ||
+				function () {
+					(h.hj.q = h.hj.q || []).push(arguments);
+				};
+			h._hjSettings = { hjid: 6440270, hjsv: 6 };
+			a = o.getElementsByTagName("head")[0];
+			r = o.createElement("script");
+			r.async = 1;
+			r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+			a.appendChild(r);
+		})(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+	</script>
 </head>
 
 <body class="">
+	<!-- password -->
+	<div id="password-modal">
+		<div id="password-box">
+			<div class="password-header">
+				<h4>Note</h4>
+			</div>
+			<div class="password-content">
+				<p>Password</p>
+				<input type="password" id="password" placeholder="Please enter the password to continue reading" />
+				<br>
+				<div class="btn-groups">
+					<a href="index.html" class="btn btn-s btn-four">Go back</a>
+					<a onclick="checkPassword()" class="btn btn-s btn-two">Unlock</a>
+				</div>
+				<div class="error" id="error-msg"></div>
+			</div>
+		</div>
+	</div>
 	<!-- go to top -->
 	<a id="button">
 		<i class="fas fa-arrow-up"></i><span>Top</span>
@@ -72,10 +90,10 @@
 		<div class="container-m">
 			<div class="work-title">REGREEN</div>
 			<div class="work-tag">
-				<span># User interface</span>
-				<span># User experience</span>
-				<span># APP</span>
+				<span># User Experience</span>
+				<span># User Interface</span>
 				<span># Website</span>
+				<span># APP</span>
 				<span># Coding</span>
 			</div>
 			<img src="images/03/03-1.jpg" alt="">
@@ -85,6 +103,24 @@
 				exchanging the fertilizer produced by RE GREEN for fruits and vegetables, thus fostering a sustainable
 				ecological model.
 			</h4>
+		</div>
+	</div>
+
+	<div id="password-modal">
+		<div id="password-box">
+			<div class="password-header">
+				<h4>Note</h4>
+			</div>
+			<div class="password-content">
+				<p>Password</p>
+				<input type="password" id="password" placeholder="Please enter the password to continue reading" />
+				<br>
+				<div class="btn-groups">
+					<a href="index.html" class="btn btn-s btn-four">Go back</a>
+					<a onclick="checkPassword()" class="btn btn-s btn-two">Unlock</a>
+				</div>
+				<div class="error" id="error-msg"></div>
+			</div>
 		</div>
 	</div>
 
@@ -246,11 +282,43 @@
 	<script src="js/typewriter.js"></script>
 	<!-- go to top -->
 	<script src="js/go-to-top.js"></script>
+	<!-- pass -->
+	<script>
+		const correctPassword = "0427";
+		const pageKey = "unlocked_regreen.html";
+		let modalShown = false;
 
-		<script>
-		if (!document.referrer.includes('login-3.html')) {
-			window.location.href = 'login-1.html';
+		window.addEventListener('scroll', () => {
+			const scrollTrigger = 3000;
+
+			if (window.scrollY > scrollTrigger &&
+				!localStorage.getItem(pageKey) &&
+				!modalShown) {
+				document.getElementById('password-modal').style.display = 'flex';
+				document.body.style.overflow = 'hidden';
+				modalShown = true;
+			}
+		});
+
+		function checkPassword() {
+			const pw = document.getElementById('password').value;
+			const error = document.getElementById('error-msg');
+
+			if (pw === correctPassword) {
+				localStorage.setItem(pageKey, 'true');
+				document.getElementById('password-modal').style.display = 'none';
+				document.body.style.overflow = 'auto';
+			} else {
+				error.textContent = 'Oops! That password doesn’t seem right. Please try again.';
+			}
 		}
+
+		window.addEventListener('DOMContentLoaded', () => {
+			if (localStorage.getItem(pageKey)) {
+				document.getElementById('password-modal').style.display = 'none';
+				document.body.style.overflow = 'auto';
+			}
+		});
 	</script>
 </body>
 
