@@ -21,11 +21,30 @@
     padding-right: 1rem;
 }
 
+.about-img {
+    width: 30rem;
+    height: 30rem;
+    border-radius: 99rem;
+}
+
+.content-title.about-img img {
+    border-radius: 99rem;
+}
+
 .inner-header-block {
-    background: url(../images/blue-xl.jpg) #ffffff;
+    background: var(--one-color);
     background-repeat: no-repeat;
     background-size: contain;
+    height: 800px;
+}
+
+.project-info {
+    margin-top: -40rem;
     margin-bottom: 8rem;
+}
+
+.project-info img {
+    margin-bottom: 2rem;
 }
 
 .work-title {
@@ -50,27 +69,7 @@
     margin-bottom: 3rem;
 }
 
-.separate-2 {
-    display: flex;
-    justify-content: space-between;
-}
 
-.separate-2-item {
-    width: 47.5%;
-}
-
-.separate-3 {
-    display: flex;
-    justify-content: space-between;
-}
-
-.separate-3-item {
-    width: 30%;
-}
-
-.separate-3-item p {
-    text-align: center;
-}
 
 .content-group {
     display: flex;
@@ -82,14 +81,6 @@
     justify-content: space-between;
 }
 
-.inner-header-block {}
-
-.inner-header-block:after {
-    background: var(--one-color);
-    height: 785px;
-    content: "";
-    position: absolute;
-}
 
 .content-content {
     width: 1050px;
@@ -102,6 +93,7 @@
 .content-title {
     width: 350px;
     position: relative;
+    margin-bottom: 2rem;
 }
 
 .content-title:before {
@@ -121,9 +113,9 @@
     width: 1050px;
 }
 
+/* ===== WeChat ===== */
 .wechatbox-group {
-    display: flex
-;
+    display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
@@ -131,8 +123,7 @@
 .wechatbox-item {
     border: 2px solid var(--wechat-color);
     padding: 3.5rem 3rem 3rem;
-    display: flex
-;
+    display: flex;
     justify-content: flex-start;
     align-items: flex-start;
     margin-bottom: 3rem;
@@ -144,34 +135,79 @@
     margin-right: 2.5rem;
 }
 
-.uxinterview-group{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+.uxinterview-group .separate-item {
+    width: 22.5%;
 }
 
-.uxinterview-item{
-    display: flex
-;flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 20%;
-}
-
-.uxinterview-info{
+.uxinterview-info {
     text-align: center;
 }
 
-/* ====================================================================== RWD ====================================================================== */
-@media(max-width:1400px) {
+.uxinterview-info h4 {
+    margin: 3rem 0 1rem;
+}
+
+/* ===== Tainan 400 ===== */
+.icon-400 {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 5rem;
+}
+
+.icon-400:last-child {
+    margin-bottom: 0rem;
+}
+
+.icon-400 h4 {
+    margin-bottom: 0.75rem;
+}
+
+.icon-400 p {
+    text-align: left;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+}
+
+.icon-400-img {
+    width: 5rem;
+    margin: 0rem 3rem 0 0;
+}
+
+.icon-400-img img {
+    width: 5rem;
+}
+
+.icon-400-long {
+    margin-bottom: 3rem;
+}
+
+.icon-400-long p {
+    line-height: 3.6rem;
+}
+
+/* ===== Jerusalem-furniture ===== */
+
+/*================================================== RWD ==================================================*/
+
+@media(max-width:1450px) {
+
+    /*==================================================================================================== 1450 px*/
     .inner-header-block {
-        background: url(../images/blue-l.jpg) #ffffff;
-        background-repeat: no-repeat;
-        background-size: contain;
+        height: 700px;
+    }
+
+    .project-info {
+        margin-top: -30rem;
     }
 }
 
 @media(max-width:1200px) {
+
+    /*==================================================================================================== 1200 px*/
+    .project-info {
+        margin-top: -35rem;
+    }
+
     .about-block {
         margin: 12rem 0;
         height: auto;
@@ -199,57 +235,113 @@
         margin: 12rem 0 0 0;
         font-size: 4.2rem;
     }
+
+    .content-title {
+        width: 100%;
+    }
+}
+
+@media(max-width:1080px) {
+
+    /*==================================================================================================== 1080 px*/
+    .inner-header-block {
+        height: 550px;
+    }
+
+    .project-info {
+        margin-top: -20rem;
+    }
+
+    .work-title {
+        margin: 10rem 0 0 0;
+        font-size: 3.2rem;
+    }
+
+    .content-group .content-title {
+        margin-bottom: 1.5rem;
+    }
 }
 
 @media(max-width:992px) {
-    .work-title {
-        margin: 10rem 0 0 0;
-    }
 
-    .inner-header-block {
-        background: #004AF9;
-        background-repeat: no-repeat;
-        background-size: contain;
-        padding-bottom: 6rem;
-        color: #fff;
+    /*==================================================================================================== 992 px*/
+    .project-info {
+        margin-top: -27rem;
     }
 }
 
 @media(max-width:768px) {
+
+    /*==================================================================================================== 768 px*/
+    .inner-header-block {
+        height: auto;
+    }
+
+    .project-info {
+        margin-top: 0;
+        background: var(--one-color);
+        padding-bottom: 4rem;
+    }
+
+    .project-info p {
+        color: #fff;
+    }
+
+    .content-title:before {
+        height: 25px;
+    }
+
+    .work-tag {
+        margin-bottom: 0rem;
+        padding-bottom: 2rem;
+    }
+
     .work-title {
         font-size: 3.2rem;
     }
 
-    .inner-header-block {
-        padding-bottom: 6rem;
-        color: #fff;
+    .wechatbox-item {
+        width: 100%;
+        padding: 2.25rem;
+    }
+
+    .uxinterview-group.separate-4.flex-wrap.mb-5 .separate-item {
+        width: 45%;
+        margin: 2rem 0;
     }
 }
 
 @media(max-width:576px) {
-    .inner-header-block {
-        padding-bottom: 4rem;
-    }
 
+    /*==================================================================================================== 576 px*/
     .work-title {
+        font-size: 2.6rem;
         margin: 8rem 0 0 0;
     }
 
-    .separate-3 {
-        flex-direction: column;
+    .work-tag {
+        margin-bottom: 0rem;
+        padding-bottom: 1rem;
     }
 
-    .separate-3-item {
-        width: 100%;
-        margin-bottom: 2.5rem;
+    /* ===== Tainan 400 ===== */
+    .tainan400 .separate-3.mb-5 {
+        margin-bottom: 0 !important;
     }
 
-    .work-title {
-        font-size: 2.6rem;
+    /* ===== Jerusalem-furniture ===== */
+    .jerusalem .separate-item {
+        margin-bottom: 0 !important;
+    }
+
+    .wechat .separate-2.mb-5 {
+        margin-bottom: 0 !important;
     }
 }
 
 @media(max-width:480px) {
+    /*==================================================================================================== 480 px*/
+
     .about-link {
         margin: 4rem 0 0 0;
         display: flex;
@@ -264,6 +356,8 @@
 }
 
 @media(max-width:420px) {
+
+    /*==================================================================================================== 420 px*/
     .content-title {
         width: 100%;
     }

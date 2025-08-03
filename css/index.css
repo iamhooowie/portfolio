@@ -1,26 +1,5 @@
-h4 {
-    font-size: 2rem;
-    line-height: 3rem;
-    font-weight: 400;
-}
-
 .index-bk {
     background: var(--one-color);
-}
-
-.banner-block {
-    position: relative;
-    overflow: hidden;
-}
-
-.cursor::after {
-    content: '';
-    display: inline-block;
-    margin-left: 3px;
-    background-color: white;
-    animation-name: blink;
-    animation-duration: 0.5s;
-    animation-iteration-count: infinite;
 }
 
 h1.cursor {
@@ -30,6 +9,7 @@ h1.cursor {
     font-family: "ElaineSans";
     color: #ffffff;
     letter-spacing: 2px;
+    margin: 4rem 0 0 0;
 }
 
 @keyframes blink {
@@ -52,6 +32,53 @@ h1.cursor {
 
 div#output {
     margin-top: -3rem;
+    height: 7.2rem;
+}
+
+/* ===== Banner ===== */
+.banner-block {
+    position: relative;
+    overflow: hidden;
+}
+
+.banner-dename {
+    margin-top: 20rem;
+    color: #fff;
+    position: relative;
+}
+
+.banner-dename::after {
+    content: "";
+    width: 10rem;
+    height: 1px;
+    background: #ffffff;
+    display: block;
+    position: absolute;
+    left: 25.5rem;
+    bottom: 7px;
+}
+
+.poundsign img {
+    height: 10rem;
+    width: auto;
+    margin-right: 2rem;
+}
+
+.iam {
+    font-family: "ElaineSans";
+    font-size: 12rem;
+    color: #fff;
+}
+
+.banner-about {
+    margin-top: 3.5rem;
+    width: 85rem;
+    color: #fff;
+}
+
+.banner-about h4 {
+    line-height: 4rem;
+    font-weight: 400;
 }
 
 .whatido-block {
@@ -69,7 +96,7 @@ div#output {
 
 .whatido-block::after {
     position: absolute;
-    content: "WHAT I DO";
+    content: "WHAT I DO ?";
     color: rgba(255, 255, 255, 10%);
     font-size: 24rem;
     font-family: "ElaineSans";
@@ -77,6 +104,8 @@ div#output {
     transform: translateY(-50%);
     z-index: -10;
 }
+
+/* ===== Index Work Block ===== */
 
 .index-work-block {
     margin-top: 10rem;
@@ -98,7 +127,17 @@ div#output {
     border-bottom: 1px solid #fff;
 }
 
-.index-work-item h4 {
+.index-work-item a {
+    transition: 0.3s ease;
+    width: 100%;
+    display: block;
+}
+
+.index-work-item a:hover {
+    transform: scale(1.02);
+}
+
+.index-work-item p {
     color: #ffffff;
     margin-bottom: 2.5rem;
 }
@@ -176,10 +215,22 @@ textPath {
     letter-spacing: 6px;
 }
 
-/* ====================================================================== RWD ====================================================================== */
-@media(max-width:1500px) {
+/*================================================== RWD ==================================================*/
+@media(max-width:1650px) {
+
+    /*==================================================================================================== 1650px*/
+    /* ===== Banner ===== */
     .whatido-block::after {
-        font-size: 18rem;
+        font-size: 20rem;
+    }
+}
+
+@media(max-width:1500px) {
+
+    /*==================================================================================================== 1500px*/
+    /* ===== Banner ===== */
+     .whatido-block::after {
+        font-size: 15rem;
     }
 
     .circle-text {
@@ -195,20 +246,45 @@ textPath {
     }
 }
 
-@media(max-width:1360px) {}
-
 @media(max-width:1280px) {
+
+    /*==================================================================================================== 1280px*/
+    /* ===== Banner ===== */
+    .poundsign img {
+        height: 7rem;
+    }
+
+    .banner-about h4 {
+        font-size: 1.8rem;
+        line-height: 36px;
+    }
+
+    div#output {
+        margin-top: -3rem;
+        height: 5rem;
+    }
+
+    h1.cursor {
+        margin: 5rem 0 0 0;
+    }
+
     .circle-text {
         padding: 2rem;
         width: 32.5rem;
         height: 32.5rem;
     }
 
+    .whatido-block::after {
+        font-size: 14rem;
+    }
+
     .whatido-block {
         font-size: 2rem;
     }
 
-    .index-work-item h4 {
+    /* ===== Index Work Block ===== */
+
+    .index-work-item p {
         color: #ffffff;
         margin: 0.5rem 0 2.5rem;
         font-size: 1.8rem;
@@ -216,6 +292,17 @@ textPath {
 }
 
 @media(max-width:1200px) {
+
+    /*==================================================================================================== 1200 px*/
+    /* ===== Banner ===== */
+    .banner-dename {
+        margin-top: 12rem;
+    }
+
+    .iam {
+        font-size: 8rem;
+    }
+
     .circle-text {
         width: 25rem;
         height: 25rem;
@@ -223,6 +310,9 @@ textPath {
 }
 
 @media(max-width:1080px) {
+
+    /*==================================================================================================== 1080 px*/
+    /* ===== Banner ===== */
     .circle-text {
         right: -2rem;
         top: 17%;
@@ -234,6 +324,11 @@ textPath {
     h1.cursor {
         font-size: 4rem;
         margin-top: 1rem;
+    }
+
+    div#output {
+        margin-top: -3rem;
+        height: 3rem;
     }
 
     .whatido-block {
@@ -248,6 +343,21 @@ textPath {
 }
 
 @media(max-width:992px) {
+
+    /*==================================================================================================== 992 px*/
+    /* ===== Banner ===== */
+     .whatido-block::after {
+        font-size: 10rem;
+    }
+    .poundsign img {
+        width: auto !important;
+    }
+
+    .banner-about {
+        margin-top: 3.5rem;
+        width: 100%;
+    }
+
     .whatido-block {
         flex-wrap: wrap;
     }
@@ -261,6 +371,8 @@ textPath {
         padding: 3rem 0;
     }
 
+    /* ===== Index Work Block ===== */
+
     .index-work-block {
         margin-top: 6rem;
     }
@@ -271,6 +383,8 @@ textPath {
 }
 
 @media(max-width:768px) {
+
+    /*==================================================================================================== 768 px*/
     h4 {
         font-size: 1.6rem;
     }
@@ -279,10 +393,15 @@ textPath {
         font-size: 3rem;
         margin-top: 1rem;
     }
-    
-    .whatido-block::after {
-        font-size: 10rem;
+
+    /* ===== Banner ===== */
+    .banner-dename::after {
+        width: 7rem;
+        left: 20.5rem;
+        bottom: 6px;
     }
+
+    /* ===== Index Work Block ===== */
 
     .index-work-item {
         width: 100%;
@@ -290,6 +409,23 @@ textPath {
 }
 
 @media(max-width:576px) {
+
+    /*==================================================================================================== 576 px*/
+    /* ===== Banner ===== */
+    .poundsign img {
+        height: 5rem;
+        margin-right: 1.25rem;
+    }
+
+    .iam {
+        font-size: 6rem;
+    }
+
+    .banner-about {
+        margin-top: 2.5rem;
+        width: 100%;
+    }
+
     .circle-text {
         right: -2rem;
         top: 14%;
@@ -319,6 +455,19 @@ textPath {
 }
 
 @media(max-width:480px) {
+
+    /*==================================================================================================== 480 px*/
+    /* ===== Banner ===== */
+    .banner-dename::after {
+        width: 6rem;
+        left: 20.5rem;
+        bottom: 10px;
+    }
+
+    h4.banner-dename {
+        font-size: 1.6rem;
+    }
+
     .whatido-block {
         font-size: 1.6rem;
         padding: 3rem 0;
@@ -331,6 +480,7 @@ textPath {
         z-index: -1;
     }
 
+    /* ===== Index Work Block ===== */
     .index-work-title {
         font-size: 2rem;
     }
