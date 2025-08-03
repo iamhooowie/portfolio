@@ -709,10 +709,6 @@
        display: none !important;
    }
 
-   .sp-7 {
-       line-height: 3.6rem;
-   }
-
    .sp-8 {
        margin: 2.5rem 0 3rem;
        display: flex;
@@ -1073,10 +1069,6 @@
 
        .sp-5 img {
            width: 6rem;
-       }
-
-       .sp-7 {
-           line-height: 3rem;
        }
 
        .sp-10 img {
