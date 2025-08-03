@@ -539,6 +539,10 @@
        animation: popUp 0.4s ease-out forwards;
    }
 
+   .password-header h4{
+    padding: 1rem;
+   }
+
    #password-box .password-header {
        background: var(--one-color);
        color: #fff;
