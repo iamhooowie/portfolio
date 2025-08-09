@@ -13,7 +13,7 @@ var textArray = [
 
 // Speed (in milliseconds) of typing.
 var speedForward = 100, //Typing Speed
-    speedWait = 1000, // Wait between typing and backspacing
+    speedWait = 3000, // Wait between typing and backspacing
     speedBetweenLines = 1000, //Wait between first and second lines
     speedBackspace = 25; //Backspace Speed
 

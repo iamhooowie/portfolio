@@ -2,14 +2,27 @@
     background: var(--one-color);
 }
 
+.me {
+    transform: rotate(-2.5deg);
+    width: 750px;
+    background: var(--two-color);
+    display: block;
+    padding: 1rem 2rem;
+    box-shadow: #000000 1rem 1rem 1px;
+}
+
 h1.cursor {
     font-size: 6rem;
     font-weight: bold;
     text-transform: uppercase;
     font-family: "ElaineSans";
-    color: #ffffff;
+    color: #000;
     letter-spacing: 2px;
-    margin: 4rem 0 0 0;
+}
+
+
+div#output {
+    height: 7.2rem;
 }
 
 @keyframes blink {
@@ -30,10 +43,6 @@ h1.cursor {
     }
 }
 
-div#output {
-    margin-top: -3rem;
-    height: 7.2rem;
-}
 
 /* ===== Banner ===== */
 .banner-block {
@@ -229,7 +238,7 @@ textPath {
 
     /*==================================================================================================== 1500px*/
     /* ===== Banner ===== */
-     .whatido-block::after {
+    .whatido-block::after {
         font-size: 15rem;
     }
 
@@ -250,6 +259,18 @@ textPath {
 
     /*==================================================================================================== 1280px*/
     /* ===== Banner ===== */
+    .me {
+        width: 630px;
+    }
+
+    div#output {
+        height: 6.2rem;
+    }
+
+    h1.cursor {
+        font-size: 5rem;
+    }
+
     .poundsign img {
         height: 7rem;
     }
@@ -257,15 +278,6 @@ textPath {
     .banner-about h4 {
         font-size: 1.8rem;
         line-height: 36px;
-    }
-
-    div#output {
-        margin-top: -3rem;
-        height: 5rem;
-    }
-
-    h1.cursor {
-        margin: 5rem 0 0 0;
     }
 
     .circle-text {
@@ -321,14 +333,16 @@ textPath {
         height: 20rem;
     }
 
-    h1.cursor {
-        font-size: 4rem;
-        margin-top: 1rem;
+    .me {
+        width: 530px;
     }
 
     div#output {
-        margin-top: -3rem;
-        height: 3rem;
+        height: 5.2rem;
+    }
+
+    h1.cursor {
+        font-size: 4rem;
     }
 
     .whatido-block {
@@ -346,9 +360,10 @@ textPath {
 
     /*==================================================================================================== 992 px*/
     /* ===== Banner ===== */
-     .whatido-block::after {
+    .whatido-block::after {
         font-size: 10rem;
     }
+
     .poundsign img {
         width: auto !important;
     }
@@ -389,12 +404,20 @@ textPath {
         font-size: 1.6rem;
     }
 
-    h1.cursor {
-        font-size: 3rem;
-        margin-top: 1rem;
+    /* ===== Banner ===== */
+    .me {
+        width: 410px;
+        padding: 1rem 2rem 0.5rem;
     }
 
-    /* ===== Banner ===== */
+    div#output {
+        height: 4.2rem;
+    }
+
+    h1.cursor {
+        font-size: 3rem;
+    }
+
     .banner-dename::after {
         width: 7rem;
         left: 20.5rem;
@@ -406,12 +429,14 @@ textPath {
     .index-work-item {
         width: 100%;
     }
+
 }
 
 @media(max-width:576px) {
 
     /*==================================================================================================== 576 px*/
     /* ===== Banner ===== */
+
     .poundsign img {
         height: 5rem;
         margin-right: 1.25rem;
@@ -419,6 +444,18 @@ textPath {
 
     .iam {
         font-size: 6rem;
+    }
+
+    .me {
+        width: 350px;
+    }
+
+    div#output {
+        height: 3.6rem;
+    }
+
+    h1.cursor {
+        font-size: 2.4rem;
     }
 
     .banner-about {
@@ -434,10 +471,6 @@ textPath {
         height: 15rem;
     }
 
-    h1.cursor {
-        font-size: 2.4rem;
-        margin-top: 3rem;
-    }
 
     .whatido-block {
         font-size: 1.8rem;
@@ -482,6 +515,24 @@ textPath {
 
     /* ===== Index Work Block ===== */
     .index-work-title {
+        font-size: 2rem;
+    }
+}
+
+@media(max-width:380px) {
+
+    /*==================================================================================================== 380 px*/
+    /* ===== Banner ===== */
+    .me {
+        width: 290px;
+        padding: 1rem 1rem 0.5rem;
+    }
+
+    div#output {
+        height: 3.2rem;
+    }
+
+    h1.cursor {
         font-size: 2rem;
     }
 }
