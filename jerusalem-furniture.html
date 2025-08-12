@@ -432,13 +432,13 @@
 	<!-- go to top -->
 	<script src="js/go-to-top.js"></script>
 	<!-- pass -->
-	<script>
+	<!-- <script>
 		const correctPassword = "0427";
-		const pageKey = "unlocked_jerusalem-furniture.html"; // 每頁不同的解鎖 key
+		const pageKey = "unlocked_jerusalem-furniture.html"; 
 		let modalShown = false;
 
 		window.addEventListener('scroll', () => {
-			const scrollTrigger = 3000; // 捲動幾 px 後觸發
+			const scrollTrigger = 3000;
 
 			if (window.scrollY > scrollTrigger &&
 				!localStorage.getItem(pageKey) &&
@@ -462,14 +462,13 @@
 			}
 		}
 
-		// 若已解鎖，讓頁面正常
 		window.addEventListener('DOMContentLoaded', () => {
 			if (localStorage.getItem(pageKey)) {
 				document.getElementById('password-modal').style.display = 'none';
 				document.body.style.overflow = 'auto';
 			}
 		});
-	</script>
+	</script> -->
 </body>
 
 </html>
