@@ -15,7 +15,7 @@ h1.cursor {
     font-size: 6rem;
     font-weight: bold;
     text-transform: uppercase;
-    font-family: "ElaineSans";
+    font-family: "ElaineSans-Black";
     color: #000;
     letter-spacing: 2px;
 }
@@ -72,7 +72,7 @@ div#output {
 }
 
 .iam {
-    font-family: "ElaineSans";
+    font-family: "ElaineSans-Black";
     font-size: 12rem;
     color: #fff;
 }

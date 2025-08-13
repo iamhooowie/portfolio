@@ -15,7 +15,7 @@
 
    @font-face {
        font-family: 'ElaineSans-Black';
-       src: url('../fonts/ElaineSans-Black.woff') format("woff"),
+       src: url("../font/ElaineSans-Black.woff") format("woff"),
            url('../fonts/ElaineSans-Black.ttf') format("truetype"),
            url('../fonts/ElaineSans-Black.eot') format("embedded-opentype");
    }
