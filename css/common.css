@@ -14,11 +14,17 @@
    } */
 
    @font-face {
-       font-family: "ElaineSans";
-       src: local("ElaineSans Black"),
-           local("ElaineSans-Black"),
-           url(../font/ElaineSans-Black.ttf);
-       font-weight: Black;
+       font-family: 'ElaineSans-Black';
+       src: url('../fonts/ElaineSans-Black.woff') format("woff"),
+           url('../fonts/ElaineSans-Black.ttf') format("truetype"),
+           url('../fonts/ElaineSans-Black.eot') format("embedded-opentype");
+   }
+
+   @font-face {
+       font-family: 'roboto';
+       src: url('../fonts/roboto.woff') format("woff"),
+           url('../fonts/roboto.ttf') format("truetype"),
+           url('../fonts/roboto.eot') format("embedded-opentype");
    }
 
    html,
