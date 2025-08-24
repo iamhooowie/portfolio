@@ -598,7 +598,7 @@
        font-size: 1.6rem;
        border-radius: 1rem;
        cursor: pointer;
-       transition: background 0.3s ease, transform 0.5s ease;
+       transition: 0.3s ease, transform 0.5s ease;
    }
 
    .error {
@@ -657,6 +657,21 @@
    .reflection-block {
        padding: 10rem 0;
        color: #ffffff;
+   }
+
+   .work-tag {
+       font-size: 2rem;
+       color: #fff;
+       margin-bottom: 3rem;
+   }
+
+   .work-tag span {
+       display: inline-block;
+       margin-right: 15px;
+   }
+
+   .work-tag~img {
+       margin-bottom: 3rem;
    }
 
    /* ===== SP ===== */
@@ -775,6 +790,34 @@
 
    .sp-18 img:hover {
        transform: scale(1.02);
+   }
+
+   .sp-19 {
+       color: var(--two-color);
+   }
+
+   .sp-20 {
+       display: flex;
+       flex-direction: column;
+       align-items: flex-start;
+   }
+
+   .sp-21 {
+       font-size: 6rem;
+       color: var(--one-color);
+       font-family: "ElaineSans-Black";
+       padding-right: 0.5rem;
+   }
+
+   .sp-22 {
+       font-size: 3.2rem!important;
+       color: var(--one-color);
+   }
+
+   .sp-23{
+    font-size: 2.6rem;
+    padding-right: 0.5rem;
+    display: inline-block;
    }
 
    /*================================================== RWD ==================================================*/
@@ -998,7 +1041,10 @@
        }
 
        /* ===== Content =====*/
-
+       .work-tag {
+           margin-bottom: 0rem;
+           padding-bottom: 2rem;
+       }
 
        /* ===== SP =====*/
        .sp-4 {
@@ -1075,6 +1121,11 @@
 
        .reflection-block {
            padding: 6rem 0;
+       }
+
+       .work-tag {
+           margin-bottom: 0rem;
+           padding-bottom: 1rem;
        }
 
        /* ===== SP =====*/

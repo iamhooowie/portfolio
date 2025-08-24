@@ -74,23 +74,6 @@
     color: #ffffff;
 }
 
-.work-tag {
-    font-size: 2rem;
-    color: #fff;
-    margin-bottom: 3rem;
-}
-
-.work-tag span {
-    display: inline-block;
-    margin-right: 15px;
-}
-
-.work-tag~img {
-    margin-bottom: 3rem;
-}
-
-
-
 .content-group {
     display: flex;
     justify-content: space-between;
@@ -368,10 +351,7 @@
         height: 25px;
     }
 
-    .work-tag {
-        margin-bottom: 0rem;
-        padding-bottom: 2rem;
-    }
+
 
     .work-title {
         font-size: 3.2rem;
@@ -398,18 +378,13 @@
         align-items: baseline;
     }
 
-    .about-link a{
+    .about-link a {
         margin-bottom: 2rem;
     }
 
     .work-title {
         font-size: 2.6rem;
         margin: 8rem 0 0 0;
-    }
-
-    .work-tag {
-        margin-bottom: 0rem;
-        padding-bottom: 1rem;
     }
 
     /* ===== Tainan 400 ===== */

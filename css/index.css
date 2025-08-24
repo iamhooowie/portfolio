@@ -156,6 +156,20 @@ div#output {
     margin: 1.5rem 0 0.5rem;
 }
 
+.work-tag-bk{
+    padding: 0 1rem;
+    position: relative;
+    background: var(--two-color);
+    box-shadow: #000000 0.5rem 0.5rem 1px;
+    color: #000;
+}
+
+.work-tag-bk::after{
+    position: relative;
+    background: var(--one-color);
+
+}
+
 .circle-text {
     position: absolute;
     right: -8rem;
@@ -238,6 +252,7 @@ textPath {
     /* ===== Banner ===== */
     .whatido-block::after {
         font-size: 15rem;
+        font-family: "ElaineSans-Black";
     }
 
     .circle-text {
@@ -250,6 +265,7 @@ textPath {
     textPath {
         font-size: 2rem;
         letter-spacing: 9px;
+        font-family: "roboto";
     }
 }
 
