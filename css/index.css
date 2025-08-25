@@ -146,7 +146,7 @@ div#output {
 
 .index-work-item p {
     color: #ffffff;
-    margin-bottom: 2.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .index-work-title {
@@ -156,7 +156,7 @@ div#output {
     margin: 1.5rem 0 0.5rem;
 }
 
-.work-tag-bk{
+.work-tag-bk {
     padding: 0 1rem;
     position: relative;
     background: var(--two-color);
@@ -164,7 +164,7 @@ div#output {
     color: #000;
 }
 
-.work-tag-bk::after{
+.work-tag-bk::after {
     position: relative;
     background: var(--one-color);
 
@@ -234,6 +234,14 @@ div#output {
 textPath {
     font-size: 2.5rem;
     letter-spacing: 6px;
+}
+
+.index-work-item .work-tag {
+    margin-bottom: 0;
+}
+
+.index-work-item span.work-tag-bk {
+    margin-bottom: 2.5rem;
 }
 
 /*================================================== RWD ==================================================*/
@@ -312,7 +320,7 @@ textPath {
 
     .index-work-item p {
         color: #ffffff;
-        margin: 0.5rem 0 2.5rem;
+        margin: 0.5rem 0 1.5rem;
         font-size: 1.8rem;
     }
 }
@@ -442,6 +450,11 @@ textPath {
 
     .index-work-item {
         width: 100%;
+    }
+
+    .index-work-item .work-tag {
+        margin-bottom: 0;
+        padding-bottom: 0;
     }
 
 }
