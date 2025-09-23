@@ -1,0 +1,427 @@
+.vh100 {
+    height: calc(100vh - 176px);
+}
+
+.about-group {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: self-start;
+    transform: translate(-50%, -50%);
+    width: 90%;
+}
+
+.about-item:first-child {
+    width: 20%;
+}
+
+.about-item:last-child {
+    width: 75%;
+}
+
+.about-img {
+    width: 30rem;
+    height: 30rem;
+    border-radius: 99rem;
+}
+
+.about-item p {
+    color: #fff;
+}
+
+.about-link {
+    margin: 6rem 0 0 0;
+}
+
+.about-link a {
+    font-size: 2rem;
+    color: #ffffff;
+    margin-right: 5rem;
+}
+
+.about-link a i {
+    padding-right: 1rem;
+}
+
+
+
+.content-title.about-img img {
+    border-radius: 99rem;
+}
+
+.inner-header-block {
+    background: var(--one-color);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 800px;
+}
+
+.project-info {
+    margin-top: -40rem;
+    margin-bottom: 8rem;
+}
+
+.project-info img {
+    margin-bottom: 2rem;
+}
+
+.work-title {
+    margin: 14rem 0 0 0;
+    font-size: 5.4rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.content-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-groups {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.content-content {
+    width: 1050px;
+}
+
+.content-group {
+    display: flex;
+}
+
+.content-title {
+    width: 350px;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.content-title:before {
+    position: absolute;
+    content: "";
+    width: 5px;
+    height: 30px;
+    background-color: var(--two-color);
+    top: 3px;
+}
+
+.content-title h2 {
+    padding-left: 15px;
+}
+
+.content-content {
+    width: 1050px;
+}
+
+/* ===== WeChat ===== */
+.wechatbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.wechatbox-item {
+    border: 2px solid var(--wechat-color);
+    padding: 3.5rem 3rem 3rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 3rem;
+    width: 48.5%;
+}
+
+.wechatbox-item img {
+    width: 6rem;
+    margin-right: 2.5rem;
+}
+
+.uxinterview-group .separate-item {
+    width: 22.5%;
+}
+
+.uxinterview-info {
+    text-align: center;
+}
+
+.uxinterview-info h4 {
+    margin: 3rem 0 1rem;
+}
+
+/* ===== Tainan 400 ===== */
+.icon-400 {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 5rem;
+}
+
+.icon-400:last-child {
+    margin-bottom: 0rem;
+}
+
+.icon-400 h4 {
+    margin-bottom: 0.75rem;
+}
+
+.icon-400 p {
+    text-align: left;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+}
+
+.icon-400-img {
+    width: 5rem;
+    margin: 0rem 3rem 0 0;
+}
+
+.icon-400-img img {
+    width: 5rem;
+}
+
+.icon-400-long {
+    margin-bottom: 3rem;
+}
+
+.icon-400-long p {
+    line-height: 3.6rem;
+}
+
+/* ===== Jerusalem-furniture ===== */
+
+/*================================================== RWD ==================================================*/
+
+@media(max-width:1450px) {
+
+    /*==================================================================================================== 1450 px*/
+    .vh100 {
+        height: calc(100vh - 164px);
+    }
+
+    .about-link {
+        margin: 4rem 0 0 0;
+    }
+
+    .about-item:first-child {
+        width: 20%;
+    }
+
+    .about-item:last-child {
+        width: 75%;
+    }
+
+    .about-img {
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .inner-header-block {
+        height: 700px;
+    }
+
+    .project-info {
+        margin-top: -30rem;
+    }
+}
+
+@media(max-width:1200px) {
+
+    /*==================================================================================================== 1200 px*/
+    .vh100 {
+        height: auto;
+    }
+
+    .about-section {
+        margin: 6rem 0;
+    }
+
+    .about-group {
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        left: auto;
+        top: auto;
+        transform: translate(0, 0);
+        width: 100%;
+    }
+
+    .about-img {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 4rem;
+    }
+
+    .about-item {
+        text-align: center;
+    }
+
+    .about-item:first-child {
+        width: 35%;
+    }
+
+    .about-item:last-child {
+        width: 100%;
+    }
+
+    .project-info {
+        margin-top: -35rem;
+    }
+
+    .content-group {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .content-group .content-title {
+        margin-bottom: 2.5rem;
+    }
+
+    .content-groups {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content-content {
+        width: 100%;
+    }
+
+    .work-title {
+        margin: 12rem 0 0 0;
+        font-size: 4.2rem;
+    }
+
+    .content-title {
+        width: 100%;
+    }
+}
+
+@media(max-width:1080px) {
+
+    /*==================================================================================================== 1080 px*/
+    .inner-header-block {
+        height: 550px;
+    }
+
+    .project-info {
+        margin-top: -20rem;
+    }
+
+    .work-title {
+        margin: 10rem 0 0 0;
+        font-size: 3.2rem;
+    }
+
+    .content-group .content-title {
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media(max-width:992px) {
+
+    /*==================================================================================================== 992 px*/
+    .project-info {
+        margin-top: -27rem;
+    }
+}
+
+@media(max-width:768px) {
+
+    /*==================================================================================================== 768 px*/
+    .about-item:first-child {
+        width: 50%;
+    }
+
+    .inner-header-block {
+        height: auto;
+    }
+
+    .project-info {
+        margin-top: 0;
+        background: var(--one-color);
+        padding-bottom: 4rem;
+    }
+
+    .project-info p {
+        color: #fff;
+    }
+
+    .content-title:before {
+        height: 25px;
+    }
+
+
+
+    .work-title {
+        font-size: 3.2rem;
+    }
+
+    .wechatbox-item {
+        width: 100%;
+        padding: 2.25rem;
+    }
+
+    .uxinterview-group.separate-4.flex-wrap.mb-5 .separate-item {
+        width: 45%;
+        margin: 2rem 0;
+    }
+}
+
+@media(max-width:576px) {
+
+    /*==================================================================================================== 576 px*/
+    .about-link {
+        margin: 4rem 0 0 0;
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+    }
+
+    .about-link a {
+        margin-bottom: 2rem;
+    }
+
+    .work-title {
+        font-size: 2.6rem;
+        margin: 8rem 0 0 0;
+    }
+
+    /* ===== Tainan 400 ===== */
+    .tainan400 .separate-3.mb-5 {
+        margin-bottom: 0 !important;
+    }
+
+    /* ===== Jerusalem-furniture ===== */
+    .jerusalem .separate-item {
+        margin-bottom: 0 !important;
+    }
+
+    .wechat .separate-2.mb-5 {
+        margin-bottom: 0 !important;
+    }
+}
+
+@media(max-width:480px) {
+    /*==================================================================================================== 480 px*/
+
+    .about-link {
+        margin: 4rem 0 0 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-link a {
+        font-size: 1.6rem;
+        display: inline-block;
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media(max-width:420px) {
+
+    /*==================================================================================================== 420 px*/
+    .content-title {
+        width: 100%;
+    }
+}

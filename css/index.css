@@ -1,0 +1,565 @@
+.index-bk {
+    background: var(--one-color);
+}
+
+.me {
+    transform: rotate(-2.5deg);
+    width: 750px;
+    background: var(--two-color);
+    display: block;
+    padding: 1rem 2rem;
+    box-shadow: #000000 1rem 1rem 1px;
+}
+
+h1.cursor {
+    font-size: 6rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: "ElaineSans-Black";
+    color: #000;
+    letter-spacing: 2px;
+}
+
+div#output {
+    height: 7.2rem;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    49% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+/* ===== Banner ===== */
+.banner-block {
+    position: relative;
+    overflow: hidden;
+}
+
+.banner-dename {
+    margin-top: 20rem;
+    color: #fff;
+    position: relative;
+}
+
+.banner-dename::after {
+    content: "";
+    width: 10rem;
+    height: 1px;
+    background: #ffffff;
+    display: block;
+    position: absolute;
+    left: 25.5rem;
+    bottom: 7px;
+}
+
+.poundsign img {
+    height: 10rem;
+    width: auto;
+    margin-right: 2rem;
+}
+
+.iam {
+    font-family: "ElaineSans-Black";
+    font-size: 12rem;
+    color: #fff;
+}
+
+.banner-about {
+    margin-top: 3.5rem;
+    width: 85rem;
+    color: #fff;
+}
+
+.banner-about h4 {
+    line-height: 4rem;
+    font-weight: 400;
+}
+
+.whatido-block {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    font-size: 2.6rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 11rem 0 0;
+    padding: 13rem 0;
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+}
+
+.whatido-block::after {
+    position: absolute;
+    content: "WHAT I DO ?";
+    color: rgba(255, 255, 255, 10%);
+    font-size: 24rem;
+    font-family: "ElaineSans";
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: -10;
+}
+
+/* ===== Index Work Block ===== */
+
+.index-work-block {
+    margin-top: 10rem;
+
+}
+
+.index-work-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.index-work-item {
+    width: 47.5%;
+    margin-bottom: 9rem;
+}
+
+.index-work-item {
+    border-bottom: 1px solid #fff;
+}
+
+.index-work-item a {
+    transition: 0.3s ease;
+    width: 100%;
+    display: block;
+}
+
+.index-work-item a:hover {
+    transform: scale(1.02);
+}
+
+.index-work-item p {
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+}
+
+.index-work-title {
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 1.5rem 0 0.5rem;
+}
+
+.work-tag-bk {
+    padding: 0 1rem;
+    position: relative;
+    background: var(--two-color);
+    box-shadow: #000000 0.5rem 0.5rem 1px;
+    color: #000;
+}
+
+.work-tag-bk::after {
+    position: relative;
+    background: var(--one-color);
+
+}
+
+.circle-text {
+    position: absolute;
+    right: -8rem;
+    top: 40%;
+    background-color: var(--two-color);
+    border-radius: 99rem;
+    padding: 4rem;
+    width: 47.5rem;
+    height: 47.5rem;
+    transform: translateY(-50%);
+}
+
+:root {
+    --rotationDuration: 20s;
+    --hoverDuration: 0.3s;
+}
+
+.link__svg {
+    width: 100%;
+    height: auto;
+    transform-box: fill-box;
+
+    stroke-width: 0.05em;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    word-spacing: 0.3em;
+
+}
+
+.link__arrow {
+    transform-origin: 50% 50%;
+    transition: transform var(--hoverDuration) / 2 var(--easeIn);
+}
+
+.link:hover .link__arrow {
+    transform: scale(1.1);
+    transition: transform var(--hoverDuration) var(--easeOut);
+}
+
+.link__arrow {
+    stroke-width: 0.075em;
+}
+
+.link__text {
+    animation: rotate normal infinite var(--rotationDuration) linear;
+    transform-origin: 50% 50%;
+}
+
+.link:hover .link__text {
+    animation-play-state: paused;
+}
+
+@keyframes rotate {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+textPath {
+    font-size: 2.5rem;
+    letter-spacing: 6px;
+}
+
+.index-work-item .work-tag {
+    margin-bottom: 0;
+}
+
+.index-work-item span.work-tag-bk {
+    margin-bottom: 2.5rem;
+}
+
+/*================================================== RWD ==================================================*/
+@media(max-width:1650px) {
+
+    /*==================================================================================================== 1650px*/
+    /* ===== Banner ===== */
+    .whatido-block::after {
+        font-size: 20rem;
+    }
+}
+
+@media(max-width:1500px) {
+
+    /*==================================================================================================== 1500px*/
+    /* ===== Banner ===== */
+    .whatido-block::after {
+        font-size: 15rem;
+        font-family: "ElaineSans-Black";
+    }
+
+    .circle-text {
+        top: 25%;
+        padding: 3rem;
+        width: 40rem;
+        height: 40rem;
+    }
+
+    textPath {
+        font-size: 2rem;
+        letter-spacing: 9px;
+        font-family: "roboto";
+    }
+}
+
+@media(max-width:1280px) {
+
+    /*==================================================================================================== 1280px*/
+    /* ===== Banner ===== */
+    .me {
+        width: 630px;
+    }
+
+    div#output {
+        height: 6.2rem;
+    }
+
+    h1.cursor {
+        font-size: 5rem;
+    }
+
+    .poundsign img {
+        height: 7rem;
+    }
+
+    .banner-about h4 {
+        font-size: 1.8rem;
+        line-height: 36px;
+    }
+
+    .circle-text {
+        padding: 2rem;
+        width: 32.5rem;
+        height: 32.5rem;
+    }
+
+    .whatido-block::after {
+        font-size: 14rem;
+    }
+
+    .whatido-block {
+        font-size: 2rem;
+    }
+
+    /* ===== Index Work Block ===== */
+
+    .index-work-item p {
+        color: #ffffff;
+        margin: 0.5rem 0 1.5rem;
+        font-size: 1.8rem;
+    }
+}
+
+@media(max-width:1200px) {
+
+    /*==================================================================================================== 1200 px*/
+    /* ===== Banner ===== */
+    .banner-dename {
+        margin-top: 12rem;
+    }
+
+    .iam {
+        font-size: 8rem;
+    }
+
+    .circle-text {
+        width: 25rem;
+        height: 25rem;
+    }
+}
+
+@media(max-width:1080px) {
+
+    /*==================================================================================================== 1080 px*/
+    /* ===== Banner ===== */
+    .circle-text {
+        right: -2rem;
+        top: 17%;
+        padding: 2rem;
+        width: 20rem;
+        height: 20rem;
+    }
+
+    .me {
+        width: 530px;
+    }
+
+    div#output {
+        height: 5.2rem;
+    }
+
+    h1.cursor {
+        font-size: 4rem;
+    }
+
+    .whatido-block {
+        font-size: 1.8rem;
+        margin: 6rem 0 0;
+        padding: 8rem 0;
+    }
+
+    .whatido-block::after {
+        font-size: 13rem;
+    }
+}
+
+@media(max-width:992px) {
+
+    /*==================================================================================================== 992 px*/
+    /* ===== Banner ===== */
+    .whatido-block::after {
+        font-size: 10rem;
+    }
+
+    .poundsign img {
+        width: auto !important;
+    }
+
+    .banner-about {
+        margin-top: 3.5rem;
+        width: 100%;
+    }
+
+    .whatido-block {
+        flex-wrap: wrap;
+    }
+
+    .whatido-item {
+        width: 50%;
+        margin: 1.5rem 0;
+    }
+
+    .whatido-block {
+        padding: 3rem 0;
+    }
+
+    /* ===== Index Work Block ===== */
+
+    .index-work-block {
+        margin-top: 6rem;
+    }
+
+    .index-work-item {
+        margin-bottom: 6rem;
+    }
+}
+
+@media(max-width:768px) {
+
+    /*==================================================================================================== 768 px*/
+    h4 {
+        font-size: 1.6rem;
+    }
+
+    /* ===== Banner ===== */
+    .me {
+        width: 410px;
+        padding: 1rem 2rem 0.5rem;
+    }
+
+    div#output {
+        height: 4.2rem;
+    }
+
+    h1.cursor {
+        font-size: 3rem;
+    }
+
+    .banner-dename::after {
+        width: 7rem;
+        left: 20.5rem;
+        bottom: 6px;
+    }
+
+    /* ===== Index Work Block ===== */
+
+    .index-work-item {
+        width: 100%;
+    }
+
+    .index-work-item .work-tag {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+}
+
+@media(max-width:576px) {
+
+    /*==================================================================================================== 576 px*/
+    /* ===== Banner ===== */
+
+    .poundsign img {
+        height: 5rem;
+        margin-right: 1.25rem;
+    }
+
+    .iam {
+        font-size: 6rem;
+    }
+
+    .me {
+        width: 350px;
+    }
+
+    div#output {
+        height: 3.6rem;
+    }
+
+    h1.cursor {
+        font-size: 2.4rem;
+    }
+
+    .banner-about {
+        margin-top: 2.5rem;
+        width: 100%;
+    }
+
+    .circle-text {
+        right: -2rem;
+        top: 14%;
+        padding: 1rem;
+        width: 15rem;
+        height: 15rem;
+    }
+
+
+    .whatido-block {
+        font-size: 1.8rem;
+        margin: 4rem 0 0;
+        padding: 4rem 0;
+    }
+
+    .whatido-block::after {
+        font-size: 8rem;
+    }
+
+    .whatido-item {
+        width: 45%;
+    }
+}
+
+@media(max-width:480px) {
+
+    /*==================================================================================================== 480 px*/
+    /* ===== Banner ===== */
+    .banner-dename::after {
+        width: 6rem;
+        left: 20.5rem;
+        bottom: 10px;
+    }
+
+    h4.banner-dename {
+        font-size: 1.6rem;
+    }
+
+    .whatido-block {
+        font-size: 1.6rem;
+        padding: 3rem 0;
+    }
+}
+
+@media(max-width:420px) {
+    .circle-text {
+        opacity: 0.5;
+        z-index: -1;
+    }
+
+    /* ===== Index Work Block ===== */
+    .index-work-title {
+        font-size: 2rem;
+    }
+}
+
+@media(max-width:380px) {
+
+    /*==================================================================================================== 380 px*/
+    /* ===== Banner ===== */
+    .me {
+        width: 290px;
+        padding: 1rem 1rem 0.5rem;
+    }
+
+    div#output {
+        height: 3.2rem;
+    }
+
+    h1.cursor {
+        font-size: 2rem;
+    }
+}
