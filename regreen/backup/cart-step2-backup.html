@@ -1,0 +1,325 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>購物車流程2 - RE Green</title>
+<meta name="viewport" content="width=device-width,maximum-scale=1.0,user-scalable=no">
+<!--reset-->
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<!--Nav-->
+<link rel="stylesheet" type="text/css" href="css/nav-core.min.css">
+<link rel="stylesheet" type="text/css" href="css/nav-layout.min.css">
+<!--style-->
+<link rel="shortcut icon" href="image/common/favicon.png" type="image/vnd.microsoft.icon">
+<link rel="icon" href="image/favicon.png" type="image/vnd.microsoft.icon">
+<link rel="stylesheet" type="text/css" href="css/easyzoom.css">
+<link rel="stylesheet" href="css/common.css" type="text/css">
+<link rel="stylesheet" href="css/main.css" type="text/css">
+<link rel="stylesheet" href="css/cart.css" type="text/css">
+<link href="//use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+</head>
+<body>
+	<section class="head clearfix">	
+		<div class="header">
+			<div class="container">
+				<header>
+				<div class="logo">
+				<a href="#"><img src="image/common/logo.svg" alt="RE Green"></a>
+				</div>
+				</header>
+			<a href="#" class="nav-button">Menu</a>
+			<div class="nav">
+				<ul>
+					<li style="display: none;">選單</li>
+					<li class="line"><a href="#">產品介紹</a></li>
+					<li class="line nav-submenu"><a href="#">關於我們</a>
+						<ul>
+							<li><a href="#">品牌理念</a></li>
+							<li><a href="#">團隊歷程</a></li>
+						</ul>
+					</li>
+					<li class="line nav-submenu"><a href="#">最新消息</a>
+						<ul>
+							<li><a href="#">RE Green消息</a></li>
+							<li><a href="#">媒體報導</a></li>
+							<li><a href="#">活動資訊</a></li>
+						</ul>
+					</li>
+					<li class="line"><a href="#">合作案例</a></li>
+					<li class="line"><a href="#">部落格</a></li>
+					<li class="line"><a href="#">購物商城</a></li>
+				</ul>
+			</div>
+			<div class="nav-fuction">
+				<ul class="clearfix">
+					<li class="language-icon"><i class="fas fa-globe"></i></li>
+					<li class="language nav-submenu">
+						<select id="chose" onchange="doChose()">
+						<option value="#" style="display: none;">Language
+						<option value="mandarin">繁體中文
+						<option value="english">英文
+						<option value="french">法文
+						</select>
+					</li>
+					<li class="user"><a href="#"><i class="fas fa-user"></i></a></li>
+					<li class="cart"><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+				</ul>
+			</div>
+			</div>
+		</div>
+		<a href="#" class="nav-close">Close Menu</a>
+	</section>
+	
+	<section id="RWDshopping" class="RWDshopping shop-1 page">
+		<div class="container-2">
+		<ul class="cart-step">
+			<li class="step1">
+				<span class="num">01</span>
+				<span class="name">購物清單</span>
+			</li>
+			<li class="step2 current">
+				<span class="num">02</span>
+				<span class="name">填寫資料</span>
+			</li>
+			<li class="step3">
+				<span class="num">03</span>
+				<span class="name">完成訂單</span>
+			</li>
+		</ul>
+
+		<div class="delivery-box">
+			<h3>取件方式</h3>
+			<div class="form-option">
+				<select>
+					<option>貨運宅配</option>  
+				</select>
+			</div>
+			<h3>付款方式</h3>
+			<div class="form-option">
+				<select>
+					<option>臨櫃匯款</option>
+					<option>ATM轉帳</option>
+					<option>貨到付款(需支付手續費：NT$ 60)</option>
+					<option>信用卡(一次付清)</option>
+					<option>超商代碼繳費</option>
+					<option>超商條碼繳費</option>
+				</select>
+				<div class="tips">
+					<span>台灣銀行 館前分行 代號004</span>
+					<span>帳號: 00000000000000&nbsp; 戶名: RE Green</span>
+				</div>
+			</div>
+		</div>
+		
+
+		<div class="shopping-title"><i class="fas fa-shopping-cart"></i> 購物車 <small>( 1 )</small></div>
+			<form id="shopping_form" method="post">
+				<div class="shopping-item">	
+				<div class="table">
+				<div class="thead">
+					<div class="tr">
+						<div class="th pic"></div>
+						<div class="th info">商品名稱</div>
+						<div class="th price">價格</div>
+						<div class="th qtys">數量</div>
+						<div class="th total">小計</div>
+						<div class="th delete"></div>
+					</div>
+				</div>
+				<div class="tbody">
+					<div class="tr bgw">
+						<div class="td pic">
+						<a href="#" target="_blank"><img src="image/shop/product-w.jpg" alt=""></a>
+						</div>
+						<div class="td info">
+							<a href="#" target="_blank">RE Green居家製肥機-綠</a>
+							<div class="mobile-info">
+								<div class="price">
+									<div class="pd-price"><span>單價</span> NT$6,000</div>
+								</div>
+								<div class="qtys">
+									<div class="qtybox qtybox2">
+										<select>
+											<option value="1" selected>1</option>
+											<option value="2" >2</option>
+											<option value="3" >3</option>
+											<option value="4" >4</option>
+											<option value="5" >5</option>
+											<option value="6" >6</option>
+											<option value="7" >7</option>
+											<option value="8" >8</option>
+											<option value="9" >9</option>
+											<option value="10" >10</option>
+										</select>
+									</div>
+								</div>
+								<div class="total">
+									<div class="pd-price">NT$6,000</div>
+								</div>
+							</div>						
+						</div>
+
+					<div class="td price">
+						<div class="pd-price"><span>單價</span> NT$6,000</div>
+					</div>
+
+					<div class="td qtys clearfix">
+						<div class="qtybox qtybox2">
+							<select>
+								<option value="1" selected>1</option>
+								<option value="2" >2</option>
+								<option value="3" >3</option>
+								<option value="4" >4</option>
+								<option value="5" >5</option>
+								<option value="6" >6</option>
+								<option value="7" >7</option>
+								<option value="8" >8</option>
+								<option value="9" >9</option>
+								<option value="10" >10</option>
+							</select>
+						</div>
+					</div>
+
+					<div class="td total">
+						<div class="pd-price">NT$6,000</div>
+					</div>
+
+					<div class="td delete">
+						<a href="#"><i class="far fa-trash-alt"></i></a>
+					</div>
+				</div>
+
+			</div>
+			</div>
+			</div>
+		</form>
+		<div class="cart-pc">
+			<div class="shopping-price-box">
+					<div class="sum-box">
+						<div class="tr totals-1">
+							<div class="td">小計</div>
+							<div class="td">NT$12,000</div>
+						</div>
+						<div class="tr totals-2">
+							<div class="td">訂單總計</div>
+							<div class="td"><span class="color-danger sp-p">NT$12,000</span><br><span class="totals-2span"><small>(不含運)</small></span></div>
+						</div>
+					</div>                
+			</div>
+		</div>
+
+		<div class="cart-form">
+			<div class="order">
+				<div class="cart-form-title"><h3>訂購人資料</h3></div>
+				<div class="form-group">
+					<span class="form-title select-necessary">姓名</span>
+					<div class="control-box"><input type="text"></div>
+				</div>
+				<div class="form-group">
+					<span class="form-title select-necessary">聯絡電話</span>
+					<div class="control-box"><input type="text"></div>
+				</div>
+				<div class="form-group">
+					<span class="form-title select-necessary">電子郵件</span>
+					<div class="control-box"><input type="text" name="" placeholder=""></div>
+				</div>
+				<div class="form-group">
+					<span class="form-title select-necessary">聯絡地址</span>
+					<div class="control-box"><input type="text" name="" placeholder=""></div>
+				</div>
+				<div class="form-group">
+					<span class="form-title">備註</span>
+					<div class="control-box">
+						<textarea class=""></textarea>
+						<div class="column_memo"><span style="font-size: 13px;">如需開設三聯式發票，請於備註欄填寫統編及公司全名。</span></div>  
+					</div>
+				</div>
+			</div>
+			<div class="receive">
+				<div class="cart-form-title">
+					<h3>收件者人資料</h3>
+					<div class="same-check">
+						<label class="form-checkbox">
+						<input type="checkbox" onclick="same_order();"> 同訂購人</label>
+					</div>
+				</div>
+				<div class="form-group">
+					<span class="form-title select-necessary">姓名</span>
+					<div class="control-box"><input type="text"></div>
+				</div>
+				<div class="form-group">
+					<span class="form-title select-necessary">聯絡電話</span>
+					<div class="control-box"><input type="text"></div>
+				</div>
+				<div class="form-group">
+					<span class="form-title select-necessary">電子郵件</span>
+					<div class="control-box"><input type="text" name="" placeholder=""></div>
+				</div>
+				<div class="form-group">
+					<span class="form-title select-necessary">聯絡地址</span>
+					<div class="control-box"><input type="text" name="" placeholder=""></div>
+				</div>
+				<div class="form-group">
+					<span class="form-title">備註</span>
+					<div class="control-box">
+						<textarea class=""></textarea>
+						<div class="column_memo"><span style="font-size: 13px;">如需開設三聯式發票，請於備註欄填寫統編及公司全名。</span></div>  
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<div class="cart-pc">
+			<div class="btn-box pc">
+				<a href="#" class="cart-btn" title="繼續選購">繼續選購</a>
+				<a href="#" class="cart-btn next-btn">確認購買<i class="fa fa-angle-right"></i></a>
+			</div>
+		</div>
+		<div id="cart-mob">
+			<div class="shopping-price-box">
+				<div class="sum-box">
+					<div class="tr totals-1">
+						<div class="td">小計</div>
+						<div class="td">NT$12,000</div>
+					</div>
+					<div class="tr totals-2">
+						<div class="td">訂單總計</div>
+						<div class="td"><span class="color-danger sp-p">NT$12,000</span><br><span class="totals-2span"><small>(不含運)</small></span></div>
+					</div>
+				</div>                
+			</div>
+				<div class="btn-box pc">
+					<a href="#" class="cart-btn" title="繼續選購">繼續選購</a>
+					<a href="#" class="cart-btn next-btn">下一步 <i class="fa fa-angle-right"></i></a>
+				</div>
+		</div>
+
+		</div>
+	</section>
+
+	<div class="footer">
+		<div class="container">
+			<div class="social">
+				<h3 class="sp-p">媒體/聯絡平台</h3>
+				<span><a href="#"><i class="fab fa-facebook-f"></i></a></span>
+				<span><a href="#"><i class="fab fa-instagram"></i></a></span>
+				<span><a href="#"><i class="fab fa-twitter"></i></a></span>
+				<span><a href="#"><i class="fas fa-envelope"></i></a></span>
+			</div>
+			<div class="footer-logo"><img src="image/common/footer-logo.png" alt=""></div>
+			<div class="ssl-brower">
+				<p>建議使用Chrome、Firefox、Safari最新版本瀏覽</p>
+				<p>全球先進SSL 256bit傳輸加密機制</p>
+				<p>Copyright © 2020 RE GREEN All right reserved.</p>
+			</div>
+		</div>
+	</div>
+
+
+<!-- jQuery --> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<!-- Nav script -->
+<script src="js/nav.jquery.min.js"></script> 
+<script src="js/nav-program.js"></script> 
+</body>
+</html>

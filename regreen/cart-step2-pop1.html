@@ -1,0 +1,400 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>購物車流程2 pop1 - RE Green</title>
+<meta name="viewport" content="width=device-width,maximum-scale=1.0,user-scalable=no">
+<!--reset-->
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<!--Nav-->
+<link rel="stylesheet" type="text/css" href="css/nav-core.min.css">
+<link rel="stylesheet" type="text/css" href="css/nav-layout.min.css">
+<!--style-->
+<link rel="shortcut icon" href="image/common/favicon.png" type="image/vnd.microsoft.icon">
+<link rel="icon" href="image/favicon.png" type="image/vnd.microsoft.icon">
+<link rel="stylesheet" type="text/css" href="css/easyzoom.css">
+<link rel="stylesheet" href="css/common.css" type="text/css">
+<link rel="stylesheet" href="css/main.css" type="text/css">
+<link rel="stylesheet" href="css/cart.css" type="text/css">
+<link href="//use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+</head>
+<body>
+	<div class="pop-area">
+		<div class="pop">
+			<div class="cart-box cart-box-2">
+				<div class="cart-box-header"><i class="fas fa-truck" style="transform: rotatey(-180deg); padding: 0 0 0 8px;"></i>選擇寄件方式</div>
+				<div class="cart-box-content cart-box-content-sp-2">
+					<div class="delivery-select">
+						<div class="delivery-select-item">
+							<a href="#">
+								<span>宅配到府</span><span>$100</span><span><i class="fas fa-check"></i></span>
+							</a>
+						</div>
+						<div class="delivery-select-add">
+							<div class="form-check">
+								<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+								<div>
+									<span>陳美美</span>
+									<span>0912345678</span>
+									<span>台北市中正區忠孝西路一段120號</span>
+								</div>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+								<div>
+									<span>陳悄悄</span>
+									<span>0920998770</span>
+									<span>台中市西屯區台灣大道2段50號</span>
+								</div>
+							</div>
+							<div class="form-group" style="margin-top: 15px;">
+								<div class="control-box"><div class="cart-box-btn"><a href=""><i class="fas fa-plus"></i>新增</a></div></div>
+							</div>
+						</div>
+					</div>
+					<div class="btn-box btn-box-2">
+						<a href="#" class="cart-btn" title="回首頁" style="background: #f9fafb;">取消</a>
+						<a href="#" class="cart-btn next-btn-2">確定</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<section class="head clearfix">	
+		<div class="header">
+			<div class="container">
+				<header>
+				<div class="logo">
+				<a href="#"><img src="image/common/logo.svg" alt="RE Green"></a>
+				</div>
+				</header>
+			<a href="#" class="nav-button">Menu</a>
+			<div class="nav">
+				<ul>
+					<li style="display: none;">選單</li>
+					<li class="line"><a href="#">產品介紹</a></li>
+					<li class="line nav-submenu"><a href="#">關於我們</a>
+						<ul>
+							<li><a href="#">品牌理念</a></li>
+							<li><a href="#">團隊歷程</a></li>
+						</ul>
+					</li>
+					<li class="line nav-submenu"><a href="#">最新消息</a>
+						<ul>
+							<li><a href="#">RE Green消息</a></li>
+							<li><a href="#">媒體報導</a></li>
+							<li><a href="#">活動資訊</a></li>
+						</ul>
+					</li>
+					<li class="line"><a href="#">合作案例</a></li>
+					<li class="line"><a href="#">部落格</a></li>
+					<li class="line"><a href="#">購物商城</a></li>
+				</ul>
+			</div>
+			<div class="nav-fuction">
+				<ul class="clearfix">
+					<li class="language-icon"><i class="fas fa-globe"></i></li>
+					<li class="language nav-submenu">
+						<select id="chose" onchange="doChose()">
+						<option value="#" style="display: none;">Language
+						<option value="mandarin">繁體中文
+						<option value="english">英文
+						<option value="french">法文
+						</select>
+					</li>
+					<li class="user"><a href="#"><i class="fas fa-user"></i></a></li>
+					<li class="cart"><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+				</ul>
+			</div>
+			</div>
+		</div>
+		<a href="#" class="nav-close">Close Menu</a>
+	</section>
+	
+	<section id="RWDshopping" class="RWDshopping shop-1 page">
+		<div class="container-2">
+		<ul class="cart-step">
+			<li class="step1">
+				<span class="num">01</span>
+				<span class="name">購物清單</span>
+			</li>
+			<li class="step2 current">
+				<span class="num">02</span>
+				<span class="name">填寫資料</span>
+			</li>
+			<li class="step3">
+				<span class="num">03</span>
+				<span class="name">完成訂單</span>
+			</li>
+		</ul>
+
+		<div class="shopping-title"><i class="fas fa-shopping-cart"></i> 購物車 <small>( 1 )</small></div>
+			<form id="shopping_form" method="post">
+				<div class="shopping-item">	
+				<div class="table">
+				<div class="thead">
+					<div class="tr">
+						<div class="th pic"></div>
+						<div class="th info">商品名稱</div>
+						<div class="th price">價格</div>
+						<div class="th qtys">數量</div>
+						<div class="th total">小計</div>
+					</div>
+				</div>
+				<div class="tbody">
+					<div class="tr bgw">
+						<div class="td pic">
+						<a href="#" target="_blank"><img src="image/shop/product-w.jpg" alt=""></a>
+						</div>
+						<div class="td info">
+							<a href="#" target="_blank">RE Green居家製肥機-綠</a>
+							<div class="mobile-info">
+								<div class="price">
+									<div class="pd-price"><span>單價</span> NT$6,000</div>
+								</div>
+								<div class="qtys">
+									<div class="qtybox qtybox2">
+										<span>1</span>
+									</div>
+								</div>
+								<div class="total">
+									<div class="pd-price">NT$6,000</div>
+								</div>
+							</div>						
+						</div>
+
+					<div class="td price">
+						<div class="pd-price"><span>單價</span> NT$6,000</div>
+					</div>
+
+					<div class="td qtys clearfix">
+						<div class="qtybox qtybox2">
+							<span>1</span>
+						</div>
+					</div>
+
+					<div class="td total">
+						<div class="pd-price">NT$6,000</div>
+					</div>
+				</div>
+
+			</div>
+			</div>
+			</div>
+			</form>
+		
+		<div class="cart-box">
+			<div class="cart-box-header"><i class="fas fa-truck" style="transform: rotatey(-180deg); padding: 0 0 0 8px;"></i>寄件資訊</div>
+			<div class="cart-box-content cart-box-content-sp-2">
+				<div class="c-b-c-a">
+					<div class="c-b-c-a-list">
+						<div class="form-group">
+							<span class="form-title select-necessary">姓名</span>
+							<div class="control-box"><input type="text"></div>
+						</div>
+						<div class="form-group">
+							<span class="form-title select-necessary">電話</span>
+							<div class="control-box"><input type="text"></div>
+						</div>
+						<div class="form-group">
+							<span class="form-title select-necessary">E-mail</span>
+							<div class="control-box"><input type="text"></div>
+						</div>
+					</div>
+					<div class="c-b-c-a-list">
+						<div class="form-group">
+							<span class="form-title select-necessary">送件方式</span>
+							<div class="control-box"><div class="cart-box-btn"><a href=""><i class="fas fa-plus"></i>新增寄件方式</a></div></div>
+						</div>
+						<div class="form-group">
+							<span class="form-title">備註</span>
+							<div class="control-box">
+								<textarea class="" style="height: 92px;"></textarea>
+								<div class="column_memo"><span style="font-size: 13px;"></span></div>  
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="cart-box">
+			<div class="cart-box-header"><i class="far fa-credit-card"></i>付款方式</div>
+			<div class="cart-box-content">
+				<div class="c-b-c-b">
+					<div class="c-b-c-b-list">
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+							<label class="form-check-label" for="exampleRadios1">
+								信用卡/金融卡
+							</label>
+						  </div>
+					</div>
+					<div class="c-b-c-b-list">
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+							<label class="form-check-label" for="exampleRadios1">
+								銀行轉帳
+							</label>
+						  </div>
+					</div>
+					<div class="c-b-c-b-list">
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+							<label class="form-check-label" for="exampleRadios1">
+							  貨到付款
+							</label>
+						  </div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="cart-box">
+			<div class="cart-box-header"><i class="far fa-newspaper"></i>發票資訊</div>
+			<div class="cart-box-content cart-box-content-sp-2">
+				<div class="c-b-c-b">
+					<div class="c-b-c-b-list">
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+							<label class="form-check-label" for="exampleRadios1">
+								電子發票
+							</label>
+						  </div>
+					</div>
+					<div class="c-b-c-b-list">
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+							<label class="form-check-label" for="exampleRadios1">
+								三聯式發票
+							</label>
+							<div class="control-box"><input type="text"></div>
+						  </div>
+					</div>
+					<div class="c-b-c-b-list">
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+							<label class="form-check-label" for="exampleRadios1">
+							  捐贈發票
+							</label>
+						  </div>
+						  <div class="control-box">
+							<select style="margin: 10px 0 0 0;">
+								<option>陽光基金會</option>
+								<option>喜憨兒基金會</option>
+								<option>範例文字</option>
+							</select>
+						  </div>
+					</div>
+					<div class="c-b-c-b-list">
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+							<label class="form-check-label" for="exampleRadios1">
+								會員載具
+							</label>
+							<div class="control-box"><input type="text"></div>
+						  </div>
+					</div>
+					<div class="c-b-c-b-list">
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+							<label class="form-check-label" for="exampleRadios1">
+							  手機載具
+							</label>
+							<div class="control-box"><input type="text"></div>
+						  </div>
+					</div>
+					<div class="c-b-c-b-list">
+						<div class="form-check">
+							<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+							<label class="form-check-label" for="exampleRadios1">
+							  自然人憑證
+							</label>
+							<div class="control-box"><input type="text"></div>
+						  </div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="cart-box displaynone-992">
+			<div class="cart-box-header"><i class="fas fa-dollar-sign"></i>總計</div>
+			<div class="cart-box-content cart-box-content-nsp">
+				<div class="c-b-c-c">
+					<div class="c-b-c-c-list">
+						<div class="cart-pc">
+							<div class="shopping-price-box">
+									<div class="sum-box">
+										<div class="tr totals-1">
+											<div class="td">小計</div>
+											<div class="td">NT$12,000</div>
+										</div>
+										<div class="tr totals-2">
+											<div class="td">訂單總計</div>
+											<div class="td"><span class="color-danger sp-p">NT$12,000</span><br><span class="totals-2span"><small>(不含運)</small></span></div>
+										</div>
+									</div>                
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+		<div class="cart-pc">
+			<div class="btn-box pc">
+				<a href="#" class="cart-btn" title="繼續選購">繼續選購</a>
+				<a href="#" class="cart-btn next-btn">確認購買<i class="fa fa-angle-right"></i></a>
+			</div>
+		</div>
+		<div id="cart-mob">
+			<div class="shopping-price-box">
+				<div class="sum-box">
+					<div class="tr totals-1">
+						<div class="td">小計</div>
+						<div class="td">NT$12,000</div>
+					</div>
+					<div class="tr totals-2">
+						<div class="td">訂單總計</div>
+						<div class="td"><span class="color-danger sp-p">NT$12,000</span><br><span class="totals-2span"><small>(不含運)</small></span></div>
+					</div>
+				</div>                
+			</div>
+				<div class="btn-box pc">
+					<a href="#" class="cart-btn" title="繼續選購">繼續選購</a>
+					<a href="#" class="cart-btn next-btn">下一步 <i class="fa fa-angle-right"></i></a>
+				</div>
+		</div>
+
+		</div>
+	</section>
+
+	<div class="footer">
+		<div class="container">
+			<div class="social">
+				<h3 class="sp-p">媒體/聯絡平台</h3>
+				<span><a href="#"><i class="fab fa-facebook-f"></i></a></span>
+				<span><a href="#"><i class="fab fa-instagram"></i></a></span>
+				<span><a href="#"><i class="fab fa-twitter"></i></a></span>
+				<span><a href="#"><i class="fas fa-envelope"></i></a></span>
+			</div>
+			<div class="footer-logo"><img src="image/common/footer-logo.png" alt=""></div>
+			<div class="ssl-brower">
+				<p>建議使用Chrome、Firefox、Safari最新版本瀏覽</p>
+				<p>全球先進SSL 256bit傳輸加密機制</p>
+				<p>Copyright © 2020 RE GREEN All right reserved.</p>
+			</div>
+		</div>
+	</div>
+
+
+<!-- jQuery --> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<!-- Nav script -->
+<script src="js/nav.jquery.min.js"></script> 
+<script src="js/nav-program.js"></script> 
+</body>
+</html>
