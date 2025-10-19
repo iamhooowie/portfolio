@@ -72,6 +72,18 @@
     font-size: 5.4rem;
     font-weight: bold;
     color: #ffffff;
+    display: flex;
+    align-items: center;
+}
+
+.work-title-link {
+    color: var(--two-color);
+}
+
+.work-title-link a {
+    color: var(--two-color);
+    font-size: 2.6rem;
+    padding-left: 0.75rem;
 }
 
 .content-group {
@@ -385,6 +397,11 @@
     .work-title {
         font-size: 2.6rem;
         margin: 8rem 0 0 0;
+    }
+
+    .work-title-link a {
+        font-size: 2rem;
+        padding-left: 0.5rem;
     }
 
     /* ===== Tainan 400 ===== */

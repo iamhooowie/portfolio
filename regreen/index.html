@@ -1,120 +1,142 @@
 <!doctype html>
 <html>
+
 <head>
-<meta charset="utf-8">
-<title>RE Green</title>
-<meta name="viewport" content="width=device-width,maximum-scale=1.0,user-scalable=no">
-<!--reset-->
-<link rel="stylesheet" type="text/css" href="css/reset.css">
-<!--Nav-->
-<link rel="stylesheet" type="text/css" href="css/nav-core.min.css">
-<link rel="stylesheet" type="text/css" href="css/nav-layout.min.css">
-<!--Banner輪播-->
-<link rel="stylesheet" type="text/css" href="css/banner-docs.theme.min.css">
-<link rel="stylesheet" type="text/css" href="css/banner-owl.carousel.min.css">
-<link rel="stylesheet" type="text/css" href="css/banner-owl.theme.default.min.css">
-<!--style-->
-<link rel="shortcut icon" href="image/common/favicon.png" type="image/vnd.microsoft.icon">
-<link rel="icon" href="image/favicon.png" type="image/vnd.microsoft.icon">
-<link rel="stylesheet" href="css/common.css" type="text/css">
-<link rel="stylesheet" href="css/index.css" type="text/css">
-<link href="//use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+	<meta charset="utf-8">
+	<title>RE Green</title>
+	<meta name="viewport" content="width=device-width,maximum-scale=1.0,user-scalable=no">
+	<!--reset-->
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<!--Nav-->
+	<link rel="stylesheet" type="text/css" href="css/nav-core.min.css">
+	<link rel="stylesheet" type="text/css" href="css/nav-layout.min.css">
+	<!--Banner輪播-->
+	<link rel="stylesheet" type="text/css" href="css/banner-docs.theme.min.css">
+	<link rel="stylesheet" type="text/css" href="css/banner-owl.carousel.min.css">
+	<link rel="stylesheet" type="text/css" href="css/banner-owl.theme.default.min.css">
+	<!--style-->
+	<link rel="shortcut icon" href="image/common/favicon.png" type="image/vnd.microsoft.icon">
+	<link rel="icon" href="image/favicon.png" type="image/vnd.microsoft.icon">
+	<link rel="stylesheet" href="css/common.css" type="text/css">
+	<link rel="stylesheet" href="css/index.css" type="text/css">
+	<link href="//use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
 </head>
+
 <body>
-	<section class="head">	
+	<section class="head">
 		<div class="header">
 			<div class="container">
 				<header>
-				<div class="logo">
-				<a href="#"><img src="image/common/logo.svg" alt="RE Green"></a>
-				</div>
+					<div class="logo">
+						<a href="index.html"><img src="image/common/logo.svg" alt="RE Green"></a>
+					</div>
 				</header>
-			<a href="#" class="nav-button"></a>
-			<div class="nav">
-				<ul>
-					<li style="display: none;">選單</li>
-					<li class="line"><a href="#">產品介紹</a></li>
-					<li class="line nav-submenu"><a href="#">關於我們</a>
-						<ul>
-							<li><a href="#">品牌理念</a></li>
-							<li><a href="#">團隊歷程</a></li>
-						</ul>
-					</li>
-					<li class="line nav-submenu"><a href="#">最新消息</a>
-						<ul>
-							<li><a href="#">RE Green消息</a></li>
-							<li><a href="#">媒體報導</a></li>
-							<li><a href="#">活動資訊</a></li>
-						</ul>
-					</li>
-					<li class="line"><a href="#">合作案例</a></li>
-					<li class="line"><a href="#">部落格</a></li>
-					<li class="line"><a href="#">購物商城</a></li>
-				</ul>
-			</div>
-			<div class="nav-fuction">
-				<ul class="clearfix">
-					<li class="language-icon"><i class="fas fa-globe"></i></li>
-					<li class="language nav-submenu">
-						<select id="chose" onchange="doChose()">
-						<option value="#" style="display: none;">Language
-						<option value="mandarin">繁體中文
-						<option value="english">英文
-						<option value="french">法文
-						</select>
-					</li>
-					<li class="user"><a href="#"><i class="fas fa-user"></i></a></li>
-					<li class="cart"><a href="#"><i class="fas fa-shopping-cart"></i></a><span class="badge">1</span></li>
-				</ul>
-			</div>
+				<a href="#" class="nav-button"></a>
+				<div class="nav">
+					<ul>
+						<li style="display: none;">選單</li>
+						<li class="line"><a href="shop.html">產品介紹</a></li>
+						<li class="line nav-submenu"><a href="page.html">關於我們</a>
+							<ul>
+								<li><a href="page.html">品牌理念</a></li>
+								<li><a href="page.html">團隊歷程</a></li>
+							</ul>
+						</li>
+						<li class="line nav-submenu"><a href="news.html">最新消息</a>
+							<ul>
+								<li><a href="news.html">RE Green消息</a></li>
+								<li><a href="news.html">媒體報導</a></li>
+								<li><a href="news.html">活動資訊</a></li>
+							</ul>
+						</li>
+						<li class="line"><a href="news.html">合作案例</a></li>
+						<li class="line"><a href="news.html">部落格</a></li>
+						<li class="line"><a href="shop.html">購物商城</a></li>
+					</ul>
+				</div>
+				<div class="nav-fuction">
+					<ul class="clearfix">
+						<li class="language-icon"><i class="fas fa-globe"></i></li>
+						<li class="language nav-submenu">
+							<select id="chose" onchange="doChose()">
+								<option value="#" style="display: none;">Language
+								<option value="mandarin">繁體中文
+								<option value="english">英文
+								<option value="french">法文
+							</select>
+						</li>
+						<li class="user"><a href="login.html"><i class="fas fa-user"></i></a></li>
+						<li class="cart"><a href="cart-step1.html"><i class="fas fa-shopping-cart"></i></a><span
+								class="badge">1</span></li>
+					</ul>
+				</div>
 			</div>
 		</div>
 		<a href="#" class="nav-close">Close Menu</a>
 		<section id="demos" class="banner">
-		<div class="owl-carousel owl-theme">
-		<img class="owl-lazy" src="image/index/banner-2.jpg">
-		<img class="owl-lazy" src="image/index/banner-2.jpg">
-		</div>
+			<div class="owl-carousel owl-theme">
+				<img class="owl-lazy" src="image/index/banner-2.jpg">
+				<img class="owl-lazy" src="image/index/banner-2.jpg">
+			</div>
 		</section>
 	</section>
-	
+
 	<section class="outline">
 		<div class="intro-img-3"><img src="image/index/intro/intro-pro-3.png" alt=""></div>
 		<div class="intro-img-2"><img src="image/index/intro/intro-pro-2.png" alt=""></div>
 		<div class="container">
 			<div class="intro-img-1"><img src="image/index/intro/intro-pro-1.png" alt=""></div>
-			
+
 			<h1 class="title sp-p">RE Green居家製肥機，是甚麼呢?</h1>
 			<div class="outline-intro">
 				<div class="title-img"><img src="image/index/intro/outline-01.png" alt="吶!你知道嗎?"></div>
-				<p>在臺灣,每年約有近<span>200</span>萬噸的家庭廚餘被浪費<br/>用化工桶堆疊來換算,高度相當於每日<span>74</span>座臺北101大樓呢!這些資源就這樣被浪費了,真的好可惜啊...</p>
+				<p>在臺灣,每年約有近<span>200</span>萬噸的家庭廚餘被浪費<br />用化工桶堆疊來換算,高度相當於每日<span>74</span>座臺北101大樓呢!這些資源就這樣被浪費了,真的好可惜啊...
+				</p>
 			</div>
 			<div class="outline-intro">
 				<div class="title-img"><img src="image/index/intro/outline-02.png" alt="但現在"></div>
-				<p>為您隆重推出RE Green居家製肥機<br/>資源再生不浪費,讓居家廚餘變成有機肥料!<br/>
-				<span class="outline-sp sp-p">RE Green居家製肥機 + 抑臭酵素包 = <span>有機肥料</span></span>
-				</p>		
+				<p>為您隆重推出RE Green居家製肥機<br />資源再生不浪費,讓居家廚餘變成有機肥料!<br />
+					<span class="outline-sp sp-p">RE Green居家製肥機 + 抑臭酵素包 = <span>有機肥料</span></span>
+				</p>
 			</div>
 			<div class="outline-special">
 				<ul>
-					<li><span><img src="image/icon/taiwan-mit.svg" alt="MIT"></span><p>臺灣團隊設計研發<br/>臺灣工廠製造MIT</p></li>
-					<li><span><img src="image/icon/index-001-02.svg" alt=""></span><p>通氣式製肥<br/>可將好菌帶回土壤中</p></li>
-					<li><span><img src="image/icon/index-001-03.svg" alt="獎章"></span><p>有專利、檢驗報告<br/>及國際設計大獎的肯定</p></li>
+					<li><span><img src="image/icon/taiwan-mit.svg" alt="MIT"></span>
+						<p>臺灣團隊設計研發<br />臺灣工廠製造MIT</p>
+					</li>
+					<li><span><img src="image/icon/index-001-02.svg" alt=""></span>
+						<p>通氣式製肥<br />可將好菌帶回土壤中</p>
+					</li>
+					<li><span><img src="image/icon/index-001-03.svg" alt="獎章"></span>
+						<p>有專利、檢驗報告<br />及國際設計大獎的肯定</p>
+					</li>
 				</ul>
 			</div>
 		</div>
 	</section>
-	<div class="sp-p btn mid-btn"><a href="#"><i class="fas fa-shopping-cart"></i>立即訂購</a></div>
+	<div class="sp-p btn mid-btn"><a href="shop.html" target="_blank"><i class="fas fa-shopping-cart"></i>立即訂購</a></div>
 	<section class="suit">
 		<div class="container">
 			<h2 class="sp-p">適用對象</h2>
 			<ul class="clearfix">
-				<li><span><img src="image/icon/index-002-01.svg" alt=""></span><p class="suit-p">每天都為廚餘回收而煩惱嗎？</p></li>
-				<li><span><img src="image/icon/index-002-02.svg" alt=""></span><p class="suit-p">想堆肥但怕有異味和小蟲嗎？</p></li>
-				<li><span><img src="image/icon/index-002-03.svg" alt=""></span><p class="suit-p">想堆肥但覺得堆肥時間太久?(一般需3個月~6個月)</p></li>
-				<li><span><img src="image/icon/index-002-04.svg" alt=""></span><p class="suit-p">居家空間小無法實現堆肥? (一般需堆一立方尺，約四人餐桌大小)</p></li>
-				<li><span><img src="image/icon/index-002-05.svg" alt=""></span><p class="suit-p">喜歡種植植物，但怕使用化學肥嗎？</p></li>
-				<li><span><img src="image/icon/index-002-06.svg" alt=""></span><p class="suit-p">想要親近大自然，調節生活壓力嗎？</p></li>
+				<li><span><img src="image/icon/index-002-01.svg" alt=""></span>
+					<p class="suit-p">每天都為廚餘回收而煩惱嗎？</p>
+				</li>
+				<li><span><img src="image/icon/index-002-02.svg" alt=""></span>
+					<p class="suit-p">想堆肥但怕有異味和小蟲嗎？</p>
+				</li>
+				<li><span><img src="image/icon/index-002-03.svg" alt=""></span>
+					<p class="suit-p">想堆肥但覺得堆肥時間太久?(一般需3個月~6個月)</p>
+				</li>
+				<li><span><img src="image/icon/index-002-04.svg" alt=""></span>
+					<p class="suit-p">居家空間小無法實現堆肥? (一般需堆一立方尺，約四人餐桌大小)</p>
+				</li>
+				<li><span><img src="image/icon/index-002-05.svg" alt=""></span>
+					<p class="suit-p">喜歡種植植物，但怕使用化學肥嗎？</p>
+				</li>
+				<li><span><img src="image/icon/index-002-06.svg" alt=""></span>
+					<p class="suit-p">想要親近大自然，調節生活壓力嗎？</p>
+				</li>
 			</ul>
 		</div>
 	</section>
@@ -123,63 +145,170 @@
 		<div class="container">
 			<h2 class="sp-p">RE Green居家製肥機六大特色,<span class="green">輕鬆將廚餘資源化!</span></h2>
 			<ul>
-				<li><span><img src="image/icon/feature-01.svg" alt=""></span><h3>無臭味</h3><p>專利抑臭配方酵素<br/>熟成期間無味道產生</p></li>
-				<li><span><img src="image/icon/feature-02.svg" alt=""></span><h3>防小蟲</h3><p>專利機器防蟲設計<br/>熟成期間無小蟲問題</p></li>
-				<li><span><img src="image/icon/feature-03.svg" alt=""></span><h3>免插電</h3><p>專利手動攪碎設計<br/>輕輕轉動可碎化剩食</p></li>
-				<li><span><img src="image/icon/feature-04.svg" alt=""></span><h3>好拆洗</h3><p>金屬、玻璃材質及<br/>積木式設計，方便清洗</p></li>
-				<li><span><img src="image/icon/feature-05.svg" alt=""></span><h3>好操作</h3><p>桶身貼合手掌輕巧<br/>便利好移動、好操作</p></li>
-				<li><span><img src="image/icon/feature-06.svg" alt=""></span><h3>可回收</h3><p>全機材質可以回收<br/>達到循環設計的概念</p></li>
+				<li><span><img src="image/icon/feature-01.svg" alt=""></span>
+					<h3>無臭味</h3>
+					<p>專利抑臭配方酵素<br />熟成期間無味道產生</p>
+				</li>
+				<li><span><img src="image/icon/feature-02.svg" alt=""></span>
+					<h3>防小蟲</h3>
+					<p>專利機器防蟲設計<br />熟成期間無小蟲問題</p>
+				</li>
+				<li><span><img src="image/icon/feature-03.svg" alt=""></span>
+					<h3>免插電</h3>
+					<p>專利手動攪碎設計<br />輕輕轉動可碎化剩食</p>
+				</li>
+				<li><span><img src="image/icon/feature-04.svg" alt=""></span>
+					<h3>好拆洗</h3>
+					<p>金屬、玻璃材質及<br />積木式設計，方便清洗</p>
+				</li>
+				<li><span><img src="image/icon/feature-05.svg" alt=""></span>
+					<h3>好操作</h3>
+					<p>桶身貼合手掌輕巧<br />便利好移動、好操作</p>
+				</li>
+				<li><span><img src="image/icon/feature-06.svg" alt=""></span>
+					<h3>可回收</h3>
+					<p>全機材質可以回收<br />達到循環設計的概念</p>
+				</li>
 			</ul>
 		</div>
-		<div class="sp-p btn mid-btn"><a href="#"><i class="fas fa-eye"></i>了解更多</a></div>
+		<div class="sp-p btn mid-btn"><a href="product-introduce.html"><i class="fas fa-eye"></i>了解更多</a></div>
 	</section>
-	
+
 	<section class="news-area">
 		<div class="container">
 			<h1 class="title sp-p">最新消息</h1>
 			<div class="news">
-			<div class="news-block">
-				<h2 class="sp-p">RE Green消息</h2>
-				<div class="news-content"><p class="news-img"><img src="image/index/news/news-01.jpg" alt=""></p><p class="news-article"><span class="date">2020.11.14</span>RE Green居家製肥機榮獲2020年 AWARD獎項</p></div>
-				<div class="news-content"><p class="news-img"><img src="image/index/news/news-02.jpg" alt=""></p><p class="news-article"><span class="date">2020.11.14</span>RE Green居家製肥機榮獲2020年 AWARD獎項</p></div>
-				<div class="news-content"><p class="news-img"><img src="image/index/news/news-03.jpg" alt=""></p><p class="news-article"><span class="date">2020.11.14</span>RE Green居家製肥機榮獲2020年 AWARD獎項</p></div>
+				<div class="news-block">
+					<h2 class="sp-p">RE Green消息</h2>
+					<div class="news-content">
+						<a href="page.html">
+							<p class="news-img"><img src="image/index/news/news-01.jpg" alt=""></p>
+							<p class="news-article"><span class="date">2020.11.14</span>RE Green居家製肥機榮獲2020年 AWARD獎項</p>
+						</a>
+					</div>
+					<div class="news-content">
+						<a href="page.html">
+							<p class="news-img"><img src="image/index/news/news-02.jpg" alt=""></p>
+							<p class="news-article"><span class="date">2020.11.14</span>RE Green居家製肥機榮獲2020年 AWARD獎項</p>
+						</a>
+					</div>
+					<div class="news-content">
+						<a href="page.html">
+							<p class="news-img"><img src="image/index/news/news-03.jpg" alt=""></p>
+							<p class="news-article"><span class="date">2020.11.14</span>RE Green居家製肥機榮獲2020年 AWARD獎項</p>
+						</a>
+					</div>
+				</div>
+				<div class="news-block">
+					<h2 class="sp-p">媒體報導</h2>
+					<div class="news-content">
+						<a href="page.html">
+							<p class="news-img"><img src="image/index/news/news-04.jpg" alt=""></p>
+							<p class="news-article"><span class="date">2020.11.14</span>公共電視臺報導<br />生活大智慧，廚餘回收新發明!</p>
+						</a>
+					</div>
+					<div class="news-content">
+						<a href="page.html">
+							<p class="news-img"><img src="image/index/news/news-05.jpg" alt=""></p>
+							<p class="news-article"><span class="date">2020.11.14</span>美國CNN新聞專訪<br />Recycling new
+								inventions</p>
+						</a>
+					</div>
+					<div class="news-content">
+						<a href="page.html">
+							<p class="news-img"><img src="image/index/news/news-06.jpg" alt=""></p>
+							<p class="news-article"><span class="date">2020.11.14</span>日本東京電視臺報導<br />人生の知恵、キッチンの余波は!
+							</p>
+						</a>
+					</div>
+				</div>
+				<div class="news-block">
+					<h2 class="sp-p">活動消息</h2>
+					<div class="news-content">
+						<a href="page.html">
+							<p class="news-img"><img src="image/index/news/news-07.jpg" alt=""></p>
+							<p class="news-article"><span class="date">2020.11.14</span>日本東京電視臺報導<br />人生の知恵、キッチンの余波は!
+							</p>
+						</a>
+					</div>
+					<div class="news-content">
+						<a href="page.html">
+							<p class="news-img"><img src="image/index/news/news-08.jpg" alt=""></p>
+							<p class="news-article"><span class="date">2020.11.14</span>日本東京電視臺報導<br />人生の知恵、キッチンの余波は!
+							</p>
+						</a>
+					</div>
+					<div class="news-content">
+						<a href="page.html">
+							<p class="news-img"><img src="image/index/news/news-09.jpg" alt=""></p>
+							<p class="news-article"><span class="date">2020.11.14</span>日本東京電視臺報導<br />人生の知恵、キッチンの余波は!
+							</p>
+						</a>
+					</div>
+				</div>
 			</div>
-			<div class="news-block">
-				<h2 class="sp-p">媒體報導</h2>
-				<div class="news-content"><p class="news-img"><img src="image/index/news/news-04.jpg" alt=""></p><p class="news-article"><span class="date">2020.11.14</span>公共電視臺報導<br/>生活大智慧，廚餘回收新發明!</p></div>
-				<div class="news-content"><p class="news-img"><img src="image/index/news/news-05.jpg" alt=""></p><p class="news-article"><span class="date">2020.11.14</span>美國CNN新聞專訪<br/>Recycling new inventions</p></div>
-				<div class="news-content"><p class="news-img"><img src="image/index/news/news-06.jpg" alt=""></p><p class="news-article"><span class="date">2020.11.14</span>日本東京電視臺報導<br/>人生の知恵、キッチンの余波は!</p></div>
-			</div>
-			<div class="news-block">
-				<h2 class="sp-p">活動消息</h2>
-				<div class="news-content"><p class="news-img"><img src="image/index/news/news-07.jpg" alt=""></p><p class="news-article"><span class="date">2020.11.14</span>RE Green居家製肥機體驗活動</p></div>
-				<div class="news-content"><p class="news-img"><img src="image/index/news/news-08.jpg" alt=""></p><p class="news-article"><span class="date">2020.11.14</span>RE Green居家製肥機體驗活動</p></div>
-				<div class="news-content"><p class="news-img"><img src="image/index/news/news-09.jpg" alt=""></p><p class="news-article"><span class="date">2020.11.14</span>RE Green居家製肥機體驗活動</p></div>
-			</div>
-			</div>
-			<div class="sp-p btn lg-btn sp-btn"><a href="#"><i class="fas fa-plus"></i>閱讀更多</a></div>
+			<div class="sp-p btn lg-btn sp-btn"><a href="news.html"><i class="fas fa-plus"></i>閱讀更多</a></div>
 		</div>
 	</section>
 	<section class="blog">
 		<div class="container">
 			<div class="blog-block">
 				<h1 class="title sp-p">部落格</h1>
-				<div class="blog-list"><a href="#"></a><span class="date">2020.11.02</span><p>RE Green居家製肥機榮獲2020年AWARD獎項RE Green居家製肥機榮獲2020年AWARD獎項RE</p><span class="more">More<span class="arrow"> &gt; </span></span></a></div>
-				<div class="blog-list"><a href="#"></a><span class="date">2020.11.02</span><p>RE Green居家製肥機榮獲2020年AWARD獎項RE</p><span class="more">More<span class="arrow"> &gt; </span></span></a></div>
-				<div class="blog-list"><a href="#"></a><span class="date">2020.11.02</span><p>RE Green居家製肥機榮獲</p><span class="more">More<span class="arrow"> &gt; </span></span></a></div>
-				<div class="blog-list"><a href="#"></a><span class="date">2020.11.02</span><p>RE Green居家製肥機榮獲2020年AWARD獎項RE Green居家製肥機榮獲2020年AWARD獎項RE Green居家製肥機榮獲2020年AWARD獎項</p><span class="more">More<span class="arrow"> &gt; </span></span></a></div>
-				<div class="blog-list"><a href="#"></a><span class="date">2020.11.02</span><p>RE Green居家製肥機榮獲2020年AWARD獎項RE Green居家製肥機榮獲2020年AWARD獎項RE</p><span class="more">More<span class="arrow"> &gt; </span></span></a></div>
+				<div class="blog-list"><a href="page.html"><span class="date">2020.11.02</span>
+					<p>RE Green居家製肥機榮獲2020年AWARD獎項RE Green居家製肥機榮獲2020年AWARD獎項RE</p><span class="more">More<span
+							class="arrow"> &gt; </span></span></a>
+				</div>
+				<div class="blog-list"><a href="page.html"><span class="date">2020.11.02</span>
+					<p>RE Green居家製肥機榮獲2020年AWARD獎項RE</p><span class="more">More<span class="arrow"> &gt;
+						</span></span></a>
+				</div>
+				<div class="blog-list"><a href="page.html"><span class="date">2020.11.02</span>
+					<p>RE Green居家製肥機榮獲</p><span class="more">More<span class="arrow"> &gt; </span></span></a>
+				</div>
+				<div class="blog-list"><a href="page.html"><span class="date">2020.11.02</span>
+					<p>RE Green居家製肥機榮獲2020年AWARD獎項RE Green居家製肥機榮獲2020年AWARD獎項RE Green居家製肥機榮獲2020年AWARD獎項</p><span
+						class="more">More<span class="arrow"> &gt; </span></span></a>
+				</div>
+				<div class="blog-list"><a href="page.html"><span class="date">2020.11.02</span>
+					<p>RE Green居家製肥機榮獲2020年AWARD獎項RE Green居家製肥機榮獲2020年AWARD獎項RE</p><span class="more">More<span
+							class="arrow"> &gt; </span></span></a>
+				</div>
 			</div>
-			<div class="sp-p btn lg-btn none-pb"><a href="#"><i class="fas fa-plus"></i>閱讀更多</a></div>
+			<div class="sp-p btn lg-btn none-pb"><a href="news.html"><i class="fas fa-plus"></i>閱讀更多</a></div>
 		</div>
 	</section>
 	<section class="cooperation clearfix">
 		<div class="container">
-		<h1 class="title sp-p">合作案例</h1></div>
-		<a href="#"><div class="cooperation-list"><p><img src="image/index/cooperation/cooperation-03.jpg" alt=""></p><h3 class="cooperation-title sp-p">都市小農合作計畫</h3><p class="cooperation-p">本文將以三個不同類型的「小農社群經濟」為例，分析其運作模式和實踐經驗，探究「合作市場經濟」在今天台灣農村的機會與限制。三個案例的經營......</p></div></a>
-		<a href="#"><div class="cooperation-list"><p><img src="image/index/cooperation/cooperation-03.jpg" alt=""></p><h3 class="cooperation-title sp-p">都市小農合作計畫</h3><p class="cooperation-p">本文將以三個不同類型的「小農社群經濟」為例，分析其運作模式和實踐經驗，探究「合作市場經濟」在今天台灣農村的機會與限制。三個案例的經營......</p></div></a>
-		<a href="#"><div class="cooperation-list"><p><img src="image/index/cooperation/cooperation-03.jpg" alt=""></p><h3 class="cooperation-title sp-p">都市小農合作計畫</h3><p class="cooperation-p">本文將以三個不同類型的「小農社群經濟」為例，分析其運作模式和實踐經驗，探究「合作市場經濟」在今天台灣農村的機會與限制。三個案例的經營......</p></div></a>
-		<a href="#"><div class="cooperation-list"><p><img src="image/index/cooperation/cooperation-03.jpg" alt=""></p><h3 class="cooperation-title sp-p">都市小農合作計畫</h3><p class="cooperation-p">本文將以三個不同類型的「小農社群經濟」為例，分析其運作模式和實踐經驗，探究「合作市場經濟」在今天台灣農村的機會與限制。三個案例的經營......</p></div></a>	
+			<h1 class="title sp-p">合作案例</h1>
+		</div>
+		<a href="page.html">
+			<div class="cooperation-list">
+				<p><img src="image/index/cooperation/cooperation-03.jpg" alt=""></p>
+				<h3 class="cooperation-title sp-p">都市小農合作計畫</h3>
+				<p class="cooperation-p">本文將以三個不同類型的「小農社群經濟」為例，分析其運作模式和實踐經驗，探究「合作市場經濟」在今天台灣農村的機會與限制。三個案例的經營......</p>
+			</div>
+		</a>
+		<a href="page.html">
+			<div class="cooperation-list">
+				<p><img src="image/index/cooperation/cooperation-03.jpg" alt=""></p>
+				<h3 class="cooperation-title sp-p">都市小農合作計畫</h3>
+				<p class="cooperation-p">本文將以三個不同類型的「小農社群經濟」為例，分析其運作模式和實踐經驗，探究「合作市場經濟」在今天台灣農村的機會與限制。三個案例的經營......</p>
+			</div>
+		</a>
+		<a href="page.html">
+			<div class="cooperation-list">
+				<p><img src="image/index/cooperation/cooperation-03.jpg" alt=""></p>
+				<h3 class="cooperation-title sp-p">都市小農合作計畫</h3>
+				<p class="cooperation-p">本文將以三個不同類型的「小農社群經濟」為例，分析其運作模式和實踐經驗，探究「合作市場經濟」在今天台灣農村的機會與限制。三個案例的經營......</p>
+			</div>
+		</a>
+		<a href="#">
+			<div class="cooperation-list">
+				<p><img src="image/index/cooperation/cooperation-03.jpg" alt=""></p>
+				<h3 class="cooperation-title sp-p">都市小農合作計畫</h3>
+				<p class="cooperation-p">本文將以三個不同類型的「小農社群經濟」為例，分析其運作模式和實踐經驗，探究「合作市場經濟」在今天台灣農村的機會與限制。三個案例的經營......</p>
+			</div>
+		</a>
 		<div class="clear"></div>
 	</section>
 
@@ -196,20 +325,21 @@
 			<div class="ssl-brower">
 				<p>建議使用Chrome、Firefox、Safari最新版本瀏覽</p>
 				<p>全球先進SSL 256bit傳輸加密機制</p>
-				<p>Copyright © 2020 RE GREEN All right reserved.</p>
+				<p>Copyright © 2024 RE GREEN All right reserved.</p>
 			</div>
 		</div>
 	</div>
 
-<!-- jQuery --> 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<!-- Banner輪播 --> 
-<script src="js/banner-owl.carousel.js"></script>
-<script src="js/banner-highlight.js"></script>
-<script src="js/banner-app.js"></script>
-<script src="js/banner-program.js"></script>
-<!-- Nav script -->
-<script src="js/nav.jquery.min.js"></script> 
-<script src="js/nav-program.js"></script> 
+	<!-- jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<!-- Banner輪播 -->
+	<script src="js/banner-owl.carousel.js"></script>
+	<script src="js/banner-highlight.js"></script>
+	<script src="js/banner-app.js"></script>
+	<script src="js/banner-program.js"></script>
+	<!-- Nav script -->
+	<script src="js/nav.jquery.min.js"></script>
+	<script src="js/nav-program.js"></script>
 </body>
+
 </html>
