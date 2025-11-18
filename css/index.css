@@ -104,7 +104,7 @@ div#output {
 .whatido-block::after {
     position: absolute;
     content: "WHAT I DO ?";
-    color: rgba(255, 255, 255, 10%);
+    color: rgba(255, 255, 255, 8%);
     font-size: 24rem;
     font-family: "ElaineSans";
     top: 50%;
