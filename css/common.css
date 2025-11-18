@@ -377,11 +377,15 @@
    }
 
    /* ===== Header ===== */
+   .navbar-collapse {
+    z-index: 9;
+}
    .navbar {
        background: transparent;
        padding: 0rem;
        padding-top: 4rem;
        align-items: center;
+       background: #fff;
    }
 
    .navbar-light .navbar-toggler-icon {
@@ -931,13 +935,14 @@
 
        .navbar-nav {
            border-top: 1px solid #E2E2E2;
-           margin: 2rem 0 0;
+           /* margin: 2rem 0 0; */
        }
 
        li.nav-item {
            margin: 1rem 0;
            text-align: center;
            padding: 1rem 0;
+           border-bottom: 1px solid #d0d0d0;
        }
 
        /* ===== SP =====*/
