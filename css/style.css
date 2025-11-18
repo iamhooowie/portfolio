@@ -27,32 +27,20 @@
     border-radius: 99rem;
 }
 
-.about-item p {
-    color: #fff;
-}
-
 .about-link {
     margin: 6rem 0 0 0;
-}
-
-.about-link a {
-    font-size: 2rem;
-    color: #ffffff;
-    margin-right: 5rem;
 }
 
 .about-link a i {
     padding-right: 1rem;
 }
 
-
-
 .content-title.about-img img {
     border-radius: 99rem;
 }
 
 .inner-header-block {
-    background: var(--one-color);
+    background: var(--three-color);
     background-repeat: no-repeat;
     background-size: contain;
     height: 800px;
@@ -95,7 +83,6 @@
     display: flex;
     justify-content: space-between;
 }
-
 
 .content-content {
     width: 1050px;
@@ -200,6 +187,11 @@
     line-height: 3.6rem;
 }
 
+.about-link a {
+    font-size: 1.6rem;
+    padding-right: 3rem;
+}
+
 /* ===== Jerusalem-furniture ===== */
 
 /*================================================== RWD ==================================================*/
@@ -208,7 +200,7 @@
 
     /*==================================================================================================== 1450 px*/
     .vh100 {
-        height: calc(100vh - 164px);
+        height: 100vh;
     }
 
     .about-link {
@@ -245,8 +237,8 @@
         height: auto;
     }
 
-    .about-section {
-        margin: 6rem 0;
+  .about-section {
+        padding: 10rem 0;
     }
 
     .about-group {

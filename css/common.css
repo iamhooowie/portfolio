@@ -14,13 +14,6 @@
    } */
 
    @font-face {
-       font-family: 'ElaineSans-Black';
-       src: url("../font/ElaineSans-Black.woff") format("woff"),
-           url('../fonts/ElaineSans-Black.ttf') format("truetype"),
-           url('../fonts/ElaineSans-Black.eot') format("embedded-opentype");
-   }
-
-   @font-face {
        font-family: 'roboto';
        src: url('../fonts/roboto.woff') format("woff"),
            url('../fonts/roboto.ttf') format("truetype"),
@@ -29,18 +22,29 @@
 
    html,
    body {
+       background: #F7F7F7;
        font-size: 10px;
        font-family: "roboto", "微軟正黑體";
        font-weight: 600;
+
    }
 
    a {
-       color: #333333;
+       color: #222222;
    }
 
    a:hover {
-       color: #333333;
+       color: #222222;
        text-decoration: none;
+   }
+
+   h1,
+   h2,
+   h3,
+   h4,
+   p,
+   li {
+       color: #222222;
    }
 
    h1 {
@@ -97,8 +101,6 @@
    ol,
    li {
        padding: 0;
-       margin-bottom: 2rem;
-       margin-left: 1rem;
    }
 
    li.none {
@@ -174,8 +176,8 @@
    /* ===== 色彩 ===== */
    :root {
        --one-color: #004AF9;
-       --two-color: #A8FC03;
-       --three-color: #333333;
+       --two-color: #EB4F3F;
+       --three-color: #222222;
        --four-color: #ffffff;
        --five-color: ;
        --font-color: ;
@@ -195,7 +197,6 @@
        font-size: 3.2rem;
        text-transform: uppercase;
        font-weight: bold;
-       color: #fff;
    }
 
    /* ===== 按鈕 ===== */
@@ -379,7 +380,7 @@
    .navbar {
        background: transparent;
        padding: 0rem;
-       padding-top: 5rem;
+       padding-top: 4rem;
        align-items: center;
    }
 
@@ -387,15 +388,27 @@
        margin-bottom: 0.5rem;
    }
 
+   .navbar-brand {
+       padding-top: 0;
+       padding-bottom: 0;
+       margin-right: 0;
+   }
+
    a.navbar-brand div {
-       font-size: 3.2rem;
+       font-size: 2.6rem;
        font-weight: bold;
-       color: #fff;
+       color: #222222;
        transition: 0.3s ease;
    }
 
    a.navbar-brand div:hover {
        transform: scale(1.05);
+   }
+
+   .navbar-brand span {
+       color: var(--two-color);
+       font-size: 2.6rem;
+       padding-right: 1rem;
    }
 
    li.nav-item {
@@ -418,18 +431,10 @@
        color: #ffffff;
    }
 
-   a.nav-link {
-       color: #fff;
-   }
-
-   .navbar-light .navbar-nav .nav-link {
-       color: #ffffff;
-   }
-
    /* ===== Footer ===== */
 
    .footer-block {
-       background: var(--two-color);
+       background: var(--three-color);
        line-height: 6rem;
    }
 
@@ -440,6 +445,11 @@
 
    .footer-item {
        font-size: 1.6rem;
+       color: #fff;
+   }
+
+   .footer-item a {
+       color: #fff;
    }
 
    /* ===== Modal ===== */
@@ -510,6 +520,7 @@
    #button.show {
        opacity: 1;
        visibility: visible;
+       color: #fff;
    }
 
    #button.show i,
@@ -676,6 +687,14 @@
        margin-bottom: 3rem;
    }
 
+  .inner-logo{
+    color: #fff!important;
+   }
+
+   .inner-nav li a{
+    color: #fff!important;
+   }
+
    /* ===== SP ===== */
    .sp-red {
        background: #EE0412;
@@ -806,20 +825,20 @@
 
    .sp-21 {
        font-size: 6rem;
-       color: var(--one-color);
-       font-family: "ElaineSans-Black";
+       color: var(--two-color);
        padding-right: 0.5rem;
    }
 
    .sp-22 {
-       font-size: 3.2rem!important;
-       color: var(--one-color);
+       font-size: 3.2rem !important;
+       color: var(--two-color);
+       opacity: 0.8;
    }
 
-   .sp-23{
-    font-size: 2.6rem;
-    padding-right: 0.5rem;
-    display: inline-block;
+   .sp-23 {
+       font-size: 2.6rem;
+       padding-right: 0.5rem;
+       display: inline-block;
    }
 
    /*================================================== RWD ==================================================*/
@@ -878,10 +897,6 @@
 
        .displaynone-1280 {
            display: none;
-       }
-
-       .sp-8 {
-           margin: 2.5rem 0 4rem;
        }
    }
 
@@ -1092,9 +1107,9 @@
        }
 
        /* ===== Distant =====*/
-       .mb-8 {
-           margin-bottom: 4rem;
-       }
+       .sp-8 {
+        margin: 0 0 1rem 0;
+    }
 
        .mb-10 {
            margin-bottom: 4rem;

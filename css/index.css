@@ -1,27 +1,61 @@
+.head-block {
+    display: block;
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    border-bottom: 1px solid #ddd;
+}
+
+.head-block .container-l {
+    position: relative;
+    height: 100%;
+    /*加這個 */
+    display: flex;
+    /*加這個 */
+    flex-direction: column;
+    /*加這個 */
+    justify-content: center;
+    /*加這個，讓 banner-block 垂直置中 */
+}
+
+.header-block {
+    position: absolute;
+    /*加這個 */
+    top: 0;
+    /*加這個 */
+    left: 0;
+    /*加這個 */
+    width: 100%;
+    /*加這個 */
+}
+
+.banner-block {
+    position: relative;
+    overflow: hidden;
+}
+
 .index-bk {
-    background: var(--one-color);
+    background: url(../images/grid.png);
+    background-repeat: repeat-y;
+    background-position: center;
 }
 
 .me {
-    transform: rotate(-2.5deg);
-    width: 750px;
-    background: var(--two-color);
-    display: block;
-    padding: 1rem 2rem;
-    box-shadow: #000000 1rem 1rem 1px;
+    display: inline-block;
 }
 
 h1.cursor {
     font-size: 6rem;
     font-weight: bold;
     text-transform: uppercase;
-    font-family: "ElaineSans-Black";
-    color: #000;
-    letter-spacing: 2px;
+    color: #222;
 }
 
 div#output {
-    height: 7.2rem;
+    position: relative;
+    padding: 1rem 2.25rem 1rem 2rem;
+    min-height: 92px;
+    display: inline-block;
 }
 
 @keyframes blink {
@@ -42,6 +76,128 @@ div#output {
     }
 }
 
+.selection-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 2px solid #000;
+    pointer-events: none;
+}
+
+/* 虛線外框 */
+.selection-box::before {
+    content: '';
+    position: absolute;
+    top: -8px;
+    left: -8px;
+    right: -8px;
+    bottom: -8px;
+    padding: 1rem;
+}
+
+/* 控制點基礎樣式 */
+.handle {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border: 2px solid #000;
+    box-sizing: border-box;
+    padding: auto;
+}
+
+/* 角落控制點 */
+.handle.top-left {
+    top: -6px;
+    left: -6px;
+}
+
+.handle.top-right {
+    top: -6px;
+    right: -6px;
+}
+
+.handle.bottom-left {
+    bottom: -6px;
+    left: -6px;
+}
+
+.handle.bottom-right {
+    bottom: -6px;
+    right: -6px;
+}
+
+/* 邊緣中點控制點 */
+.handle.top-center {
+    top: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.handle.bottom-center {
+    bottom: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.handle.left-center {
+    left: -6px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.handle.right-center {
+    right: -6px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.top-design {
+    position: relative;
+}
+
+.fontbk-1,
+.fontbk-2,
+.fontbk-3,
+.fontbk-4,
+.fontbk-5 {
+    width: 10%;
+}
+
+.fontbk-1 {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.fontbk-2 {
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.fontbk-3 {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.fontbk-4 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.fontbk-5 {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
 /* ===== Banner ===== */
 .banner-block {
     position: relative;
@@ -49,67 +205,51 @@ div#output {
 }
 
 .banner-dename {
-    margin-top: 20rem;
-    color: #fff;
     position: relative;
 }
 
 .banner-dename::after {
     content: "";
     width: 10rem;
-    height: 1px;
-    background: #ffffff;
+    height: 2px;
+    background: #333333;
     display: block;
     position: absolute;
-    left: 25.5rem;
-    bottom: 7px;
-}
-
-.poundsign img {
-    height: 10rem;
-    width: auto;
-    margin-right: 2rem;
+    left: 26rem;
+    bottom: 11px;
 }
 
 .iam {
-    font-family: "ElaineSans-Black";
     font-size: 12rem;
-    color: #fff;
+    display: inline-block;
+    margin: 3rem 0 2rem;
 }
 
 .banner-about {
     margin-top: 3.5rem;
     width: 85rem;
-    color: #fff;
 }
 
 .banner-about h4 {
-    line-height: 4rem;
+    line-height: 3.6rem;
     font-weight: 400;
 }
 
 .whatido-block {
+    padding: 8rem 0;
+}
+
+.whatido-block h1 {
+    padding-bottom: 3rem;
+}
+
+.whatido-group {
     position: relative;
     display: flex;
     justify-content: space-between;
     font-size: 2.6rem;
     font-weight: bold;
-    color: #ffffff;
-    margin: 11rem 0 0;
-    padding: 13rem 0;
-    border-top: 1px solid #ffffff;
-    border-bottom: 1px solid #ffffff;
-}
-
-.whatido-block::after {
-    position: absolute;
-    content: "WHAT I DO ?";
-    color: rgba(255, 255, 255, 8%);
-    font-size: 24rem;
-    font-family: "ElaineSans";
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: -10;
+    color: #222222;
 }
 
 /* ===== Index Work Block ===== */
@@ -130,8 +270,8 @@ div#output {
     margin-bottom: 9rem;
 }
 
-.index-work-item {
-    border-bottom: 1px solid #fff;
+.index-work-item img {
+    border: 1px solid #d0d0d0;
 }
 
 .index-work-item a {
@@ -145,45 +285,40 @@ div#output {
 }
 
 .index-work-item p {
-    color: #ffffff;
     margin-bottom: 1.5rem;
 }
 
 .index-work-title {
     font-size: 2.4rem;
     font-weight: bold;
-    color: #ffffff;
     margin: 1.5rem 0 0.5rem;
 }
 
 .work-tag-bk {
     padding: 0 1rem;
     position: relative;
-    background: var(--two-color);
-    box-shadow: #000000 0.5rem 0.5rem 1px;
-    color: #000;
+    color: #222;
+    border: 2px solid #222;
 }
 
 .work-tag-bk::after {
     position: relative;
     background: var(--one-color);
-
 }
 
 .circle-text {
     position: absolute;
     right: -8rem;
-    top: 40%;
-    background-color: var(--two-color);
+    bottom: -25%;
+    background-color: #22222230;
     border-radius: 99rem;
-    padding: 4rem;
+    padding: 3rem;
     width: 47.5rem;
     height: 47.5rem;
-    transform: translateY(-50%);
 }
 
 :root {
-    --rotationDuration: 20s;
+    --rotationDuration: 30s;
     --hoverDuration: 0.3s;
 }
 
@@ -227,13 +362,13 @@ div#output {
 
 @keyframes rotate {
     to {
-        transform: rotate(360deg);
+        transform: rotate(-360deg);
     }
 }
 
 textPath {
-    font-size: 2.5rem;
-    letter-spacing: 6px;
+    font-size: 1.2rem;
+    letter-spacing: 8.5px;
 }
 
 .index-work-item .work-tag {
@@ -244,57 +379,24 @@ textPath {
     margin-bottom: 2.5rem;
 }
 
-/*================================================== RWD ==================================================*/
-@media(max-width:1650px) {
-
-    /*==================================================================================================== 1650px*/
-    /* ===== Banner ===== */
-    .whatido-block::after {
-        font-size: 20rem;
-    }
+.index-work-block h1 {
+    margin-bottom: 3rem;
 }
 
+/*================================================== RWD ==================================================*/
 @media(max-width:1500px) {
 
     /*==================================================================================================== 1500px*/
     /* ===== Banner ===== */
-    .whatido-block::after {
-        font-size: 15rem;
-        font-family: "ElaineSans-Black";
-    }
-
-    .circle-text {
-        top: 25%;
-        padding: 3rem;
-        width: 40rem;
-        height: 40rem;
-    }
-
-    textPath {
-        font-size: 2rem;
-        letter-spacing: 9px;
-        font-family: "roboto";
-    }
 }
 
 @media(max-width:1280px) {
 
     /*==================================================================================================== 1280px*/
     /* ===== Banner ===== */
-    .me {
-        width: 630px;
-    }
-
-    div#output {
-        height: 6.2rem;
-    }
 
     h1.cursor {
         font-size: 5rem;
-    }
-
-    .poundsign img {
-        height: 7rem;
     }
 
     .banner-about h4 {
@@ -306,14 +408,14 @@ textPath {
         padding: 2rem;
         width: 32.5rem;
         height: 32.5rem;
+        transform: translateY(-50%);
+        bottom: auto;
+        top: 50%;
+        right: -16rem;
     }
 
-    .whatido-block::after {
-        font-size: 14rem;
-    }
-
-    .whatido-block {
-        font-size: 2rem;
+    div#output {
+        min-height: 80px;
     }
 
     /* ===== Index Work Block ===== */
@@ -323,23 +425,32 @@ textPath {
         margin: 0.5rem 0 1.5rem;
         font-size: 1.8rem;
     }
+
+    .whatido-block {
+        font-size: 2rem;
+    }
+
+    .whatido-group {
+        flex-wrap: wrap;
+    }
+
+    h3.whatido-item {
+    width: 50%;
+    margin: 0 0 4rem 0;
+}
 }
 
 @media(max-width:1200px) {
 
     /*==================================================================================================== 1200 px*/
     /* ===== Banner ===== */
-    .banner-dename {
-        margin-top: 12rem;
-    }
-
     .iam {
         font-size: 8rem;
     }
 
-    .circle-text {
-        width: 25rem;
-        height: 25rem;
+    .navbar-light .navbar-toggler-icon {
+        filter: invert(1);
+        opacity: 1;
     }
 }
 
@@ -347,24 +458,12 @@ textPath {
 
     /*==================================================================================================== 1080 px*/
     /* ===== Banner ===== */
-    .circle-text {
-        right: -2rem;
-        top: 17%;
-        padding: 2rem;
-        width: 20rem;
-        height: 20rem;
-    }
-
-    .me {
-        width: 530px;
+    h1.cursor {
+        font-size: 4rem;
     }
 
     div#output {
-        height: 5.2rem;
-    }
-
-    h1.cursor {
-        font-size: 4rem;
+        min-height: 68px;
     }
 
     .whatido-block {
@@ -372,24 +471,12 @@ textPath {
         margin: 6rem 0 0;
         padding: 8rem 0;
     }
-
-    .whatido-block::after {
-        font-size: 13rem;
-    }
 }
 
 @media(max-width:992px) {
 
     /*==================================================================================================== 992 px*/
     /* ===== Banner ===== */
-    .whatido-block::after {
-        font-size: 10rem;
-    }
-
-    .poundsign img {
-        width: auto !important;
-    }
-
     .banner-about {
         margin-top: 3.5rem;
         width: 100%;
@@ -417,6 +504,13 @@ textPath {
     .index-work-item {
         margin-bottom: 6rem;
     }
+
+    .circle-text {
+        background-color: #22222210;
+
+        width: 30rem;
+        height: 30rem;
+    }
 }
 
 @media(max-width:768px) {
@@ -427,17 +521,14 @@ textPath {
     }
 
     /* ===== Banner ===== */
-    .me {
-        width: 410px;
-        padding: 1rem 2rem 0.5rem;
-    }
 
-    div#output {
-        height: 4.2rem;
-    }
 
     h1.cursor {
         font-size: 3rem;
+    }
+
+    div#output {
+        min-height: 56px;
     }
 
     .banner-dename::after {
@@ -463,39 +554,17 @@ textPath {
 
     /*==================================================================================================== 576 px*/
     /* ===== Banner ===== */
-
-    .poundsign img {
-        height: 5rem;
-        margin-right: 1.25rem;
-    }
-
-    .iam {
-        font-size: 6rem;
-    }
-
-    .me {
-        width: 350px;
+    h1.cursor {
+        font-size: 2.4rem;
     }
 
     div#output {
-        height: 3.6rem;
-    }
-
-    h1.cursor {
-        font-size: 2.4rem;
+        min-height: 48.8px;
     }
 
     .banner-about {
         margin-top: 2.5rem;
         width: 100%;
-    }
-
-    .circle-text {
-        right: -2rem;
-        top: 14%;
-        padding: 1rem;
-        width: 15rem;
-        height: 15rem;
     }
 
 
@@ -505,8 +574,14 @@ textPath {
         padding: 4rem 0;
     }
 
-    .whatido-block::after {
-        font-size: 8rem;
+    .circle-text {
+        background-color: #22222210;
+        width: 20rem;
+        height: 20rem;
+        top: auto;
+        bottom: 0;
+        right: 3%;
+        padding: 1rem;
     }
 
     .whatido-item {
@@ -544,22 +619,37 @@ textPath {
     .index-work-title {
         font-size: 2rem;
     }
+
+    .circle-text {
+        background-color: #22222210;
+        width: 20rem;
+        height: 20rem;
+        top: auto;
+        bottom: -10%;
+        right: -10%;
+        padding: 1rem;
+        z-index: 2;
+    }
+
+    .iam {
+        font-size: 6rem;
+    }
 }
 
 @media(max-width:380px) {
 
     /*==================================================================================================== 380 px*/
     /* ===== Banner ===== */
-    .me {
-        width: 290px;
-        padding: 1rem 1rem 0.5rem;
-    }
-
-    div#output {
-        height: 3.2rem;
-    }
 
     h1.cursor {
         font-size: 2rem;
+    }
+
+    div#output {
+        min-height: 44px;
+    }
+
+    .sp-8 {
+        margin: 0;
     }
 }
