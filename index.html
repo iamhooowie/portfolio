@@ -86,10 +86,15 @@
 						<a class="navbar-brand" href="index.html">
 							<div class=""><span class="">HOWIE</span>C</div>
 						</a>
-						<button class="navbar-toggler" type="button" data-toggle="collapse"
+						<!-- <button class="navbar-toggler" type="button" data-toggle="collapse"
 							data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
 							aria-expanded="false" aria-label="Toggle navigation">
 							<span class="navbar-toggler-icon"></span>
+						</button> -->
+						<button class="navbar-toggler" type="button" data-toggle="collapse"
+							data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+							aria-expanded="false" aria-label="Toggle navigation">
+							<span></span>
 						</button>
 
 						<div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -330,6 +335,35 @@
 	<script src="js/typewriter.js"></script>
 	<!-- go to top -->
 	<script src="js/go-to-top.js"></script>
+	<script>
+		// 處理選單開關與背景滾動
+		document.addEventListener('DOMContentLoaded', function () {
+			const navbarToggler = document.querySelector('.navbar-toggler');
+			const navbarCollapse = document.querySelector('.navbar-collapse');
+			const body = document.body;
+
+			if (navbarToggler) {
+				navbarToggler.addEventListener('click', function () {
+					// 切換 body 的 menu-open class 來控制滾動
+					if (navbarCollapse.classList.contains('show') ||
+						navbarCollapse.classList.contains('collapsing')) {
+						body.classList.remove('menu-open');
+					} else {
+						body.classList.add('menu-open');
+					}
+				});
+			}
+
+			// 點擊選單項目後關閉選單
+			const navLinks = document.querySelectorAll('.nav-link');
+			navLinks.forEach(link => {
+				link.addEventListener('click', function () {
+					navbarCollapse.classList.remove('show');
+					body.classList.remove('menu-open');
+				});
+			});
+		});
+	</script>
 </body>
 
 </html>

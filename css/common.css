@@ -378,14 +378,14 @@
 
    /* ===== Header ===== */
    .navbar-collapse {
-    z-index: 9;
-}
+       z-index: 9;
+   }
+
    .navbar {
        background: transparent;
        padding: 0rem;
        padding-top: 4rem;
        align-items: center;
-       background: #fff;
    }
 
    .navbar-light .navbar-toggler-icon {
@@ -691,12 +691,12 @@
        margin-bottom: 3rem;
    }
 
-  .inner-logo{
-    color: #fff!important;
+   .inner-logo {
+       color: #fff !important;
    }
 
-   .inner-nav li a{
-    color: #fff!important;
+   .inner-nav li a {
+       color: #fff !important;
    }
 
    /* ===== SP ===== */
@@ -928,9 +928,6 @@
 
        .navbar-light .navbar-toggler {
            font-size: 2.4rem;
-           border: none;
-           filter: invert(1);
-           opacity: 1;
        }
 
        .navbar-nav {
@@ -939,9 +936,8 @@
        }
 
        li.nav-item {
-           margin: 1rem 0;
            text-align: center;
-           padding: 1rem 0;
+           padding: 1.5rem 0;
            border-bottom: 1px solid #d0d0d0;
        }
 
@@ -963,6 +959,134 @@
            margin: 2.5rem 0 2.75rem;
        }
 
+       /* test */
+       .navbar-toggler {
+           padding: .25rem .75rem;
+           position: relative;
+           z-index: 1001;
+           border: none;
+       }
+
+       .navbar-light .navbar-toggler {
+           font-size: 2.4rem;
+           border: none;
+       }
+
+       /* 自訂漢堡選單容器 */
+       .navbar-toggler {
+           width: 40px;
+           height: 40px;
+           display: flex;
+           flex-direction: column;
+           justify-content: center;
+           align-items: center;
+           cursor: pointer;
+       }
+
+       /* 移除預設的 toggler icon，用自訂的 */
+       .navbar-toggler-icon {
+           display: none;
+       }
+
+       /* 建立三條線的容器 */
+       .navbar-toggler::before,
+       .navbar-toggler::after {
+           content: '';
+           display: block;
+           width: 28px;
+           height: 3px;
+           background: #222;
+           transition: all 0.3s ease;
+           position: absolute;
+       }
+
+       .navbar-toggler::before {
+           transform: translateY(-8px);
+       }
+
+       .navbar-toggler::after {
+           transform: translateY(8px);
+       }
+
+       /* 中間的線 - 用 span 來做 */
+       .navbar-toggler span {
+           display: block;
+           width: 28px;
+           height: 3px;
+           background: #222;
+           transition: all 0.3s ease;
+       }
+
+       /* 當選單展開時，變成 X */
+       .navbar-toggler[aria-expanded="true"]::before {
+           transform: rotate(45deg);
+       }
+
+       .navbar-toggler[aria-expanded="true"]::after {
+           transform: rotate(-45deg);
+       }
+
+       .navbar-toggler[aria-expanded="true"] span {
+           opacity: 0;
+           transform: scale(0);
+       }
+
+       /* 選單展開時的全白背景 */
+       .navbar-collapse {
+           position: fixed;
+           top: 0;
+           left: 0;
+           width: 100%;
+           height: 100vh;
+           background: #ffffff;
+           z-index: 1000;
+           display: flex !important;
+           flex-direction: column;
+           justify-content: center;
+           align-items: center;
+           opacity: 0;
+           visibility: hidden;
+           transition: opacity 0.15s ease, visibility 0.15s ease;
+       }
+
+       .navbar-collapse.show {
+           opacity: 1;
+           visibility: visible;
+       }
+
+       /* 選單項目樣式 */
+       .navbar-nav {
+           border-top: none;
+           width: 100%;
+           text-align: center;
+           padding: 0 2rem;
+       }
+
+       li.nav-item {
+           text-align: center;
+           padding: 2rem 0;
+           border-bottom: 1px solid #e0e0e0;
+           font-size: 2rem;
+       }
+
+       li.nav-item:first-child {
+           border-top: 1px solid #e0e0e0;
+       }
+
+       li.nav-item a {
+           color: #222 !important;
+           font-size: 2rem;
+           transition: color 0.3s ease;
+       }
+
+       li.nav-item a:hover {
+           color: var(--two-color) !important;
+       }
+
+       /* 防止背景滾動 */
+       body.menu-open {
+           overflow: hidden;
+       }
    }
 
    @media(max-width:992px) {
@@ -1113,8 +1237,8 @@
 
        /* ===== Distant =====*/
        .sp-8 {
-        margin: 0 0 1rem 0;
-    }
+           margin: 0 0 1rem 0;
+       }
 
        .mb-10 {
            margin-bottom: 4rem;
