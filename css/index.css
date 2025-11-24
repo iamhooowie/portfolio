@@ -56,7 +56,8 @@ div#output {
     position: relative;
     padding: 1rem 2.25rem 1rem 2rem;
     min-height: 92px;
-    display: inline-block;
+    display: inline;
+    width: max-content;
 }
 
 @keyframes blink {
@@ -296,10 +297,13 @@ h4.whatido-item {
 }
 
 .work-tag-bk {
-    padding: 1rem;
+    padding: 0.25rem 1rem;
     position: relative;
     color: var(--font-color);
     border: 1px solid var(--border-color);
+    display: inline-block;
+    margin: 0 1rem 1rem 0;
+    font-size: 1.4rem;
 }
 
 .work-tag-bk::after {
@@ -374,10 +378,6 @@ textPath {
 
 .index-work-item .work-tag {
     margin-bottom: 0;
-}
-
-.index-work-item span.work-tag-bk {
-    margin-bottom: 2.5rem;
 }
 
 /*================================================== RWD ==================================================*/
