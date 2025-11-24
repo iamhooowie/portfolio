@@ -1,4 +1,10 @@
    /* ===== 通用 ===== */
+   .grid-bk {
+       background: url(../images/grid.png);
+       background-repeat: repeat-y;
+       background-position: center;
+       background-size: contain;
+   }
 
    @font-face {
        font-family: 'roboto';
@@ -1218,9 +1224,9 @@
            margin: 0 !important;
        }
 
-       .about-sp-1{
+       .about-sp-1 {
 
-        height: calc(100vh - 60px);
+           height: calc(100vh - 60px);
        }
 
        .sp-6 {
