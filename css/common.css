@@ -1,17 +1,4 @@
    /* ===== 通用 ===== */
-   /* #custom-cursor {
-       width: 42px;
-       height: 42px;
-       background-image: url(../images/cursor.png);
-       background-size: contain;
-       background-repeat: no-repeat;
-       background-position: center;
-       background-color: transparent;
-       position: fixed;
-       transform: translate(-50%, -50%);
-       pointer-events: none;
-       z-index: 9999;
-   } */
 
    @font-face {
        font-family: 'roboto';
@@ -25,16 +12,15 @@
        background: #F7F7F7;
        font-size: 10px;
        font-family: "roboto", "微軟正黑體";
-       font-weight: 600;
-
+       color: var(--font-color);
    }
 
    a {
-       color: #222222;
+       color: var(--font-color);
    }
 
    a:hover {
-       color: #222222;
+       color: var(--font-color);
        text-decoration: none;
    }
 
@@ -42,9 +28,10 @@
    h2,
    h3,
    h4,
+   h5,
    p,
    li {
-       color: #222222;
+       color: #4f4f4f;
    }
 
    h1 {
@@ -64,13 +51,18 @@
        font-weight: 400;
    }
 
+   h5 {
+       font-size: 1.6rem;
+       font-weight: bold;
+   }
+
    p,
    li {
-       font-size: 1.8rem;
-       line-height: 3.6rem;
+       font-size: 1.6rem;
+       line-height: 2.8rem;
        margin: 0;
        padding: 0;
-       font-weight: 400;
+       color: #777777;
    }
 
    li span {
@@ -97,19 +89,9 @@
        margin: 0;
    }
 
-   ul,
-   ol,
-   li {
-       padding: 0;
-   }
-
    li.none {
        list-style-type: none;
        margin-left: -3rem;
-   }
-
-   ol {
-       margin-left: 3rem;
    }
 
    img {
@@ -129,13 +111,13 @@
    }
 
    .container-s {
-       width: 960px;
-       max-width: 960px;
+       width: 900px;
+       max-width: 900px;
        margin: 0 auto;
    }
 
    .container-xs {
-       width: 800px;
+       width: 750px;
        max-width: 800px;
        margin: 0 auto;
    }
@@ -175,21 +157,29 @@
 
    /* ===== 色彩 ===== */
    :root {
-       --one-color: #004AF9;
-       --two-color: #EB4F3F;
-       --three-color: #222222;
-       --four-color: #ffffff;
-       --five-color: ;
-       --font-color: ;
+       --one-color: #EB4F3F;
+       --two-color: #222222;
+       --three-color: #666666;
+       --four-color: #999999;
+       --font-color: #4f4f4f;
+       --border-color: #d0d0d0;
+       --white-color: #ffffff;
+       --green-color: #20C41A;
+       --light-green-color: #ECFBE1;
+       --light-red-color: #FCE2DF;
        --wechat-color: #47B129;
    }
 
    .color-red {
-       color: #C3002F;
+       color: var(--one-color);
    }
 
    .color-green {
-       color: #C3002F;
+       color: var(--green-color);
+   }
+
+   .color-white {
+       color: var(--white-color);
    }
 
    /* ===== 文字 ===== */
@@ -410,7 +400,7 @@
    }
 
    .navbar-brand span {
-       color: var(--two-color);
+       color: var(--one-color);
        font-size: 2.6rem;
        padding-right: 1rem;
    }
@@ -426,7 +416,7 @@
 
    li.nav-item a:hover {
        transform: scale(1.2) !important;
-       color: var(--two-color) !important;
+       color: var(--one-color) !important;
    }
 
    .navbar-light .navbar-nav .nav-link:focus,
@@ -438,7 +428,7 @@
    /* ===== Footer ===== */
 
    .footer-block {
-       background: var(--three-color);
+       background: var(--two-color);
        line-height: 6rem;
    }
 
@@ -490,7 +480,7 @@
    /* ===== 浮動Top ===== */
    #button {
        display: inline-block;
-       background-color: var(--two-color);
+       background-color: var(--one-color);
        width: 70px;
        height: 70px;
        border-radius: 99px;
@@ -647,56 +637,21 @@
        }
    }
 
-   .separate-2,
-   .separate-3,
-   .separate-4 {
-       display: flex;
-       justify-content: space-between;
+
+
+   /* 相簿 */
+   .albuminn-item {
+       margin-bottom: 1rem;
    }
 
-   .separate-2 .separate-item {
-       width: 47.5%;
+   .albuminn-item a {
+       font-size: 1.6rem;
+       color: #777777;
    }
 
-   .separate-3 .separate-item {
-       width: 32%;
-   }
-
-   .separate-4 .separate-item {
-       width: 48.5%;
-   }
-
-   .separate-2:last-child,
-   .separate-3:last-child {
-       margin-bottom: 0;
-   }
-
-   .reflection-block {
-       padding: 10rem 0;
-       color: #ffffff;
-   }
-
-   .work-tag {
-       font-size: 2rem;
-       color: #fff;
-       margin-bottom: 3rem;
-   }
-
-   .work-tag span {
+   .albuminn-item span {
+       padding: 0.5rem 0 0 0;
        display: inline-block;
-       margin-right: 15px;
-   }
-
-   .work-tag~img {
-       margin-bottom: 3rem;
-   }
-
-   .inner-logo {
-       color: #fff !important;
-   }
-
-   .inner-nav li a {
-       color: #fff !important;
    }
 
    /* ===== SP ===== */
@@ -725,17 +680,10 @@
    }
 
    .sp-1 {
-       color: #ffffff;
-       margin: 0rem 0 0 5rem;
+       margin: 0 0 1rem 0 !important;
    }
 
-   .sp-2 {
-       width: 2rem;
-       height: 2rem;
-       display: inline-block;
-       margin-right: 1rem;
-       border-radius: 99px;
-   }
+   .sp-2 {}
 
    .sp-3 {
        text-align: right;
@@ -942,11 +890,6 @@
        }
 
        /* ===== SP =====*/
-       .sp-1 {
-           color: #ffffff;
-           margin: 4rem 0 0 0;
-       }
-
        .sp-3 {
            text-align: left;
        }
@@ -1111,9 +1054,6 @@
        }
 
        /* ===== Footer ===== */
-       .reflection-block {
-           padding: 6rem 0;
-       }
 
        /* ===== Distant =====*/
        .mb-3 {
@@ -1148,30 +1088,9 @@
 
        /*==================================================================================================== 768 px*/
        /* ===== 通用 =====*/
+
        h1 {
            font-size: 3.2rem;
-       }
-
-       h2 {
-           font-size: 2.6rem;
-       }
-
-       h3 {
-           font-size: 2rem;
-       }
-
-       h4 {
-           font-size: 1.6rem;
-       }
-
-       h5 {
-           font-size: 1.4rem;
-       }
-
-       p,
-       li {
-           font-size: 1.6rem;
-           line-height: 33px;
        }
 
        li span {
@@ -1189,7 +1108,6 @@
        /* ===== Content =====*/
        .work-tag {
            margin-bottom: 0rem;
-           padding-bottom: 2rem;
        }
 
        /* ===== SP =====*/
@@ -1216,6 +1134,31 @@
 
        /*==================================================================================================== 576 px*/
        /* ===== 通用 ===== */
+
+
+       h2 {
+           font-size: 2.6rem;
+       }
+
+       h3 {
+           font-size: 2rem;
+       }
+
+       h4 {
+           font-size: 1.6rem;
+       }
+
+       h5 {
+           font-size: 1.6rem;
+       }
+
+       p,
+       li {
+           font-size: 1.6rem;
+           line-height: 2.6rem;
+
+       }
+
        .display-576 {
            display: block !important;
        }
@@ -1248,6 +1191,11 @@
            margin-bottom: 4rem;
        }
 
+       .navbar-brand span,
+       a.navbar-brand div {
+           font-size: 2rem;
+       }
+
        /* ===== Content =====*/
        .separate-2,
        .separate-3 {
@@ -1265,16 +1213,16 @@
            margin-bottom: 2.5rem;
        }
 
-       .reflection-block {
-           padding: 6rem 0;
-       }
-
-       .work-tag {
-           margin-bottom: 0rem;
-           padding-bottom: 1rem;
-       }
-
        /* ===== SP =====*/
+       .sp-1 {
+           margin: 0 !important;
+       }
+
+       .about-sp-1{
+
+        height: calc(100vh - 60px);
+       }
+
        .sp-6 {
            width: 300%;
            overflow-x: hidden;
@@ -1323,10 +1271,6 @@
        }
 
        /* ===== Header ===== */
-       a.navbar-brand div {
-           font-size: 2.6rem;
-       }
-
        .navbar {
            padding-top: 2rem;
        }

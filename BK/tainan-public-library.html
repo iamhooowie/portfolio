@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<title>Tainan Public Library - HOWIE CHUNG</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+		integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="icon" type="image/png" href="images/favicon.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="copyright" content="">
+	<!-- style -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/hotjar.js"></script>
+</head>
+
+<body class="">
+	<!-- password -->
+	<div id="password-modal">
+		<div id="password-box">
+			<div class="password-header">
+				<h4>Note</h4>
+			</div>
+			<div class="password-content">
+				<p>If you're interested, please feel free to email me for access.</p>
+				<input type="password" id="password" placeholder="Please enter the password" />
+				<br>
+				<div class="btn-groups">
+					<a href="index.html" class="btn btn-s btn-four">Go back</a>
+					<a onclick="checkPassword()" class="btn btn-s btn-two">Unlock</a>
+				</div>
+				<div class="error" id="error-msg"></div>
+			</div>
+		</div>
+	</div>
+	<!-- go to top -->
+	<a id="button">
+		<i class="fas fa-arrow-up"></i><span>Top</span>
+	</a>
+
+	<div class="header-block inner-header-block">
+		<div class="header-btm">
+			<div class="container-l">
+				<nav class="navbar navbar-expand-xl navbar-light">
+					<a class="navbar-brand" href="index.html">
+						<div class="inner-logo">HOWIE C</div>
+					</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse"
+						data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+						aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul id="type-one" class="navbar-nav ml-auto inner-nav">
+							<li class="nav-item">
+								<a class="nav-link" href="index.html#work">WORK</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="https://dribbble.com/iamhooowie" target="_blank"><i
+									class="fa-brands fa-dribbble pr-2"></i>Dribbble</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="about.html">ABOUT</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="images/resume.pdf" target="_blank">RESUME</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</div>
+		<div class="container-m">
+			<div class="work-title">TAINAN PUBLIC LIBRARY</div>
+			<div class="work-tag">
+				<span class="sp-19">Role: Lead UI Designer</span>
+				<span># User interface</span>
+				<span># User experience</span>
+				<span># Website</span>
+			</div>
+		</div>
+	</div>
+	<div class="project-info">
+		<div class="container-m">
+			<img src="images/05/05-1.jpg" alt="">
+			<p>The Tainan Public Library is a newly established institution requiring the construction of a brand-new
+				web query system. This project was a government tender. Libraries are a public service utilized by many,
+				and
+				an intuitive web interface and design can significantly enhance the user experience. This section will
+				outline the user experience considerations implemented in this project.
+			</p>
+		</div>
+	</div>
+
+	<div class="content-block">
+		<img src="images/05/05-2.jpg" alt="" class="mb-10">
+		<div class="container-m">
+			<div class="content-group mb-10">
+				<div class="content-title">
+					<h2 class="">Target Users</h2>
+				</div>
+				<div class="content-content">
+					<div class="separate-4 flex-wrap">
+						<div class="separate-item mb-3">
+							<img src="images/05/05-3.jpg" alt="">
+							<p class="">Users of all age groups</p>
+						</div>
+						<div class="separate-item mb-3">
+							<img src="images/05/05-4.jpg" alt="">
+							<p class="">Students</p>
+						</div>
+						<div class="separate-item">
+							<img src="images/05/05-5.jpg" alt="">
+							<p class="">Retire people</p>
+						</div>
+						<div class="separate-item">
+							<img src="images/05/05-6.jpg" alt="">
+							<p class="">Readers who enjoy a diverse range of books</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="content-group mb-10">
+				<div class="content-title">
+					<h2 class="">Design Criteria</h2>
+				</div>
+				<div class="content-content">
+					<div class="separate-3 sp-5">
+						<div class="separate-item">
+							<img src="images/05/05-7.png" alt="">
+							<p class="font-weight-bold">Friendly</p>
+						</div>
+						<div class="separate-item">
+							<img src="images/05/05-8.png" alt="">
+							<p class="font-weight-bold">Clearly</p>
+						</div>
+						<div class="separate-item">
+							<img src="images/05/05-9.png" alt="">
+							<p class="font-weight-bold">Accessibility</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="content-group">
+				<div class="content-title">
+					<h2 class="">Design Pages</h2>
+				</div>
+				<div class="content-content mb-10">
+					<img src="images/05/05-10.jpg" alt="" class="mb-5">
+					<div class="mb-10">
+						<ol>
+							<li><span class="font-weight-bold">Setting font size : </span>Font size settings were
+								carefully determined to ensure that users of all ages receive information most
+								comfortably..
+							</li>
+							<li><span class="font-weight-bold">Active Nav Bar : </span>The active state of the Nav Bar
+								informs users of their current page location.</li>
+							<li><span class="font-weight-bold">Banner : </span>A clean banner design prevents visual
+								clutter from distracting the user.</li>
+							<li><span class="font-weight-bold">Search Bar : </span>Immediately visible upon entering the
+								page, the search interface is convenient for users to find and use. Tabs differentiate
+								keyword search from advanced search.</li>
+							<li><span class="font-weight-bold">News block : </span>As library news is typically not the
+								primary function, its display length is shortened to allocate more space to features
+								more
+								frequently used by visitors.</li>
+							<li><span class="font-weight-bold">Recommend : </span>Divided into new book recommendations
+								and top book recommendations, an automatic carousel increases the visibility of quality
+								books, thereby boosting borrowing rates.</li>
+							<li><span class="font-weight-bold">Layout : </span>Appropriate whitespace allows the
+								interface to ‘breathe,’ enhancing user focus on content.</li>
+							<li><span class="font-weight-bold">Function : </span>A saved pre-borrowing book reminder
+								remains visible in the bottom right corner as the user scrolls. Another handy feature is
+								a ‘return to top’ function, particularly useful on long pages.</li>
+						</ol>
+					</div>
+
+					<img src="images/05/05-11.jpg" alt="" class="mb-5">
+					<div class="mb-10">
+						<ol>
+							<li><span class="font-weight-bold">Hot Keywords : </span>Below the search area, recent
+								popular book titles are displayed, increasing the likelihood of clicks and the chance of
+								books being borrowed.
+							</li>
+							<li><span class="font-weight-bold">Function Block : </span>This section contains numerous
+								small features to aid user operation, such as:
+								<ul class="ml-5">
+									<li><span class="font-weight-bold">Displaying the number of search
+											results for related books.</span></li>
+									<li><span class="font-weight-bold">Print list : </span>After selecting desired
+										books, clicking ‘print’ allows users to print out titles, book codes, and
+										locations, a common service in libraries.
+									</li>
+									<li><span class="font-weight-bold">Email : </span>After selecting books, clicking
+										‘email’ sends the information to the user’s mailbox for reference.</li>
+									<li><span class="font-weight-bold">Add to My Bookshelf : </span>Users can save book
+										details in their personal membership area for easy future reference.</li>
+									<li><span class="font-weight-bold">Browsing modes : </span>Users can choose between
+										list or grid display options for books.
+										Search InformationInformation on book years, categories, and more found using
+										the Search Bar is conveniently displayed for user access.</li>
+								</ul>
+							</li>
+							<li><span class="font-weight-bold">Search Information : </span>Information on book years,
+								categories, and more found using the Search Bar is conveniently displayed for user
+								access.</li>
+							<li><span class="font-weight-bold">Book Information : </span>Basic book information,
+								including remaining quantity, is shown. Unavailable books are highlighted in red to
+								inform users they cannot be borrowed.</li>
+						</ol>
+					</div>
+
+					<img src="images/05/05-12.jpg" alt="" class="mb-5">
+					<div class="mb-10">
+						<ol>
+							<li><span class="font-weight-bold">Detail page : </span>User can share a book to their
+								social media. A good book should be shared to people!
+							</li>
+							<li><span class="font-weight-bold">Book information : </span>There is a detail book
+								information. </li>
+							<li><span class="font-weight-bold">Borrowing Information : </span>Displays the collection
+								information for the book across all libraries. Users can reserve if it’s borrowed out;
+								if available, they can borrow directly.</li>
+							<li><span class="font-weight-bold">Recommend : </span>According to users’search, system will
+								recommend other books to users.</li>
+						</ol>
+					</div>
+
+					<img src="images/05/05-13.jpg" alt="" class="mb-5">
+					<div class="">
+						<ol>
+							<li><span class="font-weight-bold">Reminder Calendar : </span>Colored prompts under dates
+								remind users to pick up or return books.
+							</li>
+							<li><span class="font-weight-bold">Function of member : </span>There are many member
+								records, saving list of book, etc.</li>
+							<li><span class="font-weight-bold">Borrowing Information : </span>Displays borrowing
+								details, including current collection numbers, which is useful if the user wishes to
+								borrow again.</li>
+						</ol>
+					</div>
+				</div>
+			</div>
+		</div>
+		<img src="images/05/05-14.jpg" alt="">
+
+		<div class="reflection-block" style="background: #4A4237;">
+			<div class="container-m">
+				<div class="content-group">
+					<div class="content-title">
+						<h2 class="">Reflection</h2>
+					</div>
+					<div class="content-content">
+						<p>This project considered various aspects of user experience. My colleagues and I engaged in
+							extensive
+							discussions and gathered relevant materials to design the most user-friendly website
+							operation
+							possible. Given the wide range of user ages, it was imperative to ensure easy usability for
+							every
+							group. During the wireframe stage, multiple revisions and simulations were made, culminating
+							in
+							this
+							project. This experience has deepened my understanding of user experience, making it an
+							invaluable
+							learning journey.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer-block">
+		<div class="container-l">
+			<div class="footer-group">
+				<div class="footer-item">© HOWIE CHUNG 2025</div>
+				<div class="footer-item">
+					<a href="mailto:chung.hao@northeastern.edu" class="pr-5">chung.hao@northeastern.edu</a>
+					<a href="https://www.linkedin.com/in/iamhooowie/" target="_blank">LinkedIn</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="jquery/jquery-3.5.1.min.js"></script>
+	<script src="popper/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<!-- typewriter -->
+	<script src="js/typewriter.js"></script>
+	<!-- go to top -->
+	<script src="js/go-to-top.js"></script>
+	<!-- pass -->
+	<!-- <script>
+		const correctPassword = "0427";
+		const pageKey = "unlocked_tainan-public-library.html";
+		let modalShown = false;
+
+		window.addEventListener('scroll', () => {
+			const scrollTrigger = 3000;
+
+			if (window.scrollY > scrollTrigger &&
+				!localStorage.getItem(pageKey) &&
+				!modalShown) {
+				document.getElementById('password-modal').style.display = 'flex';
+				document.body.style.overflow = 'hidden';
+				modalShown = true;
+			}
+		});
+
+		function checkPassword() {
+			const pw = document.getElementById('password').value;
+			const error = document.getElementById('error-msg');
+
+			if (pw === correctPassword) {
+				localStorage.setItem(pageKey, 'true');
+				document.getElementById('password-modal').style.display = 'none';
+				document.body.style.overflow = 'auto';
+			} else {
+				error.textContent = 'Oops! That password doesn’t seem right. Please try again.';
+			}
+		}
+
+		window.addEventListener('DOMContentLoaded', () => {
+			if (localStorage.getItem(pageKey)) {
+				document.getElementById('password-modal').style.display = 'none';
+				document.body.style.overflow = 'auto';
+			}
+		});
+	</script> -->
+</body>
+
+</html>

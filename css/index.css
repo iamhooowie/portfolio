@@ -38,6 +38,7 @@
     background: url(../images/grid.png);
     background-repeat: repeat-y;
     background-position: center;
+    background-size: contain;
 }
 
 .me {
@@ -223,6 +224,7 @@ div#output {
     font-size: 12rem;
     display: inline-block;
     margin: 3rem 0 2rem;
+    font-weight: bold;
 }
 
 .banner-about {
@@ -236,11 +238,12 @@ div#output {
 }
 
 .whatido-block {
-    padding: 8rem 0;
+    padding: 8rem 0 10rem;
 }
 
-.whatido-block h1 {
-    padding-bottom: 3rem;
+.whatido-block h1,
+.index-work-block h1 {
+    margin-bottom: 3rem;
 }
 
 .whatido-group {
@@ -252,13 +255,11 @@ div#output {
     color: #222222;
 }
 
-/* ===== Index Work Block ===== */
-
-.index-work-block {
-    margin-top: 10rem;
-
+h4.whatido-item {
+    color: #777777;
 }
 
+/* ===== Index Work Block ===== */
 .index-work-group {
     display: flex;
     flex-wrap: wrap;
@@ -295,10 +296,10 @@ div#output {
 }
 
 .work-tag-bk {
-    padding: 0 1rem;
+    padding: 1rem;
     position: relative;
-    color: #222;
-    border: 2px solid #222;
+    color: var(--font-color);
+    border: 1px solid var(--border-color);
 }
 
 .work-tag-bk::after {
@@ -379,10 +380,6 @@ textPath {
     margin-bottom: 2.5rem;
 }
 
-.index-work-block h1 {
-    margin-bottom: 3rem;
-}
-
 /*================================================== RWD ==================================================*/
 @media(max-width:1500px) {
 
@@ -422,7 +419,7 @@ textPath {
 
     .index-work-item p {
         margin: 0.5rem 0 1.5rem;
-        font-size: 1.8rem;
+        font-size: 1.6rem;
     }
 
     .whatido-block {
@@ -431,11 +428,11 @@ textPath {
 
     .whatido-group {
         flex-wrap: wrap;
+        gap: 4rem 0;
     }
 
-    h3.whatido-item {
+    h4.whatido-item {
         width: 50%;
-        margin: 0 0 4rem 0;
     }
 }
 
@@ -468,7 +465,6 @@ textPath {
 
     .whatido-block {
         font-size: 1.8rem;
-        margin: 6rem 0 0;
         padding: 8rem 0;
     }
 }
@@ -483,24 +479,15 @@ textPath {
     }
 
     .whatido-block {
+        padding: 5rem 0 7rem;
         flex-wrap: wrap;
     }
 
     .whatido-item {
         width: 50%;
-        margin: 1.5rem 0;
-    }
-
-    .whatido-block {
-        padding: 3rem 0;
     }
 
     /* ===== Index Work Block ===== */
-
-    .index-work-block {
-        margin-top: 6rem;
-    }
-
     .index-work-item {
         margin-bottom: 6rem;
     }
@@ -521,8 +508,6 @@ textPath {
     }
 
     /* ===== Banner ===== */
-
-
     h1.cursor {
         font-size: 3rem;
     }
@@ -537,7 +522,28 @@ textPath {
         bottom: 6px;
     }
 
+    .circle-text {
+        background-color: #22222210;
+        width: 20rem;
+        height: 20rem;
+        padding: 1rem;
+        transform: inherit;
+        top: auto;
+        bottom: -9rem;
+        right: -6rem;
+        opacity: 0.5;
+    }
+
     /* ===== Index Work Block ===== */
+    .whatido-group {
+        flex-wrap: wrap;
+        gap: 2.5rem 0;
+    }
+
+    .whatido-block h1,
+    .index-work-block h1 {
+        margin-bottom: 2rem;
+    }
 
     .index-work-item {
         width: 100%;
@@ -567,21 +573,16 @@ textPath {
         width: 100%;
     }
 
+       .circle-text {
+        width: 14rem;
+        height: 14rem;
+        bottom: -5rem;
+        right: -5rem;
+    }
 
     .whatido-block {
         font-size: 1.8rem;
-        margin: 4rem 0 0;
-        padding: 4rem 0;
-    }
-
-    .circle-text {
-        background-color: #22222210;
-        width: 20rem;
-        height: 20rem;
-        top: auto;
-        bottom: 0;
-        right: 3%;
-        padding: 1rem;
+        padding: 4rem 0 6rem;
     }
 
     .whatido-item {
@@ -620,32 +621,17 @@ textPath {
         font-size: 1.6rem;
     }
 
-    .whatido-block {
-        font-size: 1.6rem;
-        padding: 3rem 0;
+    .whatido-block h1,
+    .index-work-block h1 {
+        margin-bottom: 1rem;
     }
 }
 
 @media(max-width:420px) {
-    .circle-text {
-        opacity: 0.5;
-        z-index: -1;
-    }
 
     /* ===== Index Work Block ===== */
     .index-work-title {
         font-size: 2rem;
-    }
-
-    .circle-text {
-        background-color: #22222210;
-        width: 20rem;
-        height: 20rem;
-        top: auto;
-        bottom: -10%;
-        right: -10%;
-        padding: 1rem;
-        z-index: 2;
     }
 
     .iam {
