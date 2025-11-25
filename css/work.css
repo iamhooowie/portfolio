@@ -26,9 +26,14 @@
 .work-goal-block,
 .work-research-block,
 .design-block,
+.all-img,
 .finding-block,
 .reflection-block {
     margin-bottom: 8rem
+}
+
+.design-block-underimg{
+    margin-bottom: 2rem
 }
 
 .title-big {
@@ -399,6 +404,7 @@ ol {
     .work-goal-block,
     .work-research-block,
     .design-block,
+    .all-img,
     .reflection-block {
         margin-bottom: 6rem;
     }
@@ -519,6 +525,7 @@ ol {
     .work-goal-block,
     .work-research-block,
     .design-block,
+    .all-img,
     .finding-block,
     .reflection-block {
         margin-bottom: 4rem;
