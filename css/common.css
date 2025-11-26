@@ -195,6 +195,10 @@
        font-weight: bold;
    }
 
+   .tight-p p{
+    line-height: 2.4rem;
+   }
+
    /* ===== 按鈕 ===== */
    .btn-groups {
        text-align: center;
@@ -643,12 +647,14 @@
        }
    }
 
-
-
    /* 相簿 */
    .albuminn-item {
        margin-bottom: 1rem;
    }
+
+   /* .albuminn-item img {
+    border: 1px solid #d0d0d0;
+} */
 
    .albuminn-item a {
        font-size: 1.6rem;
@@ -661,35 +667,9 @@
    }
 
    /* ===== SP ===== */
-   .sp-red {
-       background: #EE0412;
-   }
-
-   .sp-yellow {
-       background: #F4D45F;
-   }
-
-   .sp-green {
-       background: #09873E;
-   }
-
-   .sp-blue {
-       background: #2E5AF0;
-   }
-
-   .sp-purple {
-       background: #874ED8;
-   }
-
-   .sp-black {
-       background: #1A1A1A;
-   }
-
    .sp-1 {
        margin: 0 0 1rem 0 !important;
    }
-
-   .sp-2 {}
 
    .sp-3 {
        text-align: right;
@@ -1008,12 +988,12 @@
            border-top: none;
            width: 100%;
            text-align: center;
-           padding: 0 2rem;
+           padding: 0;
        }
 
        li.nav-item {
            text-align: center;
-           padding: 2rem 0;
+           padding: 3.25rem 0;
            border-bottom: 1px solid #e0e0e0;
            font-size: 2rem;
        }

@@ -30,11 +30,6 @@
     /*加這個 */
 }
 
-.banner-block {
-    position: relative;
-    overflow: hidden;
-}
-
 .me {
     display: inline-block;
 }
@@ -233,7 +228,7 @@ div#output {
 }
 
 .whatido-block {
-    padding: 8rem 0 10rem;
+    padding: 10rem 0 12rem;
 }
 
 .whatido-block h1,
@@ -308,7 +303,7 @@ h4.whatido-item {
 .circle-text {
     position: absolute;
     right: -8rem;
-    bottom: -25%;
+    bottom: -25rem;
     background-color: #22222230;
     border-radius: 99rem;
     padding: 3rem;
@@ -443,6 +438,10 @@ textPath {
         filter: invert(1);
         opacity: 1;
     }
+
+    .index-work-item {
+        margin-bottom: 6rem;
+    }
 }
 
 @media(max-width:1080px) {
@@ -567,7 +566,7 @@ textPath {
         width: 100%;
     }
 
-       .circle-text {
+    .circle-text {
         width: 14rem;
         height: 14rem;
         bottom: -5rem;
@@ -581,6 +580,11 @@ textPath {
 
     .whatido-item {
         width: 45%;
+    }
+
+    .whatido-block h1,
+    .index-work-block h1 {
+        font-size: 2.6rem;
     }
 
     .index-work-item p {
