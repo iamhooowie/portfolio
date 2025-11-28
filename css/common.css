@@ -195,8 +195,8 @@
        font-weight: bold;
    }
 
-   .tight-p p{
-    line-height: 2.4rem;
+   .tight-p{
+    line-height: 2.2rem!important;
    }
 
    /* ===== 按鈕 ===== */

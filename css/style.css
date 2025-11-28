@@ -64,6 +64,44 @@
     padding: 2.5rem;
 }
 
+.tip-group-plus {
+    border: 1px solid var(--one-color);
+    padding: 3rem 2.5rem;
+}
+
+.tip-group-plus-with-group {
+    display: flex;
+    align-items: stretch;
+}
+
+.tip-group-plus-with-group-3 .tip-group-plus-with-item {
+    width: 33.3%;
+}
+
+.tip-group-plus-with-group .tip-group-plus-with-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    text-align: center;
+}
+
+.tip-group-plus-with-group.red .tip-group-plus-with-item {
+    border: 1px solid var(--one-color);
+}
+
+.tip-group-plus-with-group.green .tip-group-plus-with-item {
+    border: 1px solid var(--green-color);
+}
+
+.tip-group-plus-with-item img {
+    width: 2rem;
+    height: 2rem;
+    object-fit: contain;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
 .tip-group img {
     width: 4rem;
     margin-right: 2rem;
@@ -83,6 +121,18 @@
 
 .tip-group.green p {
     color: var(--green-color);
+}
+
+.tip-group.yellow {
+    background: #F2D948;
+}
+
+.tip-group.yellow p {
+    color: #222222;
+}
+
+.tip-group.blue {
+    background: #DFF3FC;
 }
 
 /* ===== 圖片分段 =====*/
@@ -314,7 +364,7 @@
 
 .work-tab .nav.nav-pills {
     display: flex;
-    justify-content: space-between;
+    gap: 0 1%;
 }
 
 .work-tab li {
@@ -415,6 +465,10 @@ ol {
 
 .about-link a i {
     padding-right: 1rem;
+}
+
+video {
+    width: 100%;
 }
 
 .work-sp-1 {
@@ -576,11 +630,6 @@ ol {
 
     .work-tab li {
         width: 22.5%;
-        margin-right: 3.3%;
-    }
-
-    .work-tab li:nth-child(4n) {
-        margin-right: 0%;
     }
 
     .people-group {
@@ -609,19 +658,8 @@ ol {
 
     .work-tab li {
         width: 30%;
-        margin-right: 5%;
-    }
-
-    .work-tab li:nth-child(4n) {
-        margin-right: auto;
-    }
-
-    .work-tab li:nth-child(3n) {
-        margin-right: 0%;
     }
 }
-
-
 
 @media(max-width:576px) {
 
@@ -640,6 +678,11 @@ ol {
         padding: 0 8px;
     }
 
+    .work-bnumber-item img {
+        width: 10rem;
+        height: 10rem;
+    }
+
     .work-bnumber-block {
         flex-direction: column;
     }
@@ -654,6 +697,19 @@ ol {
 
     .work-image-item-p-item {
         margin-bottom: 1rem;
+    }
+
+    .tip-group-plus-with-group {
+        flex-direction: column;
+    }
+
+    .tip-group-plus-with-group-3 .tip-group-plus-with-item {
+        width: 100%;
+    }
+
+    .tip-group-plus-with-group .tip-group-plus-with-item {
+        align-items: flex-start;
+        text-align: left;
     }
 
     /* ===== About =====*/
@@ -693,19 +749,6 @@ ol {
 
     .work-tab li {
         width: 47.5%;
-        margin-right: 5%;
-    }
-
-    .work-tab li:nth-child(4n) {
-        margin-right: auto;
-    }
-
-    .work-tab li:nth-child(3n) {
-        margin-right: auto;
-    }
-
-    .work-tab li:nth-child(2n) {
-        margin-right: 0%;
     }
 
     .about-link {
@@ -736,4 +779,8 @@ ol {
     .work-goal-group-3 .work-goal-item {
         padding: 2rem;
     }
+
+    .tip-group-plus {
+    padding: 2rem;
+}
 }
