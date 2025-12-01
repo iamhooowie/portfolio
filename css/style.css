@@ -72,10 +72,15 @@
 .tip-group-plus-with-group {
     display: flex;
     align-items: stretch;
+    flex-wrap: wrap;
 }
 
 .tip-group-plus-with-group-3 .tip-group-plus-with-item {
     width: 33.3%;
+}
+
+.tip-group-plus-with-group-2 .tip-group-plus-with-item {
+    width: 50%;
 }
 
 .tip-group-plus-with-group .tip-group-plus-with-item {
@@ -333,7 +338,7 @@
 .work-goal-group-square {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: stretch;
 }
 
 .work-goal-group-square .work-goal-item {
@@ -365,6 +370,7 @@
 .work-tab .nav.nav-pills {
     display: flex;
     gap: 0 1%;
+    margin: 1.5rem 0 0 0;
 }
 
 .work-tab li {
@@ -410,18 +416,12 @@
 }
 
 /* ===== Reflection =====*/
-.reflection-group ul,
-ol {
-    margin: 0 0 0 -2rem;
-}
-
 .reflection-group li {
     margin-bottom: 2rem;
 }
 
-.reflection-group ul,
-ol {
-    margin: 0 0 0 -2rem;
+.reflection-group li.sp {
+    margin-bottom: 0rem;
 }
 
 /* ===== About =====*/
@@ -609,7 +609,7 @@ video {
     .work-goal-group-3 .work-goal-item {
         width: 100%;
         height: auto;
-        padding: 2.5rem;
+        padding: 2.5rem!important;
     }
 
     .work-explain-group.work-explain-3,
@@ -703,7 +703,7 @@ video {
         flex-direction: column;
     }
 
-    .tip-group-plus-with-group-3 .tip-group-plus-with-item {
+    .tip-group-plus-with-group-3 .tip-group-plus-with-item,.tip-group-plus-with-group-2 .tip-group-plus-with-item {
         width: 100%;
     }
 

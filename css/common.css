@@ -71,6 +71,11 @@
        color: #777777;
    }
 
+   ul,
+   ol {
+       margin: 0 0 0 -2rem;
+   }
+
    li span {
        font-size: 2rem;
    }
@@ -195,8 +200,8 @@
        font-weight: bold;
    }
 
-   .tight-p{
-    line-height: 2.2rem!important;
+   .tight-p {
+       line-height: 2.2rem !important;
    }
 
    /* ===== 按鈕 ===== */
