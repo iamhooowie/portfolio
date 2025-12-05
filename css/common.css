@@ -182,7 +182,7 @@
    }
 
    .color-red {
-       color: var(--one-color);
+       color: var(--one-color)!important;
    }
 
    .color-green {
