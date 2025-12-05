@@ -199,6 +199,9 @@
        text-transform: uppercase;
        font-weight: bold;
    }
+   .f-14{
+    font-size: 1.4rem;
+   }
 
    .tight-p {
        line-height: 2.2rem !important;
@@ -676,9 +679,12 @@
        margin: 0 0 1rem 0 !important;
    }
 
-   .sp-3 {
-       text-align: right;
+   .sp-2 {
+       font-size: 1.6rem;
+       font-weight: bold;
    }
+
+  
 
    .sp-4 {
        margin-top: -30rem;
