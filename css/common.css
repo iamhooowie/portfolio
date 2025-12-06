@@ -182,7 +182,7 @@
    }
 
    .color-red {
-       color: var(--one-color)!important;
+       color: var(--one-color) !important;
    }
 
    .color-green {
@@ -199,8 +199,9 @@
        text-transform: uppercase;
        font-weight: bold;
    }
-   .f-14{
-    font-size: 1.4rem;
+
+   .f-14 {
+       font-size: 1.4rem;
    }
 
    .tight-p {
@@ -684,27 +685,11 @@
        font-weight: bold;
    }
 
-  
-
    .sp-4 {
-       margin-top: -30rem;
-   }
-
-   .sp-5 img {
-       width: 12rem;
-   }
-
-   .sp-5 .separate-item {
-       display: flex;
-       flex-direction: column;
-       align-items: center;
-       width: 30%;
-   }
-
-   .sp-5 .separate-item p {
-       color: #8B7C53;
-       font-weight: bold;
-       margin-top: 5rem;
+       position: absolute;
+       display: inline-block;
+       top: 7px;
+       padding-left: 0.5rem;
    }
 
    .sp-6 .content-title:before {
@@ -715,79 +700,6 @@
        margin: 2.5rem 0 3rem;
        display: flex;
        align-items: center;
-   }
-
-
-   .sp-9 {
-       font-size: 3.2rem;
-       font-weight: bold;
-       color: #47B128;
-   }
-
-   .sp-10 {
-       display: flex;
-       flex-direction: column;
-       justify-content: flex-start;
-       align-items: center;
-   }
-
-   .sp-10 img {
-       width: 12.5rem;
-       height: 12rem;
-       margin-bottom: 3rem;
-   }
-
-   .sp-11 {
-       text-align: center;
-       color: var(--wechat-color);
-   }
-
-   .sp-13 {
-       margin: 0 0 2rem 0;
-   }
-
-   .sp-14 {
-       overflow-x: hidden;
-   }
-
-   .sp-17 {
-       display: none;
-   }
-
-   .sp-18 img {
-       transition: 0.5s ease;
-   }
-
-   .sp-18 img:hover {
-       transform: scale(1.02);
-   }
-
-   .sp-19 {
-       color: var(--two-color);
-   }
-
-   .sp-20 {
-       display: flex;
-       flex-direction: column;
-       align-items: flex-start;
-   }
-
-   .sp-21 {
-       font-size: 6rem;
-       color: var(--two-color);
-       padding-right: 0.5rem;
-   }
-
-   .sp-22 {
-       font-size: 3.2rem !important;
-       color: var(--two-color);
-       opacity: 0.8;
-   }
-
-   .sp-23 {
-       font-size: 2.6rem;
-       padding-right: 0.5rem;
-       display: inline-block;
    }
 
    /*================================================== RWD ==================================================*/
@@ -889,10 +801,6 @@
        /* ===== SP =====*/
        .sp-3 {
            text-align: left;
-       }
-
-       .sp-4 {
-           margin-top: -20rem;
        }
 
        .sp-8 {
@@ -1070,15 +978,6 @@
        }
 
        /* ===== SP =====*/
-       .sp-5 .separate-item p {
-           margin-top: 2rem;
-       }
-
-       .sp-10 img {
-           width: 8rem;
-           height: 7.5rem;
-           margin-bottom: 2rem;
-       }
    }
 
    @media(max-width:768px) {
@@ -1108,9 +1007,6 @@
        }
 
        /* ===== SP =====*/
-       .sp-4 {
-           margin-top: -10rem;
-       }
 
    }
 
@@ -1219,40 +1115,6 @@
 
            height: calc(100vh - 60px);
        }
-
-       .sp-6 {
-           width: 300%;
-           overflow-x: hidden;
-       }
-
-       .sp-5 img {
-           width: 6rem;
-       }
-
-       .sp-10 img {
-           margin-bottom: 1rem;
-       }
-
-       .sp-12 {
-           margin-top: 1rem;
-       }
-
-       .sp-13 {
-           margin: 0 0 1rem 0;
-       }
-
-       .sp-15 {
-           margin-bottom: 1rem !important;
-       }
-
-       .sp-16 p {
-           text-align: center;
-       }
-
-       .sp-17 {
-           display: block;
-           margin-bottom: 5rem;
-       }
    }
 
    @media(max-width:480px) {
@@ -1276,7 +1138,6 @@
            padding: 0;
        }
 
-
        /* ===== SP =====*/
    }
 
@@ -1286,9 +1147,5 @@
        /* ===== Distant =====*/
        .mb-5 {
            margin-bottom: 3rem;
-       }
-
-       .sp-4 {
-           margin-top: -5rem;
        }
    }
