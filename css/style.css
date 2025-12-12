@@ -30,17 +30,17 @@
 }
 
 .title-big {
-    font-weight: bold!important;
+    font-weight: bold !important;
     margin-bottom: 0.5rem;
 }
 
 .title-middle {
-    font-weight: bold!important;
+    font-weight: bold !important;
     margin-bottom: 0.5rem;
 }
 
 .title-small {
-    font-weight: bold!important;
+    font-weight: bold !important;
     margin-bottom: 0.15rem;
 }
 
@@ -113,7 +113,7 @@
 }
 
 .tip-group-plus-with-group.green .tip-group-plus-with-item:last-child {
-   border-right: 0;
+    border-right: 0;
 }
 
 .tip-group-plus-with-item img {
@@ -183,6 +183,10 @@
     justify-content: space-between;
     align-items: stretch;
     margin-bottom: 2rem;
+}
+
+.work-explain-group.work-explain-4 .work-explain-item {
+    width: 24.5%;
 }
 
 .work-explain-group.work-explain-3 .work-explain-item {
@@ -292,6 +296,10 @@
     width: 48.5%;
 }
 
+.work-bnumber-item-100 {
+    width: 100%;
+}
+
 .work-bnumber-item.img {
     display: flex;
     flex-direction: column;
@@ -375,12 +383,12 @@
 }
 
 .work-goal-group-square .work-goal-item {
-    aspect-ratio: 1 / 1;
+    /* aspect-ratio: 1 / 1; */
     width: 33.3%;
     object-fit: cover;
     object-position: center;
     height: auto;
-    padding: 6rem 2rem 0;
+    padding: 2.5rem;
 }
 
 /* ===== stwimg ===== */
@@ -394,6 +402,7 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    flex-wrap: wrap;
 }
 
 .stwimg-group-v .stwimg-item {
@@ -402,8 +411,20 @@
     align-items: center;
 }
 
+.stwimg-group.stwimg-group-4 .stwimg-item {
+    width: 24%;
+}
+
 .stwimg-group.stwimg-group-3 .stwimg-item {
     width: 32.5%;
+}
+
+.stwimg-group-2 {
+    gap: 4rem 0;
+}
+
+.stwimg-group.stwimg-group-2 .stwimg-item {
+    width: 40%;
 }
 
 .stwimg-item {
@@ -718,12 +739,14 @@ video {
         padding: 2.5rem !important;
     }
 
+    .work-explain-group.work-explain-4,
     .work-explain-group.work-explain-3,
     .work-explain-group.work-explain-2 {
         flex-direction: column;
         gap: 2rem;
     }
 
+    .work-explain-group.work-explain-4 .work-explain-item,
     .work-explain-group.work-explain-3 .work-explain-item,
     .work-explain-group.work-explain-2 .work-explain-item {
         width: 100%;
@@ -765,6 +788,10 @@ video {
     .quote-group {
         flex-direction: column;
         gap: 2rem 0;
+    }
+
+    .work-explain-group.work-explain-4 {
+        flex-wrap: wrap;
     }
 
     /* ===== About =====*/
