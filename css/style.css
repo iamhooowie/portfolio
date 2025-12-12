@@ -30,17 +30,17 @@
 }
 
 .title-big {
-    font-weight: bold;
+    font-weight: bold!important;
     margin-bottom: 0.5rem;
 }
 
 .title-middle {
-    font-weight: bold;
+    font-weight: bold!important;
     margin-bottom: 0.5rem;
 }
 
 .title-small {
-    font-weight: bold;
+    font-weight: bold!important;
     margin-bottom: 0.15rem;
 }
 

@@ -193,6 +193,14 @@
        color: var(--white-color);
    }
 
+   .bk-red {
+       background: #FCE2DF;
+   }
+
+   .bk-light-green {
+       background: var(--light-green-color);
+   }
+
    /* ===== 文字 ===== */
    .f-32 {
        font-size: 3.2rem;
@@ -289,79 +297,235 @@
        background: var(--two-color);
    }
 
-   /* ===== Table ===== */
-   table,
-   tbody {
-       width: 100%;
+   /* ===== Table + Form ===== */
+   .t-5 {
+       width: 5%;
    }
 
-   .table .tr {
-       display: flex;
-       justify-content: space-between;
-       border: 0;
-       line-height: initial;
+   .t-10 {
+       width: 10%;
    }
 
-   th {
-       font-weight: bolder;
-       color: #333;
-       font-size: 2.6rem;
-       padding: 2.5rem 0;
-   }
-
-   td {
-       padding: 2.175rem 0;
-       font-size: 1.6rem;
-       background: #fff;
-   }
-
-   tr:last-child {
-       border: none !important;
-   }
-
-   .t15 {
+   .t-15 {
        width: 15%;
    }
 
-   .t25 {
+   .t-20 {
+       width: 20%;
+   }
+
+   .t-25 {
        width: 25%;
    }
 
-   .t75 {
+   .t-26 {
+       width: 26.6%;
+   }
+
+   .t-30 {
+       width: 30%;
+   }
+
+   .t-33 {
+       width: 33%;
+   }
+
+   .t-35 {
+       width: 35%;
+   }
+
+   .t-40 {
+       width: 40%;
+   }
+
+   .t-45 {
+       width: 45%;
+   }
+
+   .t-50 {
+       width: 50%;
+   }
+
+   .t-55 {
+       width: 55%;
+   }
+
+   .t-60 {
+       width: 60%;
+   }
+
+   .t-65 {
+       width: 65%;
+   }
+
+   .t-70 {
+       width: 70%;
+   }
+
+   .t-75 {
        width: 75%;
    }
 
-   .t85 {
+   .t-80 {
+       width: 80%;
+   }
+
+   .t-85 {
        width: 85%;
    }
 
-   .name {
-       width: 75%;
+   .t-90 {
+       width: 90%;
    }
 
-   .score {
-       width: 25%;
+   .t-95 {
+       width: 95%;
    }
 
-   .t-feat {
-       width: calc(100% - 80px);
+   .t-100 {
+       width: 100%;
+   }
+
+   .table p {
+       font-weight: 400;
+       font-size: 1.4rem;
+       line-height: 2.2rem;
+   }
+
+   .table img {
+       width: 2.2rem;
+       height: 2.2rem;
+       object-fit: contain;
+       margin-right: 0.5rem;
+   }
+
+   .table img~p {
+       line-height: 1.8rem;
+   }
+
+   .table .tr.th-header {
+       display: flex;
+       justify-content: flex-start;
+       align-items: stretch;
+   }
+
+   .tr {
+       border: 1px solid var(--border-color);
+       border-top: transparent;
+       display: flex;
+       align-items: stretch;
+       width: 100%;
+   }
+
+   .th,
+   .td {
+       border-right: 1px solid var(--border-color);
+       font-size: 1.6rem;
+       padding: 0.75rem 1rem;
+   }
+
+   .th:last-child,
+   .td:last-child {
+       border-right: 0;
+   }
+
+   .table>:not(caption)>*>* {
+       border-bottom-width: initial;
+       box-shadow: none;
+   }
+
+   .table-mob .table>:not(caption)>*>* {
+       padding: 0;
+       background-color: #ffffff;
+       border-bottom-width: initial;
+       box-shadow: none;
+   }
+
+   .form-control {
+       margin-bottom: 2.5rem;
+       padding: 0 1rem;
+       font-size: 1.6rem;
+       border: 1px solid #ddd;
+       border-radius: 5px;
+       height: 4.5rem;
+   }
+
+   .form-select {
+       width: 100%;
+       height: 4.5rem;
+       font-size: 1.6rem;
+       margin-bottom: 2.5rem;
+   }
+
+   .form-check-input {
+       width: 1.6rem;
+       height: 1.6rem;
    }
 
    label {
        font-size: 1.6rem;
+       margin-bottom: 0rem;
        font-weight: 900;
    }
 
-   .form-control {
-       padding: 0 1rem;
-       font-size: 1.6rem;
-       height: 4.5rem;
-       margin-bottom: 3rem;
-       border-radius: 0;
+   /* 拉桿式 s*/
+   .table-scroll-area {
+       width: 100%;
+       overflow-x: auto;
    }
 
-   .form-check-inline {
-       margin-right: 2rem;
+   .table-over-l {
+       width: 1400px;
+   }
+
+   .table-over-m {
+       width: 1200px;
+   }
+
+   .table-over-s {
+       width: 100%;
+   }
+
+   /* 拉桿式 e*/
+
+   /* 展開功能 s*/
+   .collapse-unit.collapsed {
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       border-radius: 1rem;
+   }
+
+   .chevron-icon {
+       transition: transform 0.3s;
+   }
+
+   /* 只要 aria-expanded="true"，就旋轉 */
+   .collapse-unit[aria-expanded="true"] .chevron-icon {
+       transform: rotate(-180deg);
+   }
+
+   .collapse-unit {
+       display: flex;
+       justify-content: space-between;
+       background: #fff;
+       border-radius: 1rem 1rem 0 0;
+       padding: 2.75rem 2.5rem;
+       margin-top: 3rem;
+       font-size: 1.6rem;
+   }
+
+   .collapse-item .card-body {
+       border: none;
+       font-size: 1.5rem;
+       padding: 1rem;
+       border-radius: 0 0 1rem 1rem;
+       border-top: transparent;
+   }
+
+   div#collapseExample2 {
+       border: 1px solid #ddd;
+       border-top: transparent;
    }
 
    /* ===== Distant ===== */
@@ -979,6 +1143,14 @@
 
        /* ===== SP =====*/
    }
+
+   @media(max-width:800px) {
+       .table-over-s {
+           width: 800px;
+       }
+   }
+
+
 
    @media(max-width:768px) {
 

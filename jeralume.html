@@ -20,6 +20,12 @@
 	<link rel="stylesheet" href="css/style.css">
 	<script src="js/hotjar.js"></script>
 	<style>
+		.table img {
+			width: 7rem;
+			height: 7rem;
+			object-fit: contain;
+		}
+
 		.work-bnumber-item img {
 			width: 6rem;
 			height: 6rem;
@@ -45,12 +51,66 @@
 			padding: 3rem 2rem 0;
 		}
 
+		.tip-group-plus-with-group.red .tip-group-plus-with-item {
+			border-bottom: 1px solid var(--one-color);
+		}
+
+		.tip-group-plus-with-group.red .tip-group-plus-with-item:nth-child(3),
+		.tip-group-plus-with-group.red .tip-group-plus-with-item:nth-child(4) {
+			border-bottom: none;
+		}
+
+		.tip-group-plus-with-group.green .tip-group-plus-with-item {
+			border-bottom: 1px solid var(--green-color);
+		}
+
+		.tip-group-plus-with-group.green .tip-group-plus-with-item:nth-child(3),
+		.tip-group-plus-with-group.green .tip-group-plus-with-item:nth-child(4) {
+			border-bottom: none;
+		}
+
+		.tip-group-plus-with-group.red .tip-group-plus-with-item:nth-child(2) {
+			border-right: none;
+		}
+
+		.tip-group-plus-with-group.green .tip-group-plus-with-item:nth-child(2) {
+			border-right: none;
+		}
+
 		@media(max-width:768px) {
 
 			/*==================================================================================================== 768 px*/
 			.work-goal-item:nth-child(2) {
 				border-left: 0px solid #fff;
 				border-right: 0px solid #fff;
+			}
+		}
+
+		@media(max-width:576px) {
+
+			/*==================================================================================================== 576 px*/
+			.tip-group-plus-with-group.red .tip-group-plus-with-item {
+				border-right: none;
+			}
+
+			.tip-group-plus-with-group.green .tip-group-plus-with-item {
+				border-right: none;
+			}
+
+			.tip-group-plus-with-group.red .tip-group-plus-with-item {
+				border-bottom: 1px solid var(--one-color);
+			}
+
+			.tip-group-plus-with-group.green .tip-group-plus-with-item {
+				border-bottom: 1px solid var(--green-color);
+			}
+
+			.tip-group-plus-with-group.red .tip-group-plus-with-item:nth-child(3) {
+				border-bottom: 1px solid var(--one-color);
+			}
+
+			.tip-group-plus-with-group.green .tip-group-plus-with-item:nth-child(3) {
+				border-bottom: 1px solid var(--green-color);
 			}
 		}
 	</style>
@@ -229,17 +289,75 @@
 					</div>
 				</div>
 
-				<div class="work-image-group work-image-group-end dis-btm-4rem">
-					<div class="work-image-item">
-						<div class="albuminn-item">
-							<a class="" href="images/jeralume/05.png" data-lightbox="example-set" data-title=""><img
-									class="example-image" src="images/jeralume/05.png" alt="" /><span></span></a>
+				<div class="table-scroll-area dis-btm-4rem">
+					<div class="table table-over-s">
+						<div class="tr th-header" style="border-top: 1px solid #d0d0d0; background: var(--one-color);">
+							<div class="th t-100">
+								<div class="d-flex">
+									<p style="color: #fff;">Problems</p>
+								</div>
+							</div>
+						</div>
+						<div class="table-item">
+							<div class="tr">
+								<div class="td t-30">
+									<p class="title-small tight-p">High Bounce Rate</p>
+								</div>
+								<div class="td t-70">
+									<p>Users quickly leave due to inability to find desired products or confusion</p>
+								</div>
+							</div>
+						</div>
+						<div class="table-item">
+							<div class="tr">
+								<div class="td t-30">
+									<p class="title-small tight-p">Low Conversion Rate</p>
+								</div>
+								<div class="td t-70">
+									<p>Even when users find products, they abandon purchases
+										due to insufficient information or unawareness of financing options</p>
+								</div>
+							</div>
+						</div>
+						<div class="table-item">
+							<div class="tr">
+								<div class="td t-30">
+									<p class="title-small tight-p">Loss of Competitive Edge</p>
+								</div>
+								<div class="td t-70">
+									<p>Core advantages go uncommunicated, driving users to competitors
+										like IKEA and Target</p>
+								</div>
+							</div>
+						</div>
+						<div class="table-item">
+							<div class="tr">
+								<div class="td t-30">
+									<p class="title-small tight-p">Blurred Brand Perception</p>
+								</div>
+								<div class="td t-70">
+									<p>Unable to establish clear brand positioning and memorable identity in users’
+										minds</p>
+								</div>
+							</div>
+						</div>
+						<div class="table-item">
+							<div class="tr">
+								<div class="td t-30">
+									<p class="title-small tight-p">Increased Customer
+										Acquisition Cost</p>
+								</div>
+								<div class="td t-70">
+									<p>Requires higher marketing budgets to compensate for inadequate
+										website experience.</p>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 
 				<h5 class="title-middle">Opportunity Points</h5>
-				<div class="tip-group-plus-with-group green tip-group-plus-with-group-2 red dis-btm-2rem">
+				<div class="tip-group-plus-with-group green tip-group-plus-with-group-2 dis-btm-2rem">
 					<div class="tip-group-plus-with-item">
 						<img src="images/jeralume/icon/05.png" alt="">
 						<h5 class="title-middle">Restructure Navigation
@@ -281,11 +399,168 @@
 					<li>Financing options or distinctive shopping experiences</li>
 				</ul>
 
-				<div class="work-image-group work-image-group-end dis-btm-4rem">
-					<div class="work-image-item">
-						<div class="albuminn-item">
-							<a class="" href="images/jeralume/06.png" data-lightbox="example-set" data-title=""><img
-									class="example-image" src="images/jeralume/06.png" alt="" /><span></span></a>
+				<div class="table-scroll-area dis-btm-4rem">
+					<div class="table table-over-s">
+						<div class="tr th-header" style="border-top: 1px solid #d0d0d0;">
+							<div class="th t-20"></div>
+							<div class="th t-26">
+								<div class="d-flex"><img src="images/jeralume/icon/Wayfair.png" alt="">
+								</div>
+							</div>
+							<div class="th t-26">
+								<div class="d-flex"><img src="images/jeralume/icon/Article.png" alt="">
+								</div>
+							</div>
+							<div class="th t-26">
+								<div class="d-flex"><img src="images/jeralume/icon/Jeralume.png" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="table-item">
+							<div class="tr">
+								<div class="td t-20">
+									<p class="title-small">Navigation Clarity</p>
+								</div>
+								<div class="td t-26 bk-light-green">
+									<p>Clear multi-level categorization</p>
+								</div>
+								<div class="td t-26 bk-light-green">
+									<p>Simple and effective, not overly complex</p>
+								</div>
+								<div class="td t-26">
+									<p>Confusing structure, unclear categorization</p>
+								</div>
+							</div>
+						</div>
+						<div class="table-item">
+							<div class="tr">
+								<div class="td t-20">
+									<p class="title-small">Product Information
+										Completeness</p>
+								</div>
+								<div class="td t-26 bk-light-green">
+									<p>Detailed specifications</p>
+								</div>
+								<div class="td t-26 bk-light-green">
+									<p>Clear information</p>
+								</div>
+								<div class="td t-26">
+									<p>Insufficient information</p>
+								</div>
+							</div>
+						</div>
+						<div class="table-item">
+							<div class="tr">
+								<div class="td t-20">
+									<p class="title-small">Financing Options</p>
+								</div>
+								<div class="td t-26">
+									<p>Functionality-focused, somewhat cluttered</p>
+								</div>
+								<div class="td t-26">
+									<p>Monthly payment displayed but not prominent</p>
+								</div>
+								<div class="td t-26">
+									<p>Barely visible, not emphasized</p>
+								</div>
+							</div>
+						</div>
+						<div class="table-item">
+							<div class="tr">
+								<div class="td t-20">
+									<p class="title-small">AR Functionality</p>
+								</div>
+								<div class="td t-26 bk-light-green">
+									<p>Yes</p>
+								</div>
+								<div class="td t-26">
+									<p>No</p>
+								</div>
+								<div class="td t-26">
+									<p>No</p>
+								</div>
+							</div>
+						</div>
+						<div class="table-item">
+							<div class="tr">
+								<div class="td t-20">
+									<p class="title-small">Visual Design</p>
+								</div>
+								<div class="td t-26">
+									<p>Functionality-focused, somewhat cluttered</p>
+								</div>
+								<div class="td t-26">
+									<p>Refined and high-end with ample white space</p>
+								</div>
+								<div class="td t-26">
+									<p>It's barely noticeable when it's not emphasized.</p>
+								</div>
+							</div>
+						</div>
+						<div class="table-item">
+							<div class="tr">
+								<div class="td t-20">
+									<p class="title-small">Brand Warmth</p>
+								</div>
+								<div class="td t-26">
+									<p>Lacks emotional connection, feels like a big-box store</p>
+								</div>
+								<div class="td t-26 bk-light-green">
+									<p>Strong lifestyle positioning</p>
+								</div>
+								<div class="td t-26">
+									<p>Outdated and cluttered, lacks character</p>
+								</div>
+							</div>
+						</div>
+						<div class="table-item">
+							<div class="tr">
+								<div class="td t-20">
+									<p class="title-small">User Review System</p>
+								</div>
+								<div class="td t-26 bk-light-green">
+									<p>Comprehensive</p>
+								</div>
+								<div class="td t-26">
+									<p>Available but limited quantity</p>
+								</div>
+								<div class="td t-26">
+									<p>No</p>
+								</div>
+							</div>
+						</div>
+						<div class="table-item">
+							<div class="tr">
+								<div class="td t-20">
+									<p class="title-small">Product Selection</p>
+								</div>
+								<div class="td t-26 bk-light-green">
+									<p>Vast selection</p>
+								</div>
+								<div class="td t-26">
+									<p>Curated selection, uniform style</p>
+								</div>
+								<div class="td t-26 bk-light-green">
+									<p>Diverse selection</p>
+								</div>
+							</div>
+						</div>
+						<div class="table-item">
+							<div class="tr">
+								<div class="td t-20">
+									<p class="title-small">Price Positioning</p>
+								</div>
+								<div class="td t-26">
+									<p>Mid-low to mid-high, wide range</p>
+								</div>
+								<div class="td t-26">
+									<p>Mid-to-high-end, relatively expensive</p>
+								</div>
+								<div class="td t-26 bk-light-green">
+									<p>Affordable pricing
+										+ installment options</p>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -683,7 +958,6 @@
 									satisfaction.</p>
 							</div>
 						</div>
-
 					</div>
 				</div>
 			</div>
@@ -745,20 +1019,25 @@
 					<h5 class="title-middle">My approach:</h5>
 					<ul>
 						<li class="sp">Deep competitive research (Wayfair, Article) to learn best practices</li>
-						<li class="sp">Clear persona development, ensuring every design decision answered “How does this help
+						<li class="sp">Clear persona development, ensuring every design decision answered “How does this
+							help
 							Linda?”</li>
-						<li class="sp">Logic-driven decisions, e.g., “Financing should appear after user interest develops, not as
+						<li class="sp">Logic-driven decisions, e.g., “Financing should appear after user interest
+							develops, not as
 							immediate promotion”</li>
 					</ul>
-					<p class="dis-btm-2rem">Even without data, designers can make informed decisions through research, empathy, and logical
+					<p class="dis-btm-2rem">Even without data, designers can make informed decisions through research,
+						empathy, and logical
 						reasoning. This experience makes me eager to validate these assumptions with real data in the
 						future.</p>
 
 					<h5>Challenge 2: Highlighting “Financing” Without Appearing Sales-Driven</h5>
-					<p class="dis-btm-2rem">This was the project’s most challenging aspect. Financing is Jeralume’s greatest advantage and
+					<p class="dis-btm-2rem">This was the project’s most challenging aspect. Financing is Jeralume’s
+						greatest advantage and
 						must be prominent, but poor execution could make users feel pressured, creating resistance.</p>
 					<h5 class="title-middle">My approach:</h5>
-					<p class="dis-btm-2rem">Placement strategy: Not at the top of homepage (too aggressive), but after users browse products
+					<p class="dis-btm-2rem">Placement strategy: Not at the top of homepage (too aggressive), but after
+						users browse products
 						and develop interest
 						Messaging strategy: Instead of “Apply for installments now!” use “Achieve comfortable living
 						stress-free”—emphasizing benefits over features</p>
